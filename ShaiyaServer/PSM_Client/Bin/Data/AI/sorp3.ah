@@ -1,0 +1,6 @@
+Idle,Empty,Empty,Empty
+Init,Empty,Empty,Empty
+Battle,Battle,Battle,Empty
+Runaway,Empty,Empty,Empty
+Help,Empty,Empty,Empty
+Arrival,MoveAtSelectedPosition,MoveAtSelectedPosition,Empty

@@ -1,0 +1,178 @@
+BehaviorsCount : 1
+BehaviorName : test
+StateCount : 6
+StateName : Init
+StateDesc : ""
+StatePos : 318 64
+StateSize : 40 36
+StateEnter : Empty
+StateUpdate : Empty
+StateExit : Empty
+StateType : 1
+StatebStart : 1
+StatebEnd : 0
+StartConditionCount : 0
+UpdateConditionCount : 1
+ConditionType : 0
+ConditionExp : "Say("Init진행~~")"
+ExitConditionCount : 0
+StateName : Move
+StateDesc : ""
+StatePos : 398 296
+StateSize : 56 36
+StateEnter : MoveRandom
+StateUpdate : Empty
+StateExit : Empty
+StateType : 1
+StatebStart : 0
+StatebEnd : 0
+StartConditionCount : 1
+ConditionType : 0
+ConditionExp : "dwTime = GetCurrentTime()"
+UpdateConditionCount : 0
+ExitConditionCount : 0
+StateName : ArrivePosition
+StateDesc : ""
+StatePos : 124 368
+StateSize : 111 36
+StateEnter : Empty
+StateUpdate : Empty
+StateExit : Empty
+StateType : 1
+StatebStart : 0
+StatebEnd : 0
+StartConditionCount : 0
+UpdateConditionCount : 0
+ExitConditionCount : 0
+StateName : Battle
+StateDesc : ""
+StatePos : 585 110
+StateSize : 58 36
+StateEnter : Battle
+StateUpdate : Battle
+StateExit : Empty
+StateType : 1
+StatebStart : 0
+StatebEnd : 0
+StartConditionCount : 0
+UpdateConditionCount : 0
+ExitConditionCount : 0
+StateName : Say
+StateDesc : ""
+StatePos : 738 325
+StateSize : 45 36
+StateEnter : Empty
+StateUpdate : Empty
+StateExit : Empty
+StateType : 1
+StatebStart : 0
+StatebEnd : 0
+StartConditionCount : 1
+ConditionType : 0
+ConditionExp : "Say("넌 죽었어~ 감히 나를 때리다니~~~")"
+UpdateConditionCount : 0
+ExitConditionCount : 0
+StateName : MoveAnywhere
+StateDesc : ""
+StatePos : 693 451
+StateSize : 119 36
+StateEnter : MoveRandom
+StateUpdate : Empty
+StateExit : Empty
+StateType : 1
+StatebStart : 0
+StatebEnd : 0
+StartConditionCount : 0
+UpdateConditionCount : 0
+ExitConditionCount : 0
+TransitionCount : 8
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 334 90 409 286
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : Init
+TransitionEnd : Move
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 1
+ConditionType : 0
+ConditionExp : "dwTime = GetCurrentTime()"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 388 313 225 361
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : Move
+TransitionEnd : ArrivePosition
+TransitionRefNumber : 2
+TransitionRecursive : 0
+ConditionCount : 1
+ConditionType : 1
+ConditionExp : "GetCurrentTime() - dwTime > 3000"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 178 358 318 90
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : ArrivePosition
+TransitionEnd : Init
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 0
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 434 286 585 136
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : Move
+TransitionEnd : Battle
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 2
+ConditionType : 1
+ConditionExp : "IsAttackMe() == 1"
+ConditionType : 0
+ConditionExp : "nCount = 0"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 616 136 737 315
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : Battle
+TransitionEnd : Say
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 1
+ConditionType : 1
+ConditionExp : "nCount == 0"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 575 112 348 74
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : Battle
+TransitionEnd : Init
+TransitionRefNumber : 2
+TransitionRecursive : 0
+ConditionCount : 1
+ConditionType : 1
+ConditionExp : "IsBattle() == 0"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 748 351 743 441
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : Say
+TransitionEnd : MoveAnywhere
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 1
+ConditionType : 0
+ConditionExp : "dwTime = GetCurrentTime()"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 734 441 611 136
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : MoveAnywhere
+TransitionEnd : Battle
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 2
+ConditionType : 0
+ConditionExp : "nCount = 1"
+ConditionType : 1
+ConditionExp : "GetCurrentTime() - dwTime > 3000"

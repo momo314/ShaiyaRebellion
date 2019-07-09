@@ -1,0 +1,15 @@
+vecFuncList.push_back( CFunctionPointerList( "Empty", OnEmpty ) );
+vecFuncList.push_back( CFunctionPointerList( "Empty", OnEmpty ) );
+vecFuncList.push_back( CFunctionPointerList( "Empty", OnEmpty ) );
+vecFuncList.push_back( CFunctionPointerList( "Empty", OnEmpty ) );
+vecFuncList.push_back( CFunctionPointerList( "Empty", OnEmpty ) );
+vecFuncList.push_back( CFunctionPointerList( "Empty", OnEmpty ) );
+vecFuncList.push_back( CFunctionPointerList( "Battle", OnBattle ) );
+vecFuncList.push_back( CFunctionPointerList( "Battle", OnBattle ) );
+vecFuncList.push_back( CFunctionPointerList( "Empty", OnEmpty ) );
+vecFuncList.push_back( CFunctionPointerList( "Empty", OnEmpty ) );
+vecFuncList.push_back( CFunctionPointerList( "Empty", OnEmpty ) );
+vecFuncList.push_back( CFunctionPointerList( "Empty", OnEmpty ) );
+vecFuncList.push_back( CFunctionPointerList( "MoveRandomRun", OnMoveRandomRun ) );
+vecFuncList.push_back( CFunctionPointerList( "MoveRandomRun", OnMoveRandomRun ) );
+vecFuncList.push_back( CFunctionPointerList( "Empty", OnEmpty ) );
