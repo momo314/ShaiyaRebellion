@@ -1,0 +1,18 @@
+INSERT INTO PS_Billing.dbo.Users_Product VALUES
+      (559,0,60178,1,'Referral',1,1,GETDATE()),
+	(559,1,60178,1,'Referral',1,1,GETDATE()),
+    (559,2,60178,1,'Referral',1,1,GETDATE()),
+    (559,3,60178,1,'Referral',1,1,GETDATE()),
+    (559,4,73054,1,'Referral',1,1,GETDATE()),
+    (559,5,77054,1,'Referral',1,1,GETDATE()),
+    (559,6,76054,1,'Referral',1,1,GETDATE()),
+    (559,7,72054,1,'Referral',1,1,GETDATE()),
+    (559,8,74054,1,'Referral',1,1,GETDATE()),
+    (559,9,97060,1,'Referral',1,1,GETDATE()),
+    (559,10,97060,1,'Referral',1,1,GETDATE()),
+    (559,11,37060,1,'Referral',1,1,GETDATE()),
+    (559,12,37060,1,'Referral',1,1,GETDATE()),
+    (559,13,96030,1,'Referral',1,1,GETDATE()),
+    (559,14,73054,1,'Referral',1,1,GETDATE()),
+    (559,15,73054,1,'Referral',1,1,GETDATE()),
+    (559,16,73054,1,'Referral',1,1,GETDATE());
