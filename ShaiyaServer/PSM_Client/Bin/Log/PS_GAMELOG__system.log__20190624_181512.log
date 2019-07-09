@@ -1,0 +1,106 @@
+2019-06-24 18:15:12 PS_GAMELOG__system log start (GameLog01)
+Module list:
+D:\ShaiyaServer\PSM_Client\Bin\ps_gameLog.exe, loaded at 0x00400000 - 10/10/18 16:33:52
+2019-06-24 18:15:50 connect game
+2019-06-24 18:22:08 err=-1, [Microsoft][ODBC SQL Server Driver][SQL Server]Incorrect syntax near 's'., SQL STATE: 42000, NATIVE ERROR: 102 (0x66)
+2019-06-24 18:22:08 DBWrite::LogGame: err=-1, query=EXEC usp_Insert_Action_Log_E 'LexiiL',1,1140,'[ADM]Seras', 80,99080229,117, 88.541862,34.154095,102.463333, '2019-06-24 18:22:08' ,111, 5598296979059834880,38196,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Warrior's Package',NULL,'0,0,0,0,0,0 (Option:)','2019-06-24 18:21:49'
+2019-06-24 20:17:27 err=-1, [Microsoft][ODBC SQL Server Driver][SQL Server]Incorrect syntax near 's'., SQL STATE: 42000, NATIVE ERROR: 102 (0x66)
+2019-06-24 20:17:27 DBWrite::LogGame: err=-1, query=EXEC usp_Insert_Action_Log_E 'LexiiL',1,1140,'[ADM]Seras', 80,99080230,35, 472.908661,26.939993,237.638367, '2019-06-24 20:17:27' ,133, 655,1,0,97059,1,NULL,NULL,NULL,NULL,NULL,'Accessory Exchange(Level 80 G ','Priest's Gold Armlet',NULL,NULL
+2019-06-24 20:17:37 err=-1, [Microsoft][ODBC SQL Server Driver][SQL Server]Incorrect syntax near 's'., SQL STATE: 42000, NATIVE ERROR: 102 (0x66)
+2019-06-24 20:17:37 DBWrite::LogGame: err=-1, query=EXEC usp_Insert_Action_Log_E 'LexiiL',1,1140,'[ADM]Seras', 80,99080230,35, 472.908661,26.939991,237.638367, '2019-06-24 20:17:37' ,133, 655,1,100000,96030,1,NULL,NULL,NULL,NULL,NULL,'Accessory Exchange(Level 80 G ','Priest's Gold Amulet',NULL,NULL
+2019-06-25 12:29:06 1 1 SAgent::Disconnect: (4, 64)
+2019-06-25 12:29:06 1 1 T=018:13:00:000, RC=498,RCS=0, RB=55029,RBS=0, SC=72,SCS=0, SB=288,SBS=0
+2019-06-25 12:29:06 disconnect game
+2019-06-25 12:29:07 connect game
+2019-06-25 12:29:07 1 1 SAgent::Disconnect: (4, 0)
+2019-06-25 12:29:07 1 1 T=000:00:00:000, RC=0,RCS=0, RB=0,RBS=0, SC=0,SCS=0, SB=0,SBS=0
+2019-06-25 12:29:07 disconnect game
+2019-06-25 12:29:07 connect game
+2019-06-26 13:03:11 1 1 SAgent::Disconnect: (4, 64)
+2019-06-26 13:03:11 1 1 T=024:34:00:000, RC=134,RCS=0, RB=569,RBS=0, SC=134,SCS=0, SB=536,SBS=0
+2019-06-26 13:03:11 disconnect game
+2019-06-26 13:03:11 connect game
+2019-06-26 13:03:11 1 1 SAgent::Disconnect: (4, 0)
+2019-06-26 13:03:11 1 1 T=000:00:00:000, RC=0,RCS=0, RB=0,RBS=0, SC=0,SCS=0, SB=0,SBS=0
+2019-06-26 13:03:11 connect game
+2019-06-26 13:03:11 disconnect game
+2019-06-27 12:29:55 1 1 SAgent::Disconnect: (4, 64)
+2019-06-27 12:29:55 1 1 T=023:26:00:000, RC=133,RCS=0, RB=565,RBS=0, SC=133,SCS=0, SB=532,SBS=0
+2019-06-27 12:29:55 disconnect game
+2019-06-27 12:29:58 connect game
+2019-06-27 12:29:58 1 1 SAgent::Disconnect: (4, 0)
+2019-06-27 12:29:58 1 1 T=000:00:00:000, RC=0,RCS=0, RB=0,RBS=0, SC=0,SCS=0, SB=0,SBS=0
+2019-06-27 12:29:58 disconnect game
+2019-06-27 12:29:58 connect game
+2019-06-28 11:28:58 1 1 SAgent::Disconnect: (4, 64)
+2019-06-28 11:28:58 1 1 T=022:59:00:000, RC=140,RCS=0, RB=593,RBS=0, SC=140,SCS=0, SB=560,SBS=0
+2019-06-28 11:28:58 disconnect game
+2019-06-28 11:29:04 connect game
+2019-06-28 11:29:04 1 1 SAgent::Disconnect: (4, 0)
+2019-06-28 11:29:04 1 1 T=000:00:00:000, RC=0,RCS=0, RB=0,RBS=0, SC=0,SCS=0, SB=0,SBS=0
+2019-06-28 11:29:04 connect game
+2019-06-28 11:29:04 disconnect game
+2019-06-29 13:11:43 1 1 SAgent::Disconnect: (8, 1236)
+2019-06-29 13:11:43 1 1 T=025:42:00:000, RC=186,RCS=0, RB=777,RBS=0, SC=185,SCS=0, SB=740,SBS=0
+2019-06-29 13:11:43 disconnect game
+2019-06-29 13:11:48 connect game
+2019-06-29 13:11:48 1 1 SAgent::Disconnect: (4, 10038)
+2019-06-29 13:11:48 1 1 T=000:00:00:000, RC=0,RCS=0, RB=0,RBS=0, SC=0,SCS=0, SB=0,SBS=0
+2019-06-29 13:11:48 disconnect game
+2019-06-29 13:11:48 connect game
+2019-06-29 20:16:22 1 1 SAgent::Disconnect: (4, 64)
+2019-06-29 20:16:22 1 1 T=007:04:00:000, RC=15,RCS=0, RB=93,RBS=0, SC=13,SCS=0, SB=52,SBS=0
+2019-06-29 20:16:22 disconnect game
+2019-06-29 20:16:32 connect game
+2019-06-29 20:16:32 connect game
+2019-06-29 20:16:32 1 1 SAgent::Disconnect: (4, 0)
+2019-06-29 20:16:32 1 1 T=000:00:00:000, RC=0,RCS=0, RB=0,RBS=0, SC=0,SCS=0, SB=0,SBS=0
+2019-06-29 20:16:32 disconnect game
+2019-06-30 13:30:37 1 1 SAgent::Disconnect: (8, 1236)
+2019-06-30 13:30:37 1 1 T=017:14:00:000, RC=59,RCS=0, RB=269,RBS=0, SC=58,SCS=0, SB=232,SBS=0
+2019-06-30 13:30:37 disconnect game
+2019-06-30 13:30:40 connect game
+2019-06-30 13:30:40 1 1 SAgent::Disconnect: (4, 10038)
+2019-06-30 13:30:40 1 1 T=000:00:00:000, RC=0,RCS=0, RB=0,RBS=0, SC=0,SCS=0, SB=0,SBS=0
+2019-06-30 13:30:40 disconnect game
+2019-06-30 13:30:40 connect game
+2019-07-01 11:38:27 1 1 SAgent::Disconnect: (4, 64)
+2019-07-01 11:38:27 1 1 T=022:07:00:000, RC=128,RCS=0, RB=545,RBS=0, SC=126,SCS=0, SB=504,SBS=0
+2019-07-01 11:38:27 disconnect game
+2019-07-01 11:38:31 connect game
+2019-07-01 11:38:31 1 1 SAgent::Disconnect: (4, 0)
+2019-07-01 11:38:31 1 1 T=000:00:00:000, RC=0,RCS=0, RB=0,RBS=0, SC=0,SCS=0, SB=0,SBS=0
+2019-07-01 11:38:31 disconnect game
+2019-07-01 11:38:31 connect game
+2019-07-02 10:33:33 1 1 SAgent::Disconnect: (4, 64)
+2019-07-02 10:33:33 1 1 T=022:55:00:000, RC=141,RCS=0, RB=597,RBS=0, SC=141,SCS=0, SB=564,SBS=0
+2019-07-02 10:33:33 disconnect game
+2019-07-02 10:33:39 connect game
+2019-07-02 10:33:39 connect game
+2019-07-02 10:33:39 1 1 SAgent::Disconnect: (4, 0)
+2019-07-02 10:33:39 1 1 T=000:00:00:000, RC=0,RCS=0, RB=0,RBS=0, SC=0,SCS=0, SB=0,SBS=0
+2019-07-02 10:33:39 disconnect game
+2019-07-03 12:44:05 1 1 SAgent::Disconnect: (4, 64)
+2019-07-03 12:44:05 1 1 T=026:10:00:000, RC=153,RCS=0, RB=645,RBS=0, SC=152,SCS=0, SB=608,SBS=0
+2019-07-03 12:44:05 disconnect game
+2019-07-03 12:44:13 connect game
+2019-07-03 12:44:13 1 1 SAgent::Disconnect: (4, 0)
+2019-07-03 12:44:13 1 1 T=000:00:00:000, RC=0,RCS=0, RB=0,RBS=0, SC=0,SCS=0, SB=0,SBS=0
+2019-07-03 12:44:13 disconnect game
+2019-07-03 12:44:13 connect game
+2019-07-04 12:30:23 1 1 SAgent::Disconnect: (4, 64)
+2019-07-04 12:30:23 1 1 T=023:46:00:000, RC=129,RCS=0, RB=549,RBS=0, SC=128,SCS=0, SB=512,SBS=0
+2019-07-04 12:30:23 disconnect game
+2019-07-04 12:30:33 connect game
+2019-07-04 12:30:33 connect game
+2019-07-04 12:30:33 1 1 SAgent::Disconnect: (4, 0)
+2019-07-04 12:30:33 1 1 T=000:00:00:000, RC=0,RCS=0, RB=0,RBS=0, SC=0,SCS=0, SB=0,SBS=0
+2019-07-04 12:30:33 disconnect game
+2019-07-05 12:08:59 1 1 SAgent::Disconnect: (4, 64)
+2019-07-05 12:08:59 1 1 T=023:38:00:000, RC=145,RCS=0, RB=613,RBS=0, SC=145,SCS=0, SB=580,SBS=0
+2019-07-05 12:08:59 disconnect game
+2019-07-05 12:09:01 connect game
+2019-07-05 12:09:01 1 1 SAgent::Disconnect: (4, 0)
+2019-07-05 12:09:01 connect game
+2019-07-05 12:09:01 1 1 T=000:00:00:000, RC=0,RCS=0, RB=0,RBS=0, SC=0,SCS=0, SB=0,SBS=0
+2019-07-05 12:09:01 disconnect game

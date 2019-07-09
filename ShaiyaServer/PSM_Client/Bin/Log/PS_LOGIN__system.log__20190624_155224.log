@@ -1,0 +1,34 @@
+2019-06-24 15:52:24 PS_LOGIN__system log start (Login01)
+2019-06-24 16:52:35 cmd_auto server info log
+ user = 0 (0/500)
+2019-06-24 16:52:35 T=001:00:00:000, NumC=0,CMin=0,CMax=1,CAvg=0.00, CAva=2,CReq=2,CCnt=2,DCCnt=2, CTimeT=000:00:00:000,CTimeAvg=000:00:00:000, RBT=388,RBS=0,RBSC=13,SBT=554,SBS=0,SBSC=19
+2019-06-24 16:52:35 SContext=2(1022/1024)
+SContextSend=0(1024/1024)
+SContextAccept=0(0/0)
+SPacketBufferSendS=1(1023/1024)
+SPacketBufferSendM=0(1024/1024)
+SPacketBufferSendB=2(1022/1024)
+SSyncQueueBufferSend::SQueueSendNode=1(1023/1024)
+SSyncQueueBufferPriority::SQueuePrioritySendNode=0(0/0)
+SSyncQueueStatus::SQueueStatusNode=0(1024/1024)
+2019-06-24 17:52:35 cmd_auto server info log
+ user = 0 (0/500)
+2019-06-24 17:52:35 T=002:00:00:000, NumC=0,CMin=0,CMax=1,CAvg=0.00, CAva=2,CReq=2,CCnt=2,DCCnt=2, CTimeT=000:00:00:000,CTimeAvg=000:00:00:000, RBT=388,RBS=0,RBSC=13,SBT=554,SBS=0,SBSC=19
+2019-06-24 17:52:35 SContext=2(1022/1024)
+SContextSend=0(1024/1024)
+SContextAccept=0(0/0)
+SPacketBufferSendS=1(1023/1024)
+SPacketBufferSendM=0(1024/1024)
+SPacketBufferSendB=2(1022/1024)
+SSyncQueueBufferSend::SQueueSendNode=1(1023/1024)
+SSyncQueueBufferPriority::SQueuePrioritySendNode=0(0/0)
+SSyncQueueStatus::SQueueStatusNode=0(1024/1024)
+2019-06-24 18:15:09 3 1 SERVICE_CONTROL_STOP
+2019-06-24 18:15:09 1 1 SAgent::Disconnect: (3, 1236)
+2019-06-24 18:15:09 1 1 T=002:22:00:000, RC=43,RCS=0, RB=361,RBS=0, SC=890,SCS=0, SB=7247,SBS=0
+2019-06-24 18:15:09 1 1 SAgent::Disconnect: (3, 1236)
+2019-06-24 18:15:09 1 1 T=002:22:00:000, RC=28,RCS=0, RB=112,RBS=0, SC=29,SCS=0, SB=149,SBS=0
+2019-06-24 18:15:09 mgr server disconnection
+2019-06-24 18:15:09 log system server disconnection
+2019-06-24 18:15:09 PS_LOGIN__system log end (Login01)
+2019-06-24 18:15:09 3 1 SService::ServiceCtrlDispatcher(): service shutdown

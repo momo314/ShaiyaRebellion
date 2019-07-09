@@ -1,0 +1,53 @@
+2019-06-24 15:52:22 PS_GAME__system log start (Game01) [Sh_EPVP]
+2019-06-24 15:52:53 error mob item drop info load error
+2019-06-24 15:52:53 error mob item drop info load error
+2019-06-24 15:52:53 error mob item drop info load error
+2019-06-24 15:52:53 error mob item drop info load error
+2019-06-24 15:52:53 error mob item drop info load error
+2019-06-24 15:52:53 error mob item drop info load error
+2019-06-24 15:52:53 error mob item drop info load error
+2019-06-24 15:52:53 error mob item drop info load error
+2019-06-24 15:52:53 error mob item drop info load error
+2019-06-24 15:52:53 error mob item drop info load error
+2019-06-24 15:52:53 error mob item drop info load error
+2019-06-24 15:52:53 error mob item drop info load error
+2019-06-24 15:52:53 error mob item drop info load error
+2019-06-24 15:52:53 error mob item drop info load error
+2019-06-24 15:52:53 error mob item drop info load error
+2019-06-24 15:52:53 error mob item drop info load error
+2019-06-24 15:52:53 error mob item drop info load error
+2019-06-24 15:52:53 error mob item drop info load error
+2019-06-24 15:52:55 connect mgr 1864
+2019-06-24 15:52:55 Server Version : 0
+2019-06-24 15:52:55 connect dbagent 1860
+2019-06-24 15:52:55 connect gamelog 1900
+2019-06-24 15:52:56 Market End -----------------------
+2019-06-24 15:52:57 Start CWorldSendThread=16360
+Module list:
+D:\ShaiyaServer\PSM_Client\Bin\ps_game.exe, loaded at 0x00400000 - 11/09/14 17:10:08
+2019-06-24 15:55:58 3 1 SERVICE_CONTROL_STOP
+2019-06-24 15:55:58 Call save all waiting...
+2019-06-24 15:56:00 1 1 SAgent::Disconnect: (3, 1236)
+2019-06-24 15:56:00 1 1 T=000:03:00:000, RC=4,RCS=0, RB=127,RBS=0, SC=7,SCS=0, SB=133,SBS=0
+2019-06-24 15:56:00 1 1 SAgent::Disconnect: (3, 1236)
+2019-06-24 15:56:00 1 1 T=000:03:00:000, RC=110,RCS=0, RB=68644,RBS=373, SC=60,SCS=0, SB=1268,SBS=6
+2019-06-24 15:56:00 1 1 SAgent::Disconnect: (3, 1236)
+2019-06-24 15:56:00 1 1 T=000:03:00:000, RC=0,RCS=0, RB=0,RBS=0, SC=3,SCS=0, SB=126,SBS=0
+2019-06-24 15:56:00 1 1 SAgent::Disconnect: (3, 1236)
+2019-06-24 15:56:00 1 1 T=000:03:00:000, RC=0,RCS=0, RB=0,RBS=0, SC=30,SCS=0, SB=4628,SBS=25
+2019-06-24 15:56:00 discon mgr ((3,1236, 127,133)
+2019-06-24 15:56:00 mgr Connection Lost INFO : T=000:03:00:000, RC=4,RCS=0, RB=127,RBS=0, SC=7,SCS=0, SB=133,SBS=0
+2019-06-24 15:56:00 discon gamelog ((3,1236, 0,4628)
+2019-06-24 15:56:00 mgr server disconnection
+2019-06-24 15:56:00 gamelog Connection Lost INFO : T=000:03:00:000, RC=0,RCS=0, RB=0,RBS=0, SC=30,SCS=0, SB=4628,SBS=25
+2019-06-24 15:56:00 game log server disconnection
+2019-06-24 15:56:00 discon userlog ((3,1236, 0,126)
+2019-06-24 15:56:00 userlog Connection Lost INFO : T=000:03:00:000, RC=0,RCS=0, RB=0,RBS=0, SC=3,SCS=0, SB=126,SBS=0
+2019-06-24 15:56:00 discon dbagent ((3,1236, 68644,1268)
+2019-06-24 15:56:00 userlog log server disconnection
+2019-06-24 15:56:00 dbagent Connection Lost INFO : T=000:03:00:000, RC=110,RCS=0, RB=68644,RBS=373, SC=60,SCS=0, SB=1268,SBS=6
+2019-06-24 15:56:00 db agent server disconnected...
+2019-06-24 15:56:00 call disconnectAll...
+2019-06-24 15:56:00 server shutdown Connection INFO : T=000:03:00:000, NumC=0,CMin=0,CMax=1,CAvg=0.00, CAva=1,CReq=1,CCnt=1,DCCnt=1, CTimeT=000:02:00:000,CTimeAvg=000:02:00:000, RBT=2520,RBS=11,RBSC=15,SBT=25731,SBS=118,SBSC=158
+2019-06-24 15:56:00 PS_GAME__system log end (Game01)
+2019-06-24 15:56:00 3 1 SService::ServiceCtrlDispatcher(): service shutdown

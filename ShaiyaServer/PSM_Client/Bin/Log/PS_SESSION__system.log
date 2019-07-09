@@ -1,0 +1,299 @@
+2019-06-24 13:26:59 PS_SESSION__system log start (Session)
+2019-06-24 13:27:00 userlog connect failed
+2019-06-24 13:27:00 initserver() failed
+2019-06-24 13:27:00 3 1 SService::ServiceCtrlDispatcher(): m_pService->Init()
+2019-06-24 13:27:00 PS_SESSION__system log end (Session)
+2019-06-24 13:27:00 3 1 SService::ServiceCtrlDispatcher(): service shutdown
+2019-06-24 13:27:10 PS_SESSION__system log start (Session)
+Module list:
+D:\ShaiyaServer\PSM_Client\Bin\ps_session.exe, loaded at 0x00400000 - 11/09/14 16:30:56
+2019-06-24 13:27:11 connect login
+2019-06-24 13:27:42 connect game
+2019-06-24 13:46:51 1 1 SAgent::Disconnect: (4, 64)
+2019-06-24 13:46:51 1 1 T=000:19:00:000, RC=10,RCS=0, RB=145,RBS=0, SC=7,SCS=0, SB=139,SBS=0
+2019-06-24 13:46:51 disconnect game
+2019-06-24 13:47:30 connect game
+2019-06-24 13:52:40 1 1 SAgent::Disconnect: (4, 64)
+2019-06-24 13:52:40 1 1 T=000:25:00:000, RC=169,RCS=0, RB=1850,RBS=1, SC=22,SCS=0, SB=288,SBS=0
+2019-06-24 13:52:40 disconnect login
+2019-06-24 13:52:43 3 1 SERVICE_CONTROL_STOP
+2019-06-24 13:52:47 1 1 SAgent::Disconnect: (4, 64)
+2019-06-24 13:52:47 1 1 T=000:05:00:000, RC=8,RCS=0, RB=137,RBS=0, SC=5,SCS=0, SB=131,SBS=0
+2019-06-24 13:52:47 disconnect game
+2019-06-24 13:52:48 1 1 SAgent::Disconnect: (3, 1236)
+2019-06-24 13:52:48 1 1 T=000:25:00:000, RC=5,RCS=0, RB=20,RBS=0, SC=6,SCS=0, SB=57,SBS=0
+2019-06-24 13:52:48 log system server disconnection
+2019-06-24 13:52:48 PS_SESSION__system log end (Session)
+2019-06-24 13:52:48 3 1 SService::ServiceCtrlDispatcher(): service shutdown
+2019-06-24 15:18:08 PS_SESSION__system log start (Session)
+Module list:
+D:\ShaiyaServer\PSM_Client\Bin\ps_session.exe, loaded at 0x00400000 - 11/09/14 16:30:56
+2019-06-24 15:18:13 connect login
+2019-06-24 15:18:47 connect game
+2019-06-24 15:36:56 1 1 SAgent::Disconnect: (4, 64)
+2019-06-24 15:36:56 1 1 T=000:18:00:000, RC=119,RCS=0, RB=1084,RBS=0, SC=10,SCS=0, SB=154,SBS=0
+2019-06-24 15:36:56 disconnect login
+2019-06-24 15:36:59 3 1 SERVICE_CONTROL_STOP
+2019-06-24 15:37:08 1 1 SAgent::Disconnect: (4, 64)
+2019-06-24 15:37:08 1 1 T=000:18:00:000, RC=10,RCS=0, RB=145,RBS=0, SC=7,SCS=0, SB=139,SBS=0
+2019-06-24 15:37:08 disconnect game
+2019-06-24 15:37:09 1 1 SAgent::Disconnect: (3, 1236)
+2019-06-24 15:37:09 1 1 T=000:19:00:000, RC=3,RCS=0, RB=12,RBS=0, SC=4,SCS=0, SB=49,SBS=0
+2019-06-24 15:37:09 log system server disconnection
+2019-06-24 15:37:09 PS_SESSION__system log end (Session)
+2019-06-24 15:37:09 3 1 SService::ServiceCtrlDispatcher(): service shutdown
+2019-06-24 15:38:00 PS_SESSION__system log start (Session)
+2019-06-24 15:38:01 userlog connect failed
+2019-06-24 15:38:01 initserver() failed
+2019-06-24 15:38:01 3 1 SService::ServiceCtrlDispatcher(): m_pService->Init()
+2019-06-24 15:38:01 PS_SESSION__system log end (Session)
+2019-06-24 15:38:01 3 1 SService::ServiceCtrlDispatcher(): service shutdown
+2019-06-24 15:38:07 PS_SESSION__system log start (Session)
+Module list:
+D:\ShaiyaServer\PSM_Client\Bin\ps_session.exe, loaded at 0x00400000 - 11/09/14 16:30:56
+2019-06-24 15:38:23 connect login
+2019-06-24 15:38:35 connect game
+2019-06-24 15:50:56 1 1 SAgent::Disconnect: (4, 64)
+2019-06-24 15:50:56 1 1 T=000:12:00:000, RC=81,RCS=0, RB=784,RBS=1, SC=9,SCS=0, SB=150,SBS=0
+2019-06-24 15:50:56 disconnect login
+2019-06-24 15:50:59 3 1 SERVICE_CONTROL_STOP
+2019-06-24 15:51:08 1 1 SAgent::Disconnect: (4, 64)
+2019-06-24 15:51:08 1 1 T=000:12:00:000, RC=9,RCS=0, RB=141,RBS=0, SC=6,SCS=0, SB=135,SBS=0
+2019-06-24 15:51:08 disconnect game
+2019-06-24 15:51:09 1 1 SAgent::Disconnect: (3, 1236)
+2019-06-24 15:51:09 1 1 T=000:13:00:000, RC=2,RCS=0, RB=8,RBS=0, SC=3,SCS=0, SB=45,SBS=0
+2019-06-24 15:51:09 log system server disconnection
+2019-06-24 15:51:09 PS_SESSION__system log end (Session)
+2019-06-24 15:51:09 3 1 SService::ServiceCtrlDispatcher(): service shutdown
+2019-06-24 15:52:22 PS_SESSION__system log start (Session)
+Module list:
+D:\ShaiyaServer\PSM_Client\Bin\ps_session.exe, loaded at 0x00400000 - 11/09/14 16:30:56
+2019-06-24 15:52:25 connect login
+2019-06-24 15:52:55 connect game
+2019-06-24 15:56:00 1 1 SAgent::Disconnect: (4, 64)
+2019-06-24 15:56:00 1 1 T=000:03:00:000, RC=7,RCS=0, RB=133,RBS=0, SC=4,SCS=0, SB=127,SBS=0
+2019-06-24 15:56:00 disconnect game
+2019-06-24 15:56:44 connect game
+2019-06-24 18:15:09 1 1 SAgent::Disconnect: (4, 64)
+2019-06-24 18:15:09 1 1 T=002:22:00:000, RC=890,RCS=0, RB=7247,RBS=0, SC=43,SCS=0, SB=361,SBS=0
+2019-06-24 18:15:09 disconnect login
+2019-06-24 18:15:09 1 1 SAgent::Disconnect: (4, 64)
+2019-06-24 18:15:09 1 1 T=002:18:00:000, RC=34,RCS=0, RB=241,RBS=0, SC=32,SCS=0, SB=239,SBS=0
+2019-06-24 18:15:09 disconnect game
+2019-06-24 18:15:09 3 1 SERVICE_CONTROL_STOP
+2019-06-24 18:15:09 1 1 SAgent::Disconnect: (3, 1236)
+2019-06-24 18:15:09 1 1 T=002:22:00:000, RC=28,RCS=0, RB=112,RBS=0, SC=29,SCS=0, SB=149,SBS=0
+2019-06-24 18:15:09 log system server disconnection
+2019-06-24 18:15:09 PS_SESSION__system log end (Session)
+2019-06-24 18:15:09 3 1 SService::ServiceCtrlDispatcher(): service shutdown
+2019-06-24 18:15:12 PS_SESSION__system log start (Session)
+2019-06-24 18:15:13 userlog connect failed
+2019-06-24 18:15:13 initserver() failed
+2019-06-24 18:15:13 3 1 SService::ServiceCtrlDispatcher(): m_pService->Init()
+2019-06-24 18:15:13 PS_SESSION__system log end (Session)
+2019-06-24 18:15:13 3 1 SService::ServiceCtrlDispatcher(): service shutdown
+2019-06-24 18:15:37 PS_SESSION__system log start (Session)
+Module list:
+D:\ShaiyaServer\PSM_Client\Bin\ps_session.exe, loaded at 0x00400000 - 11/09/14 16:30:56
+2019-06-24 18:15:50 connect game
+2019-06-24 18:16:00 connect login
+2019-06-25 12:29:04 [Rebellion Test Server] ## WorldDB Dump, TimeOver:43875797
+2019-06-25 12:29:06 1 1 SAgent::Disconnect: (4, 64)
+2019-06-25 12:29:06 1 1 T=018:13:00:000, RC=84,RCS=0, RB=738,RBS=0, SC=78,SCS=0, SB=517,SBS=0
+2019-06-25 12:29:06 disconnect game
+2019-06-25 12:29:07 1 1 SAgent::Disconnect: (4, 0)
+2019-06-25 12:29:07 1 1 T=000:00:00:000, RC=0,RCS=0, RB=0,RBS=0, SC=0,SCS=0, SB=0,SBS=0
+2019-06-25 12:29:07 connect game
+2019-06-25 12:29:16 1 1 SAgent::Disconnect: (4, 64)
+2019-06-25 12:29:16 1 1 T=018:13:00:000, RC=2249,RCS=0, RB=17943,RBS=0, SC=85,SCS=0, SB=479,SBS=0
+2019-06-25 12:29:16 disconnect login
+2019-06-25 12:29:17 1 1 SAgent::Disconnect: (4, 0)
+2019-06-25 12:29:17 1 1 T=000:00:00:000, RC=0,RCS=0, RB=0,RBS=0, SC=0,SCS=0, SB=0,SBS=0
+2019-06-25 12:29:17 connect login
+2019-06-25 12:31:30 1 1 SAgent::Disconnect: (4, 64)
+2019-06-25 12:31:30 1 1 T=018:15:00:000, RC=72,RCS=0, RB=288,RBS=0, SC=73,SCS=0, SB=325,SBS=0
+2019-06-25 12:31:30 log system server disconnection
+2019-06-25 12:31:34 m_bReUserlog ok
+2019-06-26 13:02:30 [Rebellion Test Server] ## WorldDB Dump, TimeOver:48245079
+2019-06-26 13:03:11 1 1 SAgent::Disconnect: (4, 64)
+2019-06-26 13:03:11 1 1 T=024:34:00:000, RC=137,RCS=0, RB=870,RBS=0, SC=138,SCS=0, SB=571,SBS=0
+2019-06-26 13:03:11 disconnect game
+2019-06-26 13:03:11 1 1 SAgent::Disconnect: (4, 997)
+2019-06-26 13:03:11 1 1 T=000:00:00:000, RC=0,RCS=0, RB=0,RBS=0, SC=0,SCS=0, SB=0,SBS=0
+2019-06-26 13:03:11 connect game
+2019-06-26 13:03:21 1 1 SAgent::Disconnect: (4, 64)
+2019-06-26 13:03:21 1 1 T=024:34:00:000, RC=4155,RCS=0, RB=32757,RBS=0, SC=139,SCS=0, SB=657,SBS=0
+2019-06-26 13:03:21 disconnect login
+2019-06-26 13:03:25 1 1 SAgent::Disconnect: (4, 0)
+2019-06-26 13:03:25 1 1 T=000:00:00:000, RC=0,RCS=0, RB=0,RBS=0, SC=0,SCS=0, SB=0,SBS=0
+2019-06-26 13:03:25 connect login
+2019-06-26 13:05:35 1 1 SAgent::Disconnect: (4, 64)
+2019-06-26 13:05:35 1 1 T=024:34:00:000, RC=133,RCS=0, RB=532,RBS=0, SC=135,SCS=0, SB=573,SBS=0
+2019-06-26 13:05:35 log system server disconnection
+2019-06-26 13:05:42 m_bReUserlog ok
+2019-06-27 12:29:55 1 1 SAgent::Disconnect: (4, 64)
+2019-06-27 12:29:55 1 1 T=023:26:00:000, RC=135,RCS=0, RB=605,RBS=0, SC=137,SCS=0, SB=567,SBS=0
+2019-06-27 12:29:55 disconnect game
+2019-06-27 12:29:58 1 1 SAgent::Disconnect: (4, 997)
+2019-06-27 12:29:58 1 1 T=000:00:00:000, RC=0,RCS=0, RB=0,RBS=0, SC=0,SCS=0, SB=0,SBS=0
+2019-06-27 12:29:58 connect game
+2019-06-27 12:30:05 1 1 SAgent::Disconnect: (4, 64)
+2019-06-27 12:30:05 1 1 T=023:26:00:000, RC=4124,RCS=0, RB=32513,RBS=0, SC=138,SCS=0, SB=653,SBS=0
+2019-06-27 12:30:05 disconnect login
+2019-06-27 12:30:11 1 1 SAgent::Disconnect: (4, 0)
+2019-06-27 12:30:11 1 1 T=000:00:00:000, RC=0,RCS=0, RB=0,RBS=0, SC=0,SCS=0, SB=0,SBS=0
+2019-06-27 12:30:11 connect login
+2019-06-27 12:32:19 1 1 SAgent::Disconnect: (4, 64)
+2019-06-27 12:32:19 1 1 T=023:26:00:000, RC=132,RCS=0, RB=528,RBS=0, SC=134,SCS=0, SB=569,SBS=0
+2019-06-27 12:32:19 log system server disconnection
+2019-06-27 12:32:28 m_bReUserlog ok
+2019-06-28 11:28:58 1 1 SAgent::Disconnect: (4, 64)
+2019-06-28 11:28:58 1 1 T=022:59:00:000, RC=142,RCS=0, RB=633,RBS=0, SC=144,SCS=0, SB=595,SBS=0
+2019-06-28 11:28:58 disconnect game
+2019-06-28 11:29:04 1 1 SAgent::Disconnect: (4, 997)
+2019-06-28 11:29:04 1 1 T=000:00:00:000, RC=0,RCS=0, RB=0,RBS=0, SC=0,SCS=0, SB=0,SBS=0
+2019-06-28 11:29:04 connect game
+2019-06-28 11:29:08 1 1 SAgent::Disconnect: (4, 64)
+2019-06-28 11:29:08 1 1 T=022:58:00:000, RC=4335,RCS=0, RB=34173,RBS=0, SC=145,SCS=0, SB=681,SBS=0
+2019-06-28 11:29:08 disconnect login
+2019-06-28 11:29:18 1 1 SAgent::Disconnect: (4, 0)
+2019-06-28 11:29:18 1 1 T=000:00:00:000, RC=0,RCS=0, RB=0,RBS=0, SC=0,SCS=0, SB=0,SBS=0
+2019-06-28 11:29:18 connect login
+2019-06-28 11:32:22 1 1 SAgent::Disconnect: (4, 64)
+2019-06-28 11:32:22 1 1 T=022:59:00:000, RC=139,RCS=0, RB=556,RBS=0, SC=141,SCS=0, SB=597,SBS=0
+2019-06-28 11:32:22 log system server disconnection
+2019-06-28 11:32:25 m_bReUserlog ok
+2019-06-29 13:11:29 1 1 SAgent::Disconnect: (4, 64)
+2019-06-29 13:11:29 1 1 T=025:42:00:000, RC=5754,RCS=0, RB=45341,RBS=0, SC=187,SCS=0, SB=797,SBS=0
+2019-06-29 13:11:29 disconnect login
+2019-06-29 13:11:31 1 1 SAgent::Disconnect: (4, 0)
+2019-06-29 13:11:31 1 1 T=000:00:00:000, RC=0,RCS=0, RB=0,RBS=0, SC=0,SCS=0, SB=0,SBS=0
+2019-06-29 13:11:31 connect login
+2019-06-29 13:11:42 1 1 SAgent::Disconnect: (4, 64)
+2019-06-29 13:11:42 1 1 T=025:39:00:000, RC=184,RCS=0, RB=736,RBS=0, SC=186,SCS=0, SB=777,SBS=0
+2019-06-29 13:11:42 log system server disconnection
+2019-06-29 13:11:48 m_bReUserlog ok
+2019-06-29 13:12:05 1 1 SAgent::Disconnect: (8, 1236)
+2019-06-29 13:12:05 1 1 T=025:43:00:000, RC=188,RCS=0, RB=817,RBS=0, SC=190,SCS=0, SB=780,SBS=0
+2019-06-29 13:12:05 disconnect game
+2019-06-29 13:12:08 1 1 SAgent::Disconnect: (4, 0)
+2019-06-29 13:12:08 1 1 T=000:00:00:000, RC=0,RCS=0, RB=0,RBS=0, SC=0,SCS=0, SB=0,SBS=0
+2019-06-29 13:12:08 connect game
+2019-06-29 20:16:14 [Rebellion Test Server] ## WorldDB Dump, TimeOver:21356516
+2019-06-29 20:16:22 1 1 SAgent::Disconnect: (4, 64)
+2019-06-29 20:16:22 1 1 T=007:04:00:000, RC=18,RCS=0, RB=394,RBS=0, SC=16,SCS=0, SB=82,SBS=0
+2019-06-29 20:16:22 disconnect game
+2019-06-29 20:16:26 1 1 SAgent::Disconnect: (4, 64)
+2019-06-29 20:16:26 1 1 T=007:04:00:000, RC=429,RCS=0, RB=3429,RBS=0, SC=20,SCS=0, SB=183,SBS=0
+2019-06-29 20:16:26 disconnect login
+2019-06-29 20:16:28 1 1 SAgent::Disconnect: (4, 0)
+2019-06-29 20:16:28 1 1 T=000:00:00:000, RC=0,RCS=0, RB=0,RBS=0, SC=0,SCS=0, SB=0,SBS=0
+2019-06-29 20:16:28 connect login
+2019-06-29 20:16:32 1 1 SAgent::Disconnect: (4, 0)
+2019-06-29 20:16:32 1 1 T=000:00:00:000, RC=0,RCS=0, RB=0,RBS=0, SC=0,SCS=0, SB=0,SBS=0
+2019-06-29 20:16:32 connect game
+2019-06-29 20:17:39 1 1 SAgent::Disconnect: (4, 64)
+2019-06-29 20:17:39 1 1 T=007:05:00:000, RC=13,RCS=0, RB=52,RBS=0, SC=15,SCS=0, SB=93,SBS=0
+2019-06-29 20:17:39 log system server disconnection
+2019-06-29 20:17:45 m_bReUserlog ok
+2019-06-30 13:30:23 1 1 SAgent::Disconnect: (4, 64)
+2019-06-30 13:30:23 1 1 T=017:13:00:000, RC=1806,RCS=0, RB=14265,RBS=0, SC=62,SCS=0, SB=347,SBS=0
+2019-06-30 13:30:23 disconnect login
+2019-06-30 13:30:23 [Rebellion Test Server] ## WorldDB Dump, TimeOver:44577562
+2019-06-30 13:30:26 1 1 SAgent::Disconnect: (4, 997)
+2019-06-30 13:30:26 1 1 T=000:00:00:000, RC=0,RCS=0, RB=0,RBS=0, SC=0,SCS=0, SB=0,SBS=0
+2019-06-30 13:30:27 connect login
+2019-06-30 13:30:36 1 1 SAgent::Disconnect: (4, 64)
+2019-06-30 13:30:36 1 1 T=017:12:00:000, RC=57,RCS=0, RB=228,RBS=0, SC=59,SCS=0, SB=269,SBS=0
+2019-06-30 13:30:36 log system server disconnection
+2019-06-30 13:30:43 m_bReUserlog ok
+2019-06-30 13:30:58 1 1 SAgent::Disconnect: (8, 1236)
+2019-06-30 13:30:58 1 1 T=017:14:00:000, RC=62,RCS=0, RB=570,RBS=0, SC=62,SCS=0, SB=267,SBS=0
+2019-06-30 13:30:58 disconnect game
+2019-06-30 13:31:00 1 1 SAgent::Disconnect: (4, 997)
+2019-06-30 13:31:00 1 1 T=000:00:00:000, RC=0,RCS=0, RB=0,RBS=0, SC=0,SCS=0, SB=0,SBS=0
+2019-06-30 13:31:01 connect game
+2019-07-01 11:38:27 1 1 SAgent::Disconnect: (4, 64)
+2019-07-01 11:38:27 1 1 T=022:07:00:000, RC=130,RCS=0, RB=585,RBS=0, SC=129,SCS=0, SB=534,SBS=0
+2019-07-01 11:38:27 disconnect game
+2019-07-01 11:38:31 1 1 SAgent::Disconnect: (4, 997)
+2019-07-01 11:38:31 1 1 T=000:00:00:000, RC=0,RCS=0, RB=0,RBS=0, SC=0,SCS=0, SB=0,SBS=0
+2019-07-01 11:38:31 connect game
+2019-07-01 11:38:31 1 1 SAgent::Disconnect: (4, 64)
+2019-07-01 11:38:31 1 1 T=022:08:00:000, RC=3926,RCS=0, RB=30953,RBS=0, SC=135,SCS=0, SB=693,SBS=0
+2019-07-01 11:38:31 disconnect login
+2019-07-01 11:38:37 1 1 SAgent::Disconnect: (4, 0)
+2019-07-01 11:38:37 1 1 T=000:00:00:000, RC=0,RCS=0, RB=0,RBS=0, SC=0,SCS=0, SB=0,SBS=0
+2019-07-01 11:38:37 connect login
+2019-07-01 11:40:44 1 1 SAgent::Disconnect: (4, 64)
+2019-07-01 11:40:44 1 1 T=022:10:00:000, RC=126,RCS=0, RB=504,RBS=0, SC=128,SCS=0, SB=545,SBS=0
+2019-07-01 11:40:44 log system server disconnection
+2019-07-01 11:40:44 m_bReUserlog ok
+2019-07-02 10:32:36 [Rebellion Test Server] ## WorldDB Dump, TimeOver:40265797
+2019-07-02 10:32:37 1 1 SAgent::Disconnect: (4, 64)
+2019-07-02 10:32:37 1 1 T=022:53:00:000, RC=4360,RCS=0, RB=34369,RBS=0, SC=143,SCS=0, SB=621,SBS=0
+2019-07-02 10:32:37 disconnect login
+2019-07-02 10:32:45 1 1 SAgent::Disconnect: (4, 0)
+2019-07-02 10:32:45 1 1 T=000:00:00:000, RC=0,RCS=0, RB=0,RBS=0, SC=0,SCS=0, SB=0,SBS=0
+2019-07-02 10:32:45 connect login
+2019-07-02 10:33:33 1 1 SAgent::Disconnect: (4, 64)
+2019-07-02 10:33:33 1 1 T=022:55:00:000, RC=144,RCS=0, RB=898,RBS=0, SC=146,SCS=0, SB=604,SBS=0
+2019-07-02 10:33:33 disconnect game
+2019-07-02 10:33:39 1 1 SAgent::Disconnect: (4, 997)
+2019-07-02 10:33:39 1 1 T=000:00:00:000, RC=0,RCS=0, RB=0,RBS=0, SC=0,SCS=0, SB=0,SBS=0
+2019-07-02 10:33:39 connect game
+2019-07-02 10:36:49 1 1 SAgent::Disconnect: (4, 64)
+2019-07-02 10:36:49 1 1 T=022:56:00:000, RC=140,RCS=0, RB=560,RBS=0, SC=142,SCS=0, SB=601,SBS=0
+2019-07-02 10:36:49 log system server disconnection
+2019-07-02 10:36:52 m_bReUserlog ok
+2019-07-03 12:43:44 [Rebellion Test Server] ## WorldDB Dump, TimeOver:48511828
+2019-07-03 12:44:05 1 1 SAgent::Disconnect: (4, 64)
+2019-07-03 12:44:05 1 1 T=026:10:00:000, RC=156,RCS=0, RB=946,RBS=0, SC=155,SCS=0, SB=638,SBS=0
+2019-07-03 12:44:05 disconnect game
+2019-07-03 12:44:09 1 1 SAgent::Disconnect: (4, 64)
+2019-07-03 12:44:09 1 1 T=026:11:00:000, RC=4731,RCS=0, RB=37289,RBS=0, SC=158,SCS=0, SB=735,SBS=0
+2019-07-03 12:44:09 disconnect login
+2019-07-03 12:44:09 1 1 SAgent::Disconnect: (4, 0)
+2019-07-03 12:44:09 1 1 T=000:00:00:000, RC=0,RCS=0, RB=0,RBS=0, SC=0,SCS=0, SB=0,SBS=0
+2019-07-03 12:44:09 connect login
+2019-07-03 12:44:13 1 1 SAgent::Disconnect: (4, 997)
+2019-07-03 12:44:13 1 1 T=000:00:00:000, RC=0,RCS=0, RB=0,RBS=0, SC=0,SCS=0, SB=0,SBS=0
+2019-07-03 12:44:13 connect game
+2019-07-03 12:45:21 1 1 SAgent::Disconnect: (4, 64)
+2019-07-03 12:45:21 1 1 T=026:08:00:000, RC=151,RCS=0, RB=604,RBS=0, SC=153,SCS=0, SB=645,SBS=0
+2019-07-03 12:45:21 log system server disconnection
+2019-07-03 12:45:26 m_bReUserlog ok
+2019-07-04 12:29:46 [Rebellion Test Server] ## WorldDB Dump, TimeOver:47115516
+2019-07-04 12:30:23 1 1 SAgent::Disconnect: (4, 64)
+2019-07-04 12:30:23 1 1 T=023:46:00:000, RC=132,RCS=0, RB=850,RBS=0, SC=131,SCS=0, SB=542,SBS=0
+2019-07-04 12:30:23 disconnect game
+2019-07-04 12:30:27 1 1 SAgent::Disconnect: (4, 64)
+2019-07-04 12:30:27 1 1 T=023:46:00:000, RC=3976,RCS=0, RB=31345,RBS=0, SC=133,SCS=0, SB=633,SBS=0
+2019-07-04 12:30:27 disconnect login
+2019-07-04 12:30:29 1 1 SAgent::Disconnect: (4, 0)
+2019-07-04 12:30:29 1 1 T=000:00:00:000, RC=0,RCS=0, RB=0,RBS=0, SC=0,SCS=0, SB=0,SBS=0
+2019-07-04 12:30:29 connect login
+2019-07-04 12:30:33 1 1 SAgent::Disconnect: (4, 0)
+2019-07-04 12:30:33 1 1 T=000:00:00:000, RC=0,RCS=0, RB=0,RBS=0, SC=0,SCS=0, SB=0,SBS=0
+2019-07-04 12:30:33 connect game
+2019-07-04 12:30:39 1 1 SAgent::Disconnect: (4, 64)
+2019-07-04 12:30:39 1 1 T=023:45:00:000, RC=127,RCS=0, RB=508,RBS=0, SC=129,SCS=0, SB=549,SBS=0
+2019-07-04 12:30:39 log system server disconnection
+2019-07-04 12:30:46 m_bReUserlog ok
+2019-07-05 12:08:42 [Rebellion Test Server] ## WorldDB Dump, TimeOver:41615734
+2019-07-05 12:08:59 1 1 SAgent::Disconnect: (4, 64)
+2019-07-05 12:08:59 1 1 T=023:38:00:000, RC=148,RCS=0, RB=914,RBS=0, SC=148,SCS=0, SB=610,SBS=0
+2019-07-05 12:08:59 disconnect game
+2019-07-05 12:09:01 1 1 SAgent::Disconnect: (4, 997)
+2019-07-05 12:09:01 1 1 T=000:00:00:000, RC=0,RCS=0, RB=0,RBS=0, SC=0,SCS=0, SB=0,SBS=0
+2019-07-05 12:09:02 connect game
+2019-07-05 12:09:03 1 1 SAgent::Disconnect: (4, 64)
+2019-07-05 12:09:03 1 1 T=023:38:00:000, RC=4496,RCS=0, RB=35441,RBS=0, SC=152,SCS=0, SB=759,SBS=0
+2019-07-05 12:09:03 disconnect login
+2019-07-05 12:09:07 1 1 SAgent::Disconnect: (4, 0)
+2019-07-05 12:09:07 1 1 T=000:00:00:000, RC=0,RCS=0, RB=0,RBS=0, SC=0,SCS=0, SB=0,SBS=0
+2019-07-05 12:09:07 connect login
+2019-07-05 12:09:14 1 1 SAgent::Disconnect: (4, 64)
+2019-07-05 12:09:14 1 1 T=023:38:00:000, RC=144,RCS=0, RB=576,RBS=0, SC=146,SCS=0, SB=617,SBS=0
+2019-07-05 12:09:14 log system server disconnection
+2019-07-05 12:09:24 m_bReUserlog ok

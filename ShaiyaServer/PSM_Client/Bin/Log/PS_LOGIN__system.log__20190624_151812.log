@@ -1,0 +1,10 @@
+2019-06-24 15:18:12 PS_LOGIN__system log start (Login01)
+2019-06-24 15:36:56 3 1 SERVICE_CONTROL_STOP
+2019-06-24 15:36:56 1 1 SAgent::Disconnect: (3, 1236)
+2019-06-24 15:36:56 1 1 T=000:18:00:000, RC=10,RCS=0, RB=154,RBS=0, SC=119,SCS=0, SB=1084,SBS=0
+2019-06-24 15:36:56 mgr server disconnection
+2019-06-24 15:36:56 1 1 SAgent::Disconnect: (3, 1236)
+2019-06-24 15:36:56 1 1 T=000:18:00:000, RC=3,RCS=0, RB=12,RBS=0, SC=4,SCS=0, SB=49,SBS=0
+2019-06-24 15:36:56 log system server disconnection
+2019-06-24 15:36:56 PS_LOGIN__system log end (Login01)
+2019-06-24 15:36:56 3 1 SService::ServiceCtrlDispatcher(): service shutdown

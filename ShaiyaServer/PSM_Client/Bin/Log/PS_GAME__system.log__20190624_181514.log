@@ -1,0 +1,1021 @@
+2019-06-24 18:15:14 PS_GAME__system log start (Game01) [Sh_EPVP]
+2019-06-24 18:15:45 error mob item drop info load error
+2019-06-24 18:15:45 error mob item drop info load error
+2019-06-24 18:15:45 error mob item drop info load error
+2019-06-24 18:15:45 error mob item drop info load error
+2019-06-24 18:15:45 error mob item drop info load error
+2019-06-24 18:15:45 error mob item drop info load error
+2019-06-24 18:15:45 error mob item drop info load error
+2019-06-24 18:15:45 error mob item drop info load error
+2019-06-24 18:15:45 error mob item drop info load error
+2019-06-24 18:15:45 error mob item drop info load error
+2019-06-24 18:15:45 error mob item drop info load error
+2019-06-24 18:15:45 error mob item drop info load error
+2019-06-24 18:15:45 error mob item drop info load error
+2019-06-24 18:15:45 error mob item drop info load error
+2019-06-24 18:15:45 error mob item drop info load error
+2019-06-24 18:15:45 error mob item drop info load error
+2019-06-24 18:15:45 error mob item drop info load error
+2019-06-24 18:15:45 error mob item drop info load error
+2019-06-24 18:15:50 connect mgr 1888
+2019-06-24 18:15:50 Server Version : 0
+2019-06-24 18:15:50 connect dbagent 1892
+2019-06-24 18:15:50 connect gamelog 1904
+2019-06-24 18:15:51 Market End -----------------------
+2019-06-24 18:15:51 Start CWorldSendThread=5220
+Module list:
+D:\ShaiyaServer\PSM_Client\Bin\ps_game.exe, loaded at 0x00400000 - 11/09/14 17:10:08
+2019-06-25 12:29:04 ## WorldDB Dump, TimeOver:43875797
+
+
+=== GenerateExceptionHandler ========================================
+2019-06-25 12:29:04 Exception !!!, code=0x00000000, address=0x004EE9E1
+Minidump write end.....................
+2019-06-25 12:29:06 1 1 SAgent::Disconnect: (8, 1236)
+2019-06-25 12:29:06 1 1 SAgent::Disconnect: (8, 1236)
+2019-06-25 12:29:06 1 1 SAgent::Disconnect: (8, 1236)
+2019-06-25 12:29:06 1 1 SAgent::Disconnect: (8, 1236)
+2019-06-25 12:29:06 1 1 T=018:13:00:000, RC=72,RCS=0, RB=288,RBS=0, SC=76,SCS=0, SB=435,SBS=0
+2019-06-25 12:29:06 1 1 T=018:13:00:000, RC=204,RCS=0, RB=75996,RBS=1, SC=191,SCS=0, SB=2962,SBS=0
+2019-06-25 12:29:06 1 1 T=018:13:00:000, RC=72,RCS=0, RB=288,RBS=0, SC=498,SCS=0, SB=55029,SBS=0
+2019-06-25 12:29:06 discon userlog ((8,1236, 288,435)
+2019-06-25 12:29:06 1 1 T=018:13:00:000, RC=78,RCS=0, RB=517,RBS=0, SC=84,SCS=0, SB=738,SBS=0
+2019-06-25 12:29:06 userlog Connection Lost INFO : T=018:13:00:000, RC=72,RCS=0, RB=288,RBS=0, SC=76,SCS=0, SB=435,SBS=0
+2019-06-25 12:29:06 discon dbagent ((8,1236, 75996,2962)
+2019-06-25 12:29:06 discon mgr ((8,1236, 517,738)
+2019-06-25 12:29:06 userlog log server disconnection
+2019-06-25 12:29:06 discon gamelog ((8,1236, 288,55029)
+2019-06-25 12:29:06 mgr Connection Lost INFO : T=018:13:00:000, RC=78,RCS=0, RB=517,RBS=0, SC=84,SCS=0, SB=738,SBS=0
+2019-06-25 12:29:06 dbagent Connection Lost INFO : T=018:13:00:000, RC=204,RCS=0, RB=75996,RBS=1, SC=191,SCS=0, SB=2962,SBS=0
+2019-06-25 12:29:06 mgr server disconnection
+2019-06-25 12:29:06 db agent server disconnected...
+2019-06-25 12:29:06 gamelog Connection Lost INFO : T=018:13:00:000, RC=72,RCS=0, RB=288,RBS=0, SC=498,SCS=0, SB=55029,SBS=0
+2019-06-25 12:29:06 call disconnectAll...
+2019-06-25 12:29:06 game log server disconnection
+0x004EE9E1 ps_game.exe: <unknown symbol>
+0xCCCC76AD <unknown module>: <unknown symbol>
+Stack trace end.....................
+
+Stack trace(all thread) begin.....................
+
+Module list:
+D:\ShaiyaServer\PSM_Client\Bin\ps_game.exe, loaded at 0x00400000 - 11/09/14 17:10:08
+WARNING: ps_game.exe is not accessible
+Symbol search path is: ps_game.pdb
+WARNING: ps_game.pdb is not accessible
+WARNING: ps_game.pdb is not accessible
+
+Microsoft (R) Windows Debugger  Version 6.3.0017.0
+Copyright (c) Microsoft Corporation. All rights reserved.
+
+
+Loading Dump File [D:\ShaiyaServer\PSM_Client\Bin\Log\20190624_181514_ps_game.dmp]
+User Mini Dump File: Only registers, stack and portions of memory are available
+
+Windows Longhorn Version 9200 MP (4 procs) Free x86 compatible
+Product: WinNt, suite: SingleUserTS
+Debug session time: Tue Jun 25 12:29:05 2019
+System Uptime: not available
+Process Uptime: 0 days 18:13:53.000
+Symbol search path is: ps_game.pdb
+Executable search path is: ps_game.exe
+...............................................................................................
+The call to LoadLibrary(ext) failed, Win32 error 2
+    "The system cannot find the file specified."
+Please check your debugger configuration and/or network access.
+The call to LoadLibrary(exts) failed, Win32 error 2
+    "The system cannot find the file specified."
+Please check your debugger configuration and/or network access.
+The call to LoadLibrary(uext) failed, Win32 error 2
+    "The system cannot find the file specified."
+Please check your debugger configuration and/or network access.
+The call to LoadLibrary(ntsdexts) failed, Win32 error 2
+    "The system cannot find the file specified."
+Please check your debugger configuration and/or network access.
+(d40.1f44): Unknown exception - code 00000000 (!!! second chance !!!)
+
+thread count = 30
+thread 0(6668)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x7750365B sechost.dll: RegisterServiceCtrlHandlerExW + 379
+0x7750882E sechost.dll: I_ScIsSecurityProcess + 2990
+0x77506D9C sechost.dll: StartServiceCtrlDispatcherA + 108
+0x004FC01B ps_game.exe: <unknown symbol>
+
+thread 1(9888)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x6FF133A9 ItemMall.dll: Start + 1321
+0x76A70419 KERNEL32.DLL: BaseThreadInitThunk + 25
+0x775D662D ntdll.dll: RtlGetAppContainerNamedObjectPath + 237
+0x775D65FD ntdll.dll: RtlGetAppContainerNamedObjectPath + 189
+
+thread 2(5524)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x5F89ABAD Ep6.dll: <unknown symbol>
+0x76A70419 KERNEL32.DLL: BaseThreadInitThunk + 25
+0x775D662D ntdll.dll: RtlGetAppContainerNamedObjectPath + 237
+0x775D65FD ntdll.dll: RtlGetAppContainerNamedObjectPath + 189
+
+thread 3(12472)
+0x775E07EC ntdll.dll: ZwDelayExecution + 12
+0x7518DBDF KERNELBASE.dll: Sleep + 15
+0x5F6D4A90 SExtended.dll: <unknown symbol>
+0x76A70419 KERNEL32.DLL: BaseThreadInitThunk + 25
+0x775D662D ntdll.dll: RtlGetAppContainerNamedObjectPath + 237
+0x775D65FD ntdll.dll: RtlGetAppContainerNamedObjectPath + 189
+
+thread 4(5636)
+0x775E0A5C ntdll.dll: ZwWaitForMultipleObjects + 12
+0x5F5B315E comsvcs.dll: DllGetClassObject + 7694
+0x76A70419 KERNEL32.DLL: BaseThreadInitThunk + 25
+0x775D662D ntdll.dll: RtlGetAppContainerNamedObjectPath + 237
+0x775D65FD ntdll.dll: RtlGetAppContainerNamedObjectPath + 189
+
+thread 5(8740)
+0x775E0A5C ntdll.dll: ZwWaitForMultipleObjects + 12
+0x75194D98 KERNELBASE.dll: WaitForMultipleObjects + 24
+0x004FA938 ps_game.exe: <unknown symbol>
+0xCCCC76AD <unknown module>: <unknown symbol>
+
+thread 6(15476)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x004F5A78 ps_game.exe: <unknown symbol>
+0x76A70419 KERNEL32.DLL: BaseThreadInitThunk + 25
+0x775D662D ntdll.dll: RtlGetAppContainerNamedObjectPath + 237
+0x775D65FD ntdll.dll: RtlGetAppContainerNamedObjectPath + 189
+
+thread 7(15852)
+0x775E051C ntdll.dll: NtRemoveIoCompletion + 12
+0x5F32B332 sqlncli11.dll: DllMain + 983
+0x76A70419 KERNEL32.DLL: BaseThreadInitThunk + 25
+0x775D662D ntdll.dll: RtlGetAppContainerNamedObjectPath + 237
+0x775D65FD ntdll.dll: RtlGetAppContainerNamedObjectPath + 189
+
+thread 8(14280)
+0x764D2B8C win32u.dll: NtUserGetMessage + 12
+0x7631A4ED combase.dll: Ordinal154 + 3373
+0x7631A407 combase.dll: Ordinal154 + 3143
+0x7631A34E combase.dll: Ordinal154 + 2958
+0x762AC294 combase.dll: CoGetObjectContext + 756
+0x7627E97F combase.dll: CoIncrementMTAUsage + 3423
+0x76A70419 KERNEL32.DLL: BaseThreadInitThunk + 25
+0x775D662D ntdll.dll: RtlGetAppContainerNamedObjectPath + 237
+0x775D65FD ntdll.dll: RtlGetAppContainerNamedObjectPath + 189
+
+thread 9(9256)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x004E941B ps_game.exe: <unknown symbol>
+0xCCCC76AD <unknown module>: <unknown symbol>
+
+thread 10(8004)
+0x775E136C ntdll.dll: ZwGetContextThread + 12
+0x046C0190 dbghelp.dll: SymFunctionTableAccess
+0x52990C45 <unknown module>: <unknown symbol>
+
+thread 11(8884)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x74934ABC MSWSOCK.dll: sethostname + 16588
+0x75974B8F WS2_32.dll: WSAAccept + 143
+0x004E9B6E ps_game.exe: <unknown symbol>
+
+thread 12(15500)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x004E941B ps_game.exe: <unknown symbol>
+0xCCCC76AD <unknown module>: <unknown symbol>
+
+thread 13(10676)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x004E941B ps_game.exe: <unknown symbol>
+0xCCCC76AD <unknown module>: <unknown symbol>
+
+thread 14(7644)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x004E941B ps_game.exe: <unknown symbol>
+0xCCCC76AD <unknown module>: <unknown symbol>
+
+thread 15(14488)
+0x775E051C ntdll.dll: NtRemoveIoCompletion + 12
+0x004F2492 ps_game.exe: <unknown symbol>
+
+thread 16(9628)
+0x775E051C ntdll.dll: NtRemoveIoCompletion + 12
+0x004F2492 ps_game.exe: <unknown symbol>
+
+thread 17(2040)
+0x775E051C ntdll.dll: NtRemoveIoCompletion + 12
+0x004F2492 ps_game.exe: <unknown symbol>
+
+thread 18(6516)
+0x775E051C ntdll.dll: NtRemoveIoCompletion + 12
+0x004F2492 ps_game.exe: <unknown symbol>
+
+thread 19(4288)
+0x775E051C ntdll.dll: NtRemoveIoCompletion + 12
+0x004F2492 ps_game.exe: <unknown symbol>
+
+thread 20(10380)
+0x775E051C ntdll.dll: NtRemoveIoCompletion + 12
+0x004F2492 ps_game.exe: <unknown symbol>
+
+thread 21(5032)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x004E941B ps_game.exe: <unknown symbol>
+0xCCCC76AD <unknown module>: <unknown symbol>
+
+thread 22(5220)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x0040374D ps_game.exe: <unknown symbol>
+
+thread 23(7560)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x00403ADB ps_game.exe: <unknown symbol>
+
+thread 24(16040)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x00403ADB ps_game.exe: <unknown symbol>
+
+thread 25(9104)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x00403ADB ps_game.exe: <unknown symbol>
+
+thread 26(844)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x00403ADB ps_game.exe: <unknown symbol>
+
+thread 27(6760)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x00403ADB ps_game.exe: <unknown symbol>
+
+thread 28(16084)
+0x775E216C ntdll.dll: ZwWaitForWorkViaWorkerFactory + 12
+0x76A70419 KERNEL32.DLL: BaseThreadInitThunk + 25
+0x775D662D ntdll.dll: RtlGetAppContainerNamedObjectPath + 237
+0x775D65FD ntdll.dll: RtlGetAppContainerNamedObjectPath + 189
+
+thread 29(13040)
+0x775E216C ntdll.dll: ZwWaitForWorkViaWorkerFactory + 12
+0x76A70419 KERNEL32.DLL: BaseThreadInitThunk + 25
+0x775D662D ntdll.dll: RtlGetAppContainerNamedObjectPath + 237
+0x775D65FD ntdll.dll: RtlGetAppContainerNamedObjectPath + 189
+
+Stack trace(all thread) end.....................
+=== GenerateExceptionHandler End ================================================
+
+2019-06-25 12:29:07 m_bReSession ok
+2019-06-25 12:29:07 m_bReDBAgent ok
+2019-06-25 12:29:07 m_bReUserlog ok
+2019-06-25 12:29:07 m_bReGamelog ok
+2019-06-25 12:29:22 Market End -----------------------
+2019-06-26 13:02:30 ## WorldDB Dump, TimeOver:48245079
+
+
+=== GenerateExceptionHandler ========================================
+2019-06-26 13:02:30 Exception !!!, code=0x00000000, address=0x004EE9E1
+Minidump write end.....................
+0x004EE9E1 ps_game.exe: <unknown symbol>
+0xCCCC76AD <unknown module>: <unknown symbol>
+Stack trace end.....................
+
+Stack trace(all thread) begin.....................
+
+Module list:
+D:\ShaiyaServer\PSM_Client\Bin\ps_game.exe, loaded at 0x00400000 - 11/09/14 17:10:08
+WARNING: ps_game.exe is not accessible
+Symbol search path is: ps_game.pdb
+WARNING: ps_game.pdb is not accessible
+WARNING: ps_game.pdb is not accessible
+
+Loading Dump File [D:\ShaiyaServer\PSM_Client\Bin\Log\20190624_181514_ps_game.dmp]
+User Mini Dump File: Only registers, stack and portions of memory are available
+
+Windows Longhorn Version 9200 MP (4 procs) Free x86 compatible
+Product: WinNt, suite: SingleUserTS
+Debug session time: Wed Jun 26 13:02:41 2019
+System Uptime: not available
+Process Uptime: 1 days 18:47:29.000
+Symbol search path is: ps_game.pdb
+Executable search path is: ps_game.exe
+...............................................................................................
+The call to LoadLibrary(exts) failed, Win32 error 2
+    "The system cannot find the file specified."
+Please check your debugger configuration and/or network access.
+The call to LoadLibrary(uext) failed, Win32 error 2
+    "The system cannot find the file specified."
+Please check your debugger configuration and/or network access.
+The call to LoadLibrary(ntsdexts) failed, Win32 error 2
+    "The system cannot find the file specified."
+Please check your debugger configuration and/or network access.
+The call to LoadLibrary(ext) failed, Win32 error 2
+    "The system cannot find the file specified."
+Please check your debugger configuration and/or network access.
+(d40.1f44): Unknown exception - code 00000000 (!!! second chance !!!)
+
+thread count = 29
+thread 0(6668)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x7750365B sechost.dll: RegisterServiceCtrlHandlerExW + 379
+0x7750882E sechost.dll: I_ScIsSecurityProcess + 2990
+0x77506D9C sechost.dll: StartServiceCtrlDispatcherA + 108
+0x004FC01B ps_game.exe: <unknown symbol>
+
+thread 1(9888)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x6FF133A9 ItemMall.dll: Start + 1321
+0x76A70419 KERNEL32.DLL: BaseThreadInitThunk + 25
+0x775D662D ntdll.dll: RtlGetAppContainerNamedObjectPath + 237
+0x775D65FD ntdll.dll: RtlGetAppContainerNamedObjectPath + 189
+
+thread 2(5524)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x5F89ABAD Ep6.dll: <unknown symbol>
+0x76A70419 KERNEL32.DLL: BaseThreadInitThunk + 25
+0x775D662D ntdll.dll: RtlGetAppContainerNamedObjectPath + 237
+0x775D65FD ntdll.dll: RtlGetAppContainerNamedObjectPath + 189
+
+thread 3(12472)
+0x775E07EC ntdll.dll: ZwDelayExecution + 12
+0x7518DBDF KERNELBASE.dll: Sleep + 15
+0x5F6D4A90 SExtended.dll: <unknown symbol>
+0x76A70419 KERNEL32.DLL: BaseThreadInitThunk + 25
+0x775D662D ntdll.dll: RtlGetAppContainerNamedObjectPath + 237
+0x775D65FD ntdll.dll: RtlGetAppContainerNamedObjectPath + 189
+
+thread 4(5636)
+0x775E0A5C ntdll.dll: ZwWaitForMultipleObjects + 12
+0x5F5B315E comsvcs.dll: DllGetClassObject + 7694
+0x76A70419 KERNEL32.DLL: BaseThreadInitThunk + 25
+0x775D662D ntdll.dll: RtlGetAppContainerNamedObjectPath + 237
+0x775D65FD ntdll.dll: RtlGetAppContainerNamedObjectPath + 189
+
+thread 5(8740)
+0x775E0A5C ntdll.dll: ZwWaitForMultipleObjects + 12
+0x75194D98 KERNELBASE.dll: WaitForMultipleObjects + 24
+0x004FA938 ps_game.exe: <unknown symbol>
+0xCCCC76AD <unknown module>: <unknown symbol>
+
+thread 6(15476)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x004F5A78 ps_game.exe: <unknown symbol>
+0x76A70419 KERNEL32.DLL: BaseThreadInitThunk + 25
+0x775D662D ntdll.dll: RtlGetAppContainerNamedObjectPath + 237
+0x775D65FD ntdll.dll: RtlGetAppContainerNamedObjectPath + 189
+
+thread 7(15852)
+0x775E051C ntdll.dll: NtRemoveIoCompletion + 12
+0x5F32B332 sqlncli11.dll: DllMain + 983
+0x76A70419 KERNEL32.DLL: BaseThreadInitThunk + 25
+0x775D662D ntdll.dll: RtlGetAppContainerNamedObjectPath + 237
+0x775D65FD ntdll.dll: RtlGetAppContainerNamedObjectPath + 189
+
+thread 8(14280)
+0x764D2B8C win32u.dll: NtUserGetMessage + 12
+0x7631A4ED combase.dll: Ordinal154 + 3373
+0x7631A407 combase.dll: Ordinal154 + 3143
+0x7631A34E combase.dll: Ordinal154 + 2958
+0x762AC294 combase.dll: CoGetObjectContext + 756
+0x7627E97F combase.dll: CoIncrementMTAUsage + 3423
+0x76A70419 KERNEL32.DLL: BaseThreadInitThunk + 25
+0x775D662D ntdll.dll: RtlGetAppContainerNamedObjectPath + 237
+0x775D65FD ntdll.dll: RtlGetAppContainerNamedObjectPath + 189
+
+thread 9(9256)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x004E941B ps_game.exe: <unknown symbol>
+0xCCCC76AD <unknown module>: <unknown symbol>
+
+thread 10(8004)
+0x775E136C ntdll.dll: ZwGetContextThread + 12
+0x046C0190 dbghelp.dll: SymFunctionTableAccess
+0x52990C45 <unknown module>: <unknown symbol>
+
+thread 11(8884)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x74934ABC MSWSOCK.dll: sethostname + 16588
+0x75974B8F WS2_32.dll: WSAAccept + 143
+0x004E9B6E ps_game.exe: <unknown symbol>
+
+thread 12(15500)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x004E941B ps_game.exe: <unknown symbol>
+0xCCCC76AD <unknown module>: <unknown symbol>
+
+thread 13(10676)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x004E941B ps_game.exe: <unknown symbol>
+0xCCCC76AD <unknown module>: <unknown symbol>
+
+thread 14(7644)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x004E941B ps_game.exe: <unknown symbol>
+0xCCCC76AD <unknown module>: <unknown symbol>
+
+thread 15(14488)
+0x775E051C ntdll.dll: NtRemoveIoCompletion + 12
+0x004F2492 ps_game.exe: <unknown symbol>
+
+thread 16(9628)
+0x775E051C ntdll.dll: NtRemoveIoCompletion + 12
+0x004F2492 ps_game.exe: <unknown symbol>
+
+thread 17(2040)
+0x775E051C ntdll.dll: NtRemoveIoCompletion + 12
+0x004F2492 ps_game.exe: <unknown symbol>
+
+thread 18(6516)
+0x775E051C ntdll.dll: NtRemoveIoCompletion + 12
+0x004F2492 ps_game.exe: <unknown symbol>
+
+thread 19(4288)
+0x775E051C ntdll.dll: NtRemoveIoCompletion + 12
+0x004F2492 ps_game.exe: <unknown symbol>
+
+thread 20(10380)
+0x775E051C ntdll.dll: NtRemoveIoCompletion + 12
+0x004F2492 ps_game.exe: <unknown symbol>
+
+thread 21(5032)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x004E941B ps_game.exe: <unknown symbol>
+0xCCCC76AD <unknown module>: <unknown symbol>
+
+thread 22(5220)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x0040374D ps_game.exe: <unknown symbol>
+
+thread 23(7560)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x00403ADB ps_game.exe: <unknown symbol>
+
+thread 24(16040)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x00403ADB ps_game.exe: <unknown symbol>
+
+thread 25(9104)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x00403ADB ps_game.exe: <unknown symbol>
+
+thread 26(844)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x00403ADB ps_game.exe: <unknown symbol>
+
+thread 27(6760)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x00403ADB ps_game.exe: <unknown symbol>
+
+thread 28(4800)
+0x775E216C ntdll.dll: ZwWaitForWorkViaWorkerFactory + 12
+0x76A70419 KERNEL32.DLL: BaseThreadInitThunk + 25
+0x775D662D ntdll.dll: RtlGetAppContainerNamedObjectPath + 237
+0x775D65FD ntdll.dll: RtlGetAppContainerNamedObjectPath + 189
+
+Stack trace(all thread) end.....................
+=== GenerateExceptionHandler End ================================================
+
+2019-06-26 13:03:11 1 1 SAgent::Disconnect: (8, 1236)
+2019-06-26 13:03:11 1 1 SAgent::Disconnect: (8, 1236)
+2019-06-26 13:03:11 1 1 T=024:34:00:000, RC=138,RCS=0, RB=571,RBS=0, SC=137,SCS=0, SB=870,SBS=0
+2019-06-26 13:03:11 1 1 T=024:34:00:000, RC=224,RCS=0, RB=64531,RBS=0, SC=201,SCS=0, SB=1373,SBS=0
+2019-06-26 13:03:11 1 1 SAgent::Disconnect: (8, 1236)
+2019-06-26 13:03:11 1 1 T=024:34:00:000, RC=134,RCS=0, RB=536,RBS=0, SC=134,SCS=0, SB=569,SBS=0
+2019-06-26 13:03:11 discon userlog ((8,1236, 536,569)
+2019-06-26 13:03:11 discon mgr ((8,1236, 571,870)
+2019-06-26 13:03:11 discon dbagent ((8,1236, 64531,1373)
+2019-06-26 13:03:11 mgr Connection Lost INFO : T=024:34:00:000, RC=138,RCS=0, RB=571,RBS=0, SC=137,SCS=0, SB=870,SBS=0
+2019-06-26 13:03:11 dbagent Connection Lost INFO : T=024:34:00:000, RC=224,RCS=0, RB=64531,RBS=0, SC=201,SCS=0, SB=1373,SBS=0
+2019-06-26 13:03:11 userlog Connection Lost INFO : T=024:34:00:000, RC=134,RCS=0, RB=536,RBS=0, SC=134,SCS=0, SB=569,SBS=0
+2019-06-26 13:03:11 db agent server disconnected...
+2019-06-26 13:03:11 userlog log server disconnection
+2019-06-26 13:03:11 call disconnectAll...
+2019-06-26 13:03:11 mgr server disconnection
+2019-06-26 13:03:11 1 1 SAgent::Disconnect: (8, 1236)
+2019-06-26 13:03:11 1 1 T=024:34:00:000, RC=134,RCS=0, RB=536,RBS=0, SC=134,SCS=0, SB=569,SBS=0
+2019-06-26 13:03:11 discon gamelog ((8,1236, 536,569)
+2019-06-26 13:03:11 gamelog Connection Lost INFO : T=024:34:00:000, RC=134,RCS=0, RB=536,RBS=0, SC=134,SCS=0, SB=569,SBS=0
+2019-06-26 13:03:11 game log server disconnection
+2019-06-26 13:03:11 m_bReSession ok
+2019-06-26 13:03:11 m_bReDBAgent ok
+2019-06-26 13:03:11 m_bReUserlog ok
+2019-06-26 13:03:11 m_bReGamelog ok
+2019-06-26 13:03:14 Market End -----------------------
+2019-06-27 12:29:54 ## WorldSend Dump, TimeOver:44500812
+2019-06-27 12:29:55 1 1 SAgent::Disconnect: (8, 1236)
+2019-06-27 12:29:55 1 1 T=023:26:00:000, RC=137,RCS=0, RB=567,RBS=0, SC=135,SCS=0, SB=605,SBS=0
+2019-06-27 12:29:55 discon mgr ((8,1236, 567,605)
+2019-06-27 12:29:55 mgr Connection Lost INFO : T=023:26:00:000, RC=137,RCS=0, RB=567,RBS=0, SC=135,SCS=0, SB=605,SBS=0
+2019-06-27 12:29:55 mgr server disconnection
+2019-06-27 12:29:55 1 1 SAgent::Disconnect: (8, 1236)
+2019-06-27 12:29:55 1 1 SAgent::Disconnect: (8, 1236)
+2019-06-27 12:29:55 1 1 SAgent::Disconnect: (8, 1236)
+2019-06-27 12:29:55 1 1 T=023:26:00:000, RC=133,RCS=0, RB=532,RBS=0, SC=133,SCS=0, SB=565,SBS=0
+2019-06-27 12:29:55 1 1 T=023:26:00:000, RC=223,RCS=0, RB=64527,RBS=0, SC=200,SCS=0, SB=1369,SBS=0
+2019-06-27 12:29:55 discon gamelog ((8,1236, 532,565)
+2019-06-27 12:29:55 discon dbagent ((8,1236, 64527,1369)
+2019-06-27 12:29:55 gamelog Connection Lost INFO : T=023:26:00:000, RC=133,RCS=0, RB=532,RBS=0, SC=133,SCS=0, SB=565,SBS=0
+2019-06-27 12:29:55 1 1 T=023:26:00:000, RC=133,RCS=0, RB=532,RBS=0, SC=133,SCS=0, SB=565,SBS=0
+2019-06-27 12:29:55 game log server disconnection
+2019-06-27 12:29:55 dbagent Connection Lost INFO : T=023:26:00:000, RC=223,RCS=0, RB=64527,RBS=0, SC=200,SCS=0, SB=1369,SBS=0
+2019-06-27 12:29:55 discon userlog ((8,1236, 532,565)
+2019-06-27 12:29:55 db agent server disconnected...
+2019-06-27 12:29:55 userlog Connection Lost INFO : T=023:26:00:000, RC=133,RCS=0, RB=532,RBS=0, SC=133,SCS=0, SB=565,SBS=0
+2019-06-27 12:29:55 call disconnectAll...
+2019-06-27 12:29:55 userlog log server disconnection
+2019-06-27 12:29:58 m_bReSession ok
+2019-06-27 12:29:58 m_bReDBAgent ok
+2019-06-27 12:29:58 m_bReUserlog ok
+2019-06-27 12:29:58 m_bReGamelog ok
+2019-06-27 12:29:59 Market End -----------------------
+2019-06-28 11:28:58 1 1 SAgent::Disconnect: (8, 1236)
+2019-06-28 11:28:58 1 1 T=022:59:00:000, RC=140,RCS=0, RB=560,RBS=0, SC=140,SCS=0, SB=593,SBS=0
+2019-06-28 11:28:58 1 1 SAgent::Disconnect: (8, 1236)
+2019-06-28 11:28:58 1 1 SAgent::Disconnect: (8, 1236)
+2019-06-28 11:28:58 1 1 T=022:59:00:000, RC=144,RCS=0, RB=595,RBS=0, SC=142,SCS=0, SB=633,SBS=0
+2019-06-28 11:28:58 1 1 T=022:59:00:000, RC=230,RCS=0, RB=64555,RBS=0, SC=210,SCS=0, SB=1433,SBS=0
+2019-06-28 11:28:58 discon userlog ((8,1236, 560,593)
+2019-06-28 11:28:58 userlog Connection Lost INFO : T=022:59:00:000, RC=140,RCS=0, RB=560,RBS=0, SC=140,SCS=0, SB=593,SBS=0
+2019-06-28 11:28:58 userlog log server disconnection
+2019-06-28 11:28:58 discon dbagent ((8,1236, 64555,1433)
+2019-06-28 11:28:58 1 1 SAgent::Disconnect: (8, 1236)
+2019-06-28 11:28:58 discon mgr ((8,1236, 595,633)
+2019-06-28 11:28:58 dbagent Connection Lost INFO : T=022:59:00:000, RC=230,RCS=0, RB=64555,RBS=0, SC=210,SCS=0, SB=1433,SBS=0
+2019-06-28 11:28:58 mgr Connection Lost INFO : T=022:59:00:000, RC=144,RCS=0, RB=595,RBS=0, SC=142,SCS=0, SB=633,SBS=0
+2019-06-28 11:28:58 mgr server disconnection
+2019-06-28 11:28:58 1 1 T=022:59:00:000, RC=140,RCS=0, RB=560,RBS=0, SC=140,SCS=0, SB=593,SBS=0
+2019-06-28 11:28:58 discon gamelog ((8,1236, 560,593)
+2019-06-28 11:28:58 db agent server disconnected...
+2019-06-28 11:28:58 gamelog Connection Lost INFO : T=022:59:00:000, RC=140,RCS=0, RB=560,RBS=0, SC=140,SCS=0, SB=593,SBS=0
+2019-06-28 11:28:58 call disconnectAll...
+2019-06-28 11:28:58 game log server disconnection
+2019-06-28 11:29:04 m_bReSession ok
+2019-06-28 11:29:04 m_bReDBAgent ok
+2019-06-28 11:29:04 m_bReUserlog ok
+2019-06-28 11:29:04 m_bReGamelog ok
+2019-06-28 11:29:08 Market End -----------------------
+2019-06-29 13:11:42 1 1 SAgent::Disconnect: (8, 1236)
+2019-06-29 13:11:42 1 1 T=025:42:00:000, RC=185,RCS=0, RB=740,RBS=0, SC=186,SCS=0, SB=777,SBS=0
+2019-06-29 13:11:42 discon userlog ((8,1236, 740,777)
+2019-06-29 13:11:42 userlog Connection Lost INFO : T=025:42:00:000, RC=185,RCS=0, RB=740,RBS=0, SC=186,SCS=0, SB=777,SBS=0
+2019-06-29 13:11:42 userlog log server disconnection
+2019-06-29 13:11:43 1 1 SAgent::Disconnect: (8, 1236)
+2019-06-29 13:11:43 1 1 T=025:42:00:000, RC=275,RCS=0, RB=64735,RBS=0, SC=279,SCS=0, SB=1893,SBS=0
+2019-06-29 13:11:43 discon dbagent ((8,1236, 64735,1893)
+2019-06-29 13:11:43 dbagent Connection Lost INFO : T=025:42:00:000, RC=275,RCS=0, RB=64735,RBS=0, SC=279,SCS=0, SB=1893,SBS=0
+2019-06-29 13:11:43 db agent server disconnected...
+2019-06-29 13:11:43 call disconnectAll...
+2019-06-29 13:11:43 1 1 SAgent::Disconnect: (8, 1236)
+2019-06-29 13:11:43 1 1 T=025:42:00:000, RC=185,RCS=0, RB=740,RBS=0, SC=186,SCS=0, SB=777,SBS=0
+2019-06-29 13:11:43 discon gamelog ((8,1236, 740,777)
+2019-06-29 13:11:43 gamelog Connection Lost INFO : T=025:42:00:000, RC=185,RCS=0, RB=740,RBS=0, SC=186,SCS=0, SB=777,SBS=0
+2019-06-29 13:11:43 game log server disconnection
+2019-06-29 13:11:48 m_bReDBAgent ok
+2019-06-29 13:11:48 m_bReUserlog ok
+2019-06-29 13:11:48 m_bReGamelog ok
+2019-06-29 13:12:00 Market End -----------------------
+2019-06-29 13:12:05 1 1 SAgent::Disconnect: (8, 1236)
+2019-06-29 13:12:05 1 1 T=025:43:00:000, RC=190,RCS=0, RB=780,RBS=0, SC=188,SCS=0, SB=817,SBS=0
+2019-06-29 13:12:05 discon mgr ((8,1236, 780,817)
+2019-06-29 13:12:05 mgr Connection Lost INFO : T=025:43:00:000, RC=190,RCS=0, RB=780,RBS=0, SC=188,SCS=0, SB=817,SBS=0
+2019-06-29 13:12:05 mgr server disconnection
+2019-06-29 13:12:08 m_bReSession ok
+2019-06-29 20:16:14 ## WorldDB Dump, TimeOver:21356516
+
+
+=== GenerateExceptionHandler ========================================
+2019-06-29 20:16:14 Exception !!!, code=0x00000000, address=0x004EE9E1
+2019-06-29 20:16:22 1 1 SAgent::Disconnect: (8, 1236)
+2019-06-29 20:16:22 1 1 T=007:04:00:000, RC=13,RCS=0, RB=52,RBS=0, SC=15,SCS=0, SB=93,SBS=0
+2019-06-29 20:16:22 1 1 SAgent::Disconnect: (8, 1236)
+2019-06-29 20:16:22 1 1 SAgent::Disconnect: (8, 1236)
+2019-06-29 20:16:22 1 1 T=007:04:00:000, RC=13,RCS=0, RB=52,RBS=0, SC=15,SCS=0, SB=93,SBS=0
+2019-06-29 20:16:22 1 1 T=007:04:00:000, RC=103,RCS=0, RB=64047,RBS=2, SC=22,SCS=0, SB=177,SBS=0
+2019-06-29 20:16:22 1 1 SAgent::Disconnect: (8, 1236)
+2019-06-29 20:16:22 1 1 T=007:04:00:000, RC=16,RCS=0, RB=82,RBS=0, SC=18,SCS=0, SB=394,SBS=0
+2019-06-29 20:16:22 discon mgr ((8,1236, 82,394)
+2019-06-29 20:16:22 mgr Connection Lost INFO : T=007:04:00:000, RC=16,RCS=0, RB=82,RBS=0, SC=18,SCS=0, SB=394,SBS=0
+2019-06-29 20:16:22 mgr server disconnection
+2019-06-29 20:16:22 discon userlog ((8,1236, 52,93)
+2019-06-29 20:16:22 userlog Connection Lost INFO : T=007:04:00:000, RC=13,RCS=0, RB=52,RBS=0, SC=15,SCS=0, SB=93,SBS=0
+2019-06-29 20:16:22 userlog log server disconnection
+2019-06-29 20:16:22 discon dbagent ((8,1236, 64047,177)
+2019-06-29 20:16:22 dbagent Connection Lost INFO : T=007:04:00:000, RC=103,RCS=0, RB=64047,RBS=2, SC=22,SCS=0, SB=177,SBS=0
+2019-06-29 20:16:22 db agent server disconnected...
+2019-06-29 20:16:22 call disconnectAll...
+2019-06-29 20:16:22 discon gamelog ((8,1236, 52,93)
+2019-06-29 20:16:22 gamelog Connection Lost INFO : T=007:04:00:000, RC=13,RCS=0, RB=52,RBS=0, SC=15,SCS=0, SB=93,SBS=0
+2019-06-29 20:16:22 game log server disconnection
+Minidump write end.....................
+0x004EE9E1 ps_game.exe: <unknown symbol>
+0xCCCC76AD <unknown module>: <unknown symbol>
+Stack trace end.....................
+
+Stack trace(all thread) begin.....................
+
+Module list:
+D:\ShaiyaServer\PSM_Client\Bin\ps_game.exe, loaded at 0x00400000 - 11/09/14 17:10:08
+WARNING: ps_game.exe is not accessible
+Symbol search path is: ps_game.pdb
+WARNING: ps_game.pdb is not accessible
+WARNING: ps_game.pdb is not accessible
+
+Loading Dump File [D:\ShaiyaServer\PSM_Client\Bin\Log\20190624_181514_ps_game.dmp]
+User Mini Dump File: Only registers, stack and portions of memory are available
+
+Windows Longhorn Version 9200 MP (4 procs) Free x86 compatible
+Product: WinNt, suite: SingleUserTS
+Debug session time: Sat Jun 29 20:16:22 2019
+System Uptime: not available
+Process Uptime: 5 days 2:01:10.000
+Symbol search path is: ps_game.pdb
+Executable search path is: ps_game.exe
+...............................................................................................
+The call to LoadLibrary(exts) failed, Win32 error 2
+    "The system cannot find the file specified."
+Please check your debugger configuration and/or network access.
+The call to LoadLibrary(uext) failed, Win32 error 2
+    "The system cannot find the file specified."
+Please check your debugger configuration and/or network access.
+The call to LoadLibrary(ntsdexts) failed, Win32 error 2
+    "The system cannot find the file specified."
+Please check your debugger configuration and/or network access.
+The call to LoadLibrary(ext) failed, Win32 error 2
+    "The system cannot find the file specified."
+Please check your debugger configuration and/or network access.
+(d40.1f44): Unknown exception - code 00000000 (!!! second chance !!!)
+
+thread count = 30
+thread 0(6668)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x7750365B sechost.dll: RegisterServiceCtrlHandlerExW + 379
+0x7750882E sechost.dll: I_ScIsSecurityProcess + 2990
+0x77506D9C sechost.dll: StartServiceCtrlDispatcherA + 108
+0x004FC01B ps_game.exe: <unknown symbol>
+
+thread 1(9888)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x6FF133A9 ItemMall.dll: Start + 1321
+0x76A70419 KERNEL32.DLL: BaseThreadInitThunk + 25
+0x775D662D ntdll.dll: RtlGetAppContainerNamedObjectPath + 237
+0x775D65FD ntdll.dll: RtlGetAppContainerNamedObjectPath + 189
+
+thread 2(5524)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x5F89ABAD Ep6.dll: <unknown symbol>
+0x76A70419 KERNEL32.DLL: BaseThreadInitThunk + 25
+0x775D662D ntdll.dll: RtlGetAppContainerNamedObjectPath + 237
+0x775D65FD ntdll.dll: RtlGetAppContainerNamedObjectPath + 189
+
+thread 3(12472)
+0x775E07EC ntdll.dll: ZwDelayExecution + 12
+0x7518DBDF KERNELBASE.dll: Sleep + 15
+0x5F6D4A90 SExtended.dll: <unknown symbol>
+0x76A70419 KERNEL32.DLL: BaseThreadInitThunk + 25
+0x775D662D ntdll.dll: RtlGetAppContainerNamedObjectPath + 237
+0x775D65FD ntdll.dll: RtlGetAppContainerNamedObjectPath + 189
+
+thread 4(5636)
+0x775E0A5C ntdll.dll: ZwWaitForMultipleObjects + 12
+0x5F5B315E comsvcs.dll: DllGetClassObject + 7694
+0x76A70419 KERNEL32.DLL: BaseThreadInitThunk + 25
+0x775D662D ntdll.dll: RtlGetAppContainerNamedObjectPath + 237
+0x775D65FD ntdll.dll: RtlGetAppContainerNamedObjectPath + 189
+
+thread 5(8740)
+0x775E0A5C ntdll.dll: ZwWaitForMultipleObjects + 12
+0x75194D98 KERNELBASE.dll: WaitForMultipleObjects + 24
+0x004FA938 ps_game.exe: <unknown symbol>
+0xCCCC76AD <unknown module>: <unknown symbol>
+
+thread 6(15476)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x004F5A78 ps_game.exe: <unknown symbol>
+0x76A70419 KERNEL32.DLL: BaseThreadInitThunk + 25
+0x775D662D ntdll.dll: RtlGetAppContainerNamedObjectPath + 237
+0x775D65FD ntdll.dll: RtlGetAppContainerNamedObjectPath + 189
+
+thread 7(15852)
+0x775E051C ntdll.dll: NtRemoveIoCompletion + 12
+0x5F32B332 sqlncli11.dll: DllMain + 983
+0x76A70419 KERNEL32.DLL: BaseThreadInitThunk + 25
+0x775D662D ntdll.dll: RtlGetAppContainerNamedObjectPath + 237
+0x775D65FD ntdll.dll: RtlGetAppContainerNamedObjectPath + 189
+
+thread 8(14280)
+0x764D2B8C win32u.dll: NtUserGetMessage + 12
+0x7631A4ED combase.dll: Ordinal154 + 3373
+0x7631A407 combase.dll: Ordinal154 + 3143
+0x7631A34E combase.dll: Ordinal154 + 2958
+0x762AC294 combase.dll: CoGetObjectContext + 756
+0x7627E97F combase.dll: CoIncrementMTAUsage + 3423
+0x76A70419 KERNEL32.DLL: BaseThreadInitThunk + 25
+0x775D662D ntdll.dll: RtlGetAppContainerNamedObjectPath + 237
+0x775D65FD ntdll.dll: RtlGetAppContainerNamedObjectPath + 189
+
+thread 9(9256)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x004E941B ps_game.exe: <unknown symbol>
+0xCCCC76AD <unknown module>: <unknown symbol>
+
+thread 10(8004)
+0x775E136C ntdll.dll: ZwGetContextThread + 12
+0x046C0190 dbghelp.dll: SymFunctionTableAccess
+0x52990C45 <unknown module>: <unknown symbol>
+
+thread 11(8884)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x74934ABC MSWSOCK.dll: sethostname + 16588
+0x75974B8F WS2_32.dll: WSAAccept + 143
+0x004E9B6E ps_game.exe: <unknown symbol>
+
+thread 12(15500)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x004E941B ps_game.exe: <unknown symbol>
+0xCCCC76AD <unknown module>: <unknown symbol>
+
+thread 13(10676)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x004E941B ps_game.exe: <unknown symbol>
+0xCCCC76AD <unknown module>: <unknown symbol>
+
+thread 14(7644)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x004E941B ps_game.exe: <unknown symbol>
+0xCCCC76AD <unknown module>: <unknown symbol>
+
+thread 15(14488)
+0x775E051C ntdll.dll: NtRemoveIoCompletion + 12
+0x004F2492 ps_game.exe: <unknown symbol>
+
+thread 16(9628)
+0x775E051C ntdll.dll: NtRemoveIoCompletion + 12
+0x004F2492 ps_game.exe: <unknown symbol>
+
+thread 17(2040)
+0x775E051C ntdll.dll: NtRemoveIoCompletion + 12
+0x004F2492 ps_game.exe: <unknown symbol>
+
+thread 18(6516)
+0x775E051C ntdll.dll: NtRemoveIoCompletion + 12
+0x004F2492 ps_game.exe: <unknown symbol>
+
+thread 19(4288)
+0x775E051C ntdll.dll: NtRemoveIoCompletion + 12
+0x004F2492 ps_game.exe: <unknown symbol>
+
+thread 20(10380)
+0x775E051C ntdll.dll: NtRemoveIoCompletion + 12
+0x004F2492 ps_game.exe: <unknown symbol>
+
+thread 21(5032)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x004E941B ps_game.exe: <unknown symbol>
+0xCCCC76AD <unknown module>: <unknown symbol>
+
+thread 22(5220)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x0040374D ps_game.exe: <unknown symbol>
+
+thread 23(7560)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x00403ADB ps_game.exe: <unknown symbol>
+
+thread 24(16040)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x00403ADB ps_game.exe: <unknown symbol>
+
+thread 25(9104)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x00403ADB ps_game.exe: <unknown symbol>
+
+thread 26(844)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x00403ADB ps_game.exe: <unknown symbol>
+
+thread 27(6760)
+0x775E04CC ntdll.dll: NtWaitForSingleObject + 12
+0x751929D2 KERNELBASE.dll: WaitForSingleObject + 18
+0x00403ADB ps_game.exe: <unknown symbol>
+
+thread 28(7848)
+0x775E216C ntdll.dll: ZwWaitForWorkViaWorkerFactory + 12
+0x76A70419 KERNEL32.DLL: BaseThreadInitThunk + 25
+0x775D662D ntdll.dll: RtlGetAppContainerNamedObjectPath + 237
+0x775D65FD ntdll.dll: RtlGetAppContainerNamedObjectPath + 189
+
+thread 29(13768)
+0x775E216C ntdll.dll: ZwWaitForWorkViaWorkerFactory + 12
+0x76A70419 KERNEL32.DLL: BaseThreadInitThunk + 25
+0x775D662D ntdll.dll: RtlGetAppContainerNamedObjectPath + 237
+0x775D65FD ntdll.dll: RtlGetAppContainerNamedObjectPath + 189
+
+Stack trace(all thread) end.....................
+=== GenerateExceptionHandler End ================================================
+
+2019-06-29 20:16:32 m_bReSession ok
+2019-06-29 20:16:32 m_bReDBAgent ok
+2019-06-29 20:16:32 m_bReUserlog ok
+2019-06-29 20:16:32 m_bReGamelog ok
+2019-06-29 20:16:33 Market End -----------------------
+2019-06-30 13:30:23 ## WorldDB Dump, TimeOver:44577562
+2019-06-30 13:30:36 1 1 SAgent::Disconnect: (8, 1236)
+2019-06-30 13:30:36 1 1 T=017:14:00:000, RC=58,RCS=0, RB=232,RBS=0, SC=59,SCS=0, SB=269,SBS=0
+2019-06-30 13:30:36 discon userlog ((8,1236, 232,269)
+2019-06-30 13:30:36 userlog Connection Lost INFO : T=017:14:00:000, RC=58,RCS=0, RB=232,RBS=0, SC=59,SCS=0, SB=269,SBS=0
+2019-06-30 13:30:36 userlog log server disconnection
+2019-06-30 13:30:37 1 1 SAgent::Disconnect: (8, 1236)
+2019-06-30 13:30:37 1 1 T=017:14:00:000, RC=148,RCS=0, RB=64227,RBS=1, SC=89,SCS=0, SB=629,SBS=0
+2019-06-30 13:30:37 discon dbagent ((8,1236, 64227,629)
+2019-06-30 13:30:37 dbagent Connection Lost INFO : T=017:14:00:000, RC=148,RCS=0, RB=64227,RBS=1, SC=89,SCS=0, SB=629,SBS=0
+2019-06-30 13:30:37 db agent server disconnected...
+2019-06-30 13:30:37 call disconnectAll...
+2019-06-30 13:30:37 1 1 SAgent::Disconnect: (8, 1236)
+2019-06-30 13:30:37 1 1 T=017:14:00:000, RC=58,RCS=0, RB=232,RBS=0, SC=59,SCS=0, SB=269,SBS=0
+2019-06-30 13:30:37 discon gamelog ((8,1236, 232,269)
+2019-06-30 13:30:37 gamelog Connection Lost INFO : T=017:14:00:000, RC=58,RCS=0, RB=232,RBS=0, SC=59,SCS=0, SB=269,SBS=0
+2019-06-30 13:30:37 game log server disconnection
+2019-06-30 13:30:40 m_bReDBAgent ok
+2019-06-30 13:30:40 m_bReUserlog ok
+2019-06-30 13:30:40 m_bReGamelog ok
+2019-06-30 13:30:41 Market End -----------------------
+2019-06-30 13:30:58 1 1 SAgent::Disconnect: (8, 1236)
+2019-06-30 13:30:58 1 1 T=017:14:00:000, RC=62,RCS=0, RB=267,RBS=0, SC=62,SCS=0, SB=570,SBS=0
+2019-06-30 13:30:58 discon mgr ((8,1236, 267,570)
+2019-06-30 13:30:58 mgr Connection Lost INFO : T=017:14:00:000, RC=62,RCS=0, RB=267,RBS=0, SC=62,SCS=0, SB=570,SBS=0
+2019-06-30 13:30:58 mgr server disconnection
+2019-06-30 13:31:00 m_bReSession ok
+2019-07-01 11:38:27 1 1 SAgent::Disconnect: (8, 1236)
+2019-07-01 11:38:27 1 1 SAgent::Disconnect: (8, 1236)
+2019-07-01 11:38:27 1 1 SAgent::Disconnect: (8, 1236)
+2019-07-01 11:38:27 1 1 SAgent::Disconnect: (8, 1236)
+2019-07-01 11:38:27 1 1 T=022:07:00:000, RC=216,RCS=0, RB=64499,RBS=0, SC=193,SCS=0, SB=1738,SBS=0
+2019-07-01 11:38:27 1 1 T=022:07:00:000, RC=126,RCS=0, RB=504,RBS=0, SC=128,SCS=0, SB=545,SBS=0
+2019-07-01 11:38:27 1 1 T=022:07:00:000, RC=129,RCS=0, RB=534,RBS=0, SC=130,SCS=0, SB=585,SBS=0
+2019-07-01 11:38:27 discon gamelog ((8,1236, 504,545)
+2019-07-01 11:38:27 discon mgr ((8,1236, 534,585)
+2019-07-01 11:38:27 gamelog Connection Lost INFO : T=022:07:00:000, RC=126,RCS=0, RB=504,RBS=0, SC=128,SCS=0, SB=545,SBS=0
+2019-07-01 11:38:27 mgr Connection Lost INFO : T=022:07:00:000, RC=129,RCS=0, RB=534,RBS=0, SC=130,SCS=0, SB=585,SBS=0
+2019-07-01 11:38:27 discon dbagent ((8,1236, 64499,1738)
+2019-07-01 11:38:27 game log server disconnection
+2019-07-01 11:38:27 mgr server disconnection
+2019-07-01 11:38:27 1 1 T=022:07:00:000, RC=126,RCS=0, RB=504,RBS=0, SC=128,SCS=0, SB=545,SBS=0
+2019-07-01 11:38:27 dbagent Connection Lost INFO : T=022:07:00:000, RC=216,RCS=0, RB=64499,RBS=0, SC=193,SCS=0, SB=1738,SBS=0
+2019-07-01 11:38:27 discon userlog ((8,1236, 504,545)
+2019-07-01 11:38:27 db agent server disconnected...
+2019-07-01 11:38:27 userlog Connection Lost INFO : T=022:07:00:000, RC=126,RCS=0, RB=504,RBS=0, SC=128,SCS=0, SB=545,SBS=0
+2019-07-01 11:38:27 userlog log server disconnection
+2019-07-01 11:38:27 call disconnectAll...
+2019-07-01 11:38:31 m_bReSession ok
+2019-07-01 11:38:31 m_bReDBAgent ok
+2019-07-01 11:38:31 m_bReUserlog ok
+2019-07-01 11:38:31 m_bReGamelog ok
+2019-07-01 11:38:32 Market End -----------------------
+2019-07-02 10:32:36 ## WorldDB Dump, TimeOver:40265797
+2019-07-02 10:33:33 1 1 SAgent::Disconnect: (8, 1236)
+2019-07-02 10:33:33 1 1 SAgent::Disconnect: (8, 1236)
+2019-07-02 10:33:33 1 1 T=022:55:00:000, RC=231,RCS=0, RB=64559,RBS=0, SC=212,SCS=0, SB=1449,SBS=0
+2019-07-02 10:33:33 1 1 T=022:55:00:000, RC=146,RCS=0, RB=604,RBS=0, SC=144,SCS=0, SB=898,SBS=0
+2019-07-02 10:33:33 1 1 SAgent::Disconnect: (8, 1236)
+2019-07-02 10:33:33 discon dbagent ((8,1236, 64559,1449)
+2019-07-02 10:33:33 1 1 T=022:55:00:000, RC=141,RCS=0, RB=564,RBS=0, SC=141,SCS=0, SB=597,SBS=0
+2019-07-02 10:33:33 discon mgr ((8,1236, 604,898)
+2019-07-02 10:33:33 dbagent Connection Lost INFO : T=022:55:00:000, RC=231,RCS=0, RB=64559,RBS=0, SC=212,SCS=0, SB=1449,SBS=0
+2019-07-02 10:33:33 mgr Connection Lost INFO : T=022:55:00:000, RC=146,RCS=0, RB=604,RBS=0, SC=144,SCS=0, SB=898,SBS=0
+2019-07-02 10:33:33 db agent server disconnected...
+2019-07-02 10:33:33 mgr server disconnection
+2019-07-02 10:33:33 call disconnectAll...
+2019-07-02 10:33:33 discon userlog ((8,1236, 564,597)
+2019-07-02 10:33:33 userlog Connection Lost INFO : T=022:55:00:000, RC=141,RCS=0, RB=564,RBS=0, SC=141,SCS=0, SB=597,SBS=0
+2019-07-02 10:33:33 userlog log server disconnection
+2019-07-02 10:33:33 1 1 SAgent::Disconnect: (8, 1236)
+2019-07-02 10:33:33 1 1 T=022:55:00:000, RC=141,RCS=0, RB=564,RBS=0, SC=141,SCS=0, SB=597,SBS=0
+2019-07-02 10:33:33 discon gamelog ((8,1236, 564,597)
+2019-07-02 10:33:33 gamelog Connection Lost INFO : T=022:55:00:000, RC=141,RCS=0, RB=564,RBS=0, SC=141,SCS=0, SB=597,SBS=0
+2019-07-02 10:33:33 game log server disconnection
+2019-07-02 10:33:39 m_bReSession ok
+2019-07-02 10:33:39 m_bReDBAgent ok
+2019-07-02 10:33:39 m_bReUserlog ok
+2019-07-02 10:33:39 m_bReGamelog ok
+2019-07-02 10:33:40 Market End -----------------------
+2019-07-03 12:43:44 ## WorldDB Dump, TimeOver:48511828
+2019-07-03 12:44:05 1 1 SAgent::Disconnect: (8, 1236)
+2019-07-03 12:44:05 1 1 T=026:10:00:000, RC=155,RCS=0, RB=638,RBS=0, SC=156,SCS=0, SB=946,SBS=0
+2019-07-03 12:44:05 1 1 SAgent::Disconnect: (8, 1236)
+2019-07-03 12:44:05 1 1 T=026:10:00:000, RC=242,RCS=0, RB=64603,RBS=0, SC=230,SCS=0, SB=1569,SBS=0
+2019-07-03 12:44:05 discon mgr ((8,1236, 638,946)
+2019-07-03 12:44:05 1 1 SAgent::Disconnect: (8, 1236)
+2019-07-03 12:44:05 discon dbagent ((8,1236, 64603,1569)
+2019-07-03 12:44:05 1 1 T=026:10:00:000, RC=152,RCS=0, RB=608,RBS=0, SC=153,SCS=0, SB=645,SBS=0
+2019-07-03 12:44:05 mgr Connection Lost INFO : T=026:10:00:000, RC=155,RCS=0, RB=638,RBS=0, SC=156,SCS=0, SB=946,SBS=0
+2019-07-03 12:44:05 discon gamelog ((8,1236, 608,645)
+2019-07-03 12:44:05 mgr server disconnection
+2019-07-03 12:44:05 dbagent Connection Lost INFO : T=026:10:00:000, RC=242,RCS=0, RB=64603,RBS=0, SC=230,SCS=0, SB=1569,SBS=0
+2019-07-03 12:44:05 1 1 SAgent::Disconnect: (8, 1236)
+2019-07-03 12:44:05 gamelog Connection Lost INFO : T=026:10:00:000, RC=152,RCS=0, RB=608,RBS=0, SC=153,SCS=0, SB=645,SBS=0
+2019-07-03 12:44:05 1 1 T=026:10:00:000, RC=152,RCS=0, RB=608,RBS=0, SC=153,SCS=0, SB=645,SBS=0
+2019-07-03 12:44:05 db agent server disconnected...
+2019-07-03 12:44:05 game log server disconnection
+2019-07-03 12:44:05 discon userlog ((8,1236, 608,645)
+2019-07-03 12:44:05 call disconnectAll...
+2019-07-03 12:44:05 userlog Connection Lost INFO : T=026:10:00:000, RC=152,RCS=0, RB=608,RBS=0, SC=153,SCS=0, SB=645,SBS=0
+2019-07-03 12:44:05 userlog log server disconnection
+2019-07-03 12:44:13 m_bReSession ok
+2019-07-03 12:44:13 m_bReDBAgent ok
+2019-07-03 12:44:13 m_bReUserlog ok
+2019-07-03 12:44:13 m_bReGamelog ok
+2019-07-03 12:44:14 Market End -----------------------
+2019-07-04 12:29:39 ## WorldDB Dump, TimeOver:47115516
+2019-07-04 12:30:23 1 1 SAgent::Disconnect: (8, 1236)
+2019-07-04 12:30:23 1 1 T=023:46:00:000, RC=131,RCS=0, RB=542,RBS=0, SC=132,SCS=0, SB=850,SBS=0
+2019-07-04 12:30:23 1 1 SAgent::Disconnect: (8, 1236)
+2019-07-04 12:30:23 1 1 T=023:46:00:000, RC=218,RCS=0, RB=64507,RBS=0, SC=194,SCS=0, SB=1329,SBS=0
+2019-07-04 12:30:23 1 1 SAgent::Disconnect: (8, 1236)
+2019-07-04 12:30:23 1 1 T=023:46:00:000, RC=128,RCS=0, RB=512,RBS=0, SC=129,SCS=0, SB=549,SBS=0
+2019-07-04 12:30:23 1 1 SAgent::Disconnect: (8, 1236)
+2019-07-04 12:30:23 1 1 T=023:46:00:000, RC=128,RCS=0, RB=512,RBS=0, SC=129,SCS=0, SB=549,SBS=0
+2019-07-04 12:30:23 discon mgr ((8,1236, 542,850)
+2019-07-04 12:30:23 discon gamelog ((8,1236, 512,549)
+2019-07-04 12:30:23 mgr Connection Lost INFO : T=023:46:00:000, RC=131,RCS=0, RB=542,RBS=0, SC=132,SCS=0, SB=850,SBS=0
+2019-07-04 12:30:23 gamelog Connection Lost INFO : T=023:46:00:000, RC=128,RCS=0, RB=512,RBS=0, SC=129,SCS=0, SB=549,SBS=0
+2019-07-04 12:30:23 mgr server disconnection
+2019-07-04 12:30:23 game log server disconnection
+2019-07-04 12:30:23 discon dbagent ((8,1236, 64507,1329)
+2019-07-04 12:30:23 discon userlog ((8,1236, 512,549)
+2019-07-04 12:30:23 dbagent Connection Lost INFO : T=023:46:00:000, RC=218,RCS=0, RB=64507,RBS=0, SC=194,SCS=0, SB=1329,SBS=0
+2019-07-04 12:30:23 userlog Connection Lost INFO : T=023:46:00:000, RC=128,RCS=0, RB=512,RBS=0, SC=129,SCS=0, SB=549,SBS=0
+2019-07-04 12:30:23 db agent server disconnected...
+2019-07-04 12:30:23 userlog log server disconnection
+2019-07-04 12:30:23 call disconnectAll...
+2019-07-04 12:30:33 m_bReSession ok
+2019-07-04 12:30:33 m_bReDBAgent ok
+2019-07-04 12:30:33 m_bReUserlog ok
+2019-07-04 12:30:33 m_bReGamelog ok
+2019-07-04 12:30:34 Market End -----------------------
+2019-07-05 12:08:42 ## WorldDB Dump, TimeOver:41615734
+2019-07-05 12:08:59 1 1 SAgent::Disconnect: (8, 1236)
+2019-07-05 12:08:59 1 1 SAgent::Disconnect: (8, 1236)
+2019-07-05 12:08:59 1 1 T=023:38:00:000, RC=148,RCS=0, RB=610,RBS=0, SC=148,SCS=0, SB=914,SBS=0
+2019-07-05 12:08:59 1 1 SAgent::Disconnect: (8, 1236)
+2019-07-05 12:08:59 1 1 T=023:38:00:000, RC=235,RCS=0, RB=64575,RBS=0, SC=218,SCS=0, SB=1489,SBS=0
+2019-07-05 12:08:59 1 1 T=023:38:00:000, RC=145,RCS=0, RB=580,RBS=0, SC=145,SCS=0, SB=613,SBS=0
+2019-07-05 12:08:59 discon mgr ((8,1236, 610,914)
+2019-07-05 12:08:59 discon userlog ((8,1236, 580,613)
+2019-07-05 12:08:59 mgr Connection Lost INFO : T=023:38:00:000, RC=148,RCS=0, RB=610,RBS=0, SC=148,SCS=0, SB=914,SBS=0
+2019-07-05 12:08:59 mgr server disconnection
+2019-07-05 12:08:59 discon dbagent ((8,1236, 64575,1489)
+2019-07-05 12:08:59 userlog Connection Lost INFO : T=023:38:00:000, RC=145,RCS=0, RB=580,RBS=0, SC=145,SCS=0, SB=613,SBS=0
+2019-07-05 12:08:59 dbagent Connection Lost INFO : T=023:38:00:000, RC=235,RCS=0, RB=64575,RBS=0, SC=218,SCS=0, SB=1489,SBS=0
+2019-07-05 12:08:59 userlog log server disconnection
+2019-07-05 12:08:59 db agent server disconnected...
+2019-07-05 12:08:59 call disconnectAll...
+2019-07-05 12:08:59 1 1 SAgent::Disconnect: (8, 1236)
+2019-07-05 12:08:59 1 1 T=023:38:00:000, RC=145,RCS=0, RB=580,RBS=0, SC=145,SCS=0, SB=613,SBS=0
+2019-07-05 12:08:59 discon gamelog ((8,1236, 580,613)
+2019-07-05 12:08:59 gamelog Connection Lost INFO : T=023:38:00:000, RC=145,RCS=0, RB=580,RBS=0, SC=145,SCS=0, SB=613,SBS=0
+2019-07-05 12:08:59 game log server disconnection
+2019-07-05 12:09:01 m_bReSession ok
+2019-07-05 12:09:01 m_bReDBAgent ok
+2019-07-05 12:09:01 m_bReUserlog ok
+2019-07-05 12:09:01 m_bReGamelog ok
+2019-07-05 12:09:04 Market End -----------------------
