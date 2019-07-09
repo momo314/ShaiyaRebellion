@@ -1,0 +1,2242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="21">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>44</ID>
+      <Description>"Max Recrune 1"</Description>
+      <LastState Activated="1"/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+registersymbol(rune)
+registersymbol(gecici)
+registersymbol(itemname)
+registersymbol(counter16)
+registersymbol(strpointer)
+registersymbol(dexpointer)
+registersymbol(recpointer)
+registersymbol(intpointer)
+registersymbol(wispointer)
+registersymbol(lucpointer)
+registersymbol(hppointer)
+registersymbol(mppointer)
+registersymbol(sppointer)
+alloc(counter16,4)
+alloc(gecici,4)
+alloc(itemname,4)
+alloc(strpointer,4)
+alloc(dexpointer,4)
+alloc(recpointer,4)
+alloc(intpointer,4)
+alloc(wispointer,4)
+alloc(lucpointer,4)
+alloc(hppointer,4)
+alloc(mppointer,4)
+alloc(sppointer,4)
+alloc(rune,4)
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+label(dexxx)
+label(reccc)
+label(inttt)
+label(wisss)
+label(luccc)
+label(hppp)
+label(mppp)
+label(sppp)
+label(removalrune)
+
+newmem: //this is allocated memory, you have read,write,execute access
+mov esi,[ebp+30]
+mov esi,[esi]
+mov [itemname],esi
+mov esi,0
+mov [strpointer],0
+mov [dexpointer],0
+mov [recpointer],0
+mov [intpointer],0
+mov [wispointer],0
+mov [lucpointer],0
+mov [hppointer],0
+mov [sppointer],0
+mov [mppointer],0
+mov [counter16],0
+cmp byte ptr [ebp+84],00
+JE dexxx
+add [counter16],1
+mov [strpointer],1
+
+dexxx:
+cmp byte ptr [ebp+86],00
+JE reccc
+add [counter16],1
+mov [dexpointer],1
+
+reccc:
+cmp byte ptr [ebp+88],00
+JE inttt
+add [counter16],1
+mov [recpointer],1
+
+inttt:
+cmp byte ptr [ebp+8A],00
+JE wisss
+add [counter16],1
+mov [intpointer],1
+
+wisss:
+cmp byte ptr [ebp+8C],00
+JE luccc
+add [counter16],1
+mov [wispointer],1
+
+luccc:
+cmp byte ptr [ebp+8E],00
+JE hppp
+add [counter16],1
+mov [lucpointer],1
+
+hppp:
+cmp byte ptr [ebp+90],00
+JE mppp
+add [counter16],1
+mov [hppointer],1
+
+mppp:
+cmp byte ptr [ebp+92],00
+JE sppp
+add [counter16],1
+mov [mppointer],1
+
+sppp:
+cmp byte ptr [ebp+94],00
+JE originalcode
+add [counter16],1
+mov [sppointer],1
+
+
+originalcode:
+mov dl,[ecx]
+mov [rune],dl
+
+//Check
+cmp [rune], (int)75 //StdRune
+je removalrune
+cmp [rune], (int)155 //StdRune
+je removalrune
+cmp [rune], (int)106 //Str
+je CheckStrRune
+CheckDexPointer:
+cmp [rune], (int)107 //Dex
+je CheckDexRune
+CheckRecPointer:
+cmp [rune], (int)108 // Rec
+je CheckRecRune
+CheckIntPointer:
+cmp [rune], (int)109 // Int
+je CheckIntRune
+CheckWisPointer:
+cmp [rune], (int)110 // Wis
+je CheckWisRune
+CheckLucPointer:
+cmp [rune], (int)111 // Luc
+je CheckLucRune
+CheckHPPointer:
+cmp [rune], (int)112 // HP
+je CheckHPRune
+CheckMPPointer:
+cmp [rune], (int)113 // MP
+je CheckMPRune
+CheckSPPointer:
+cmp [rune], (int)114 //SP
+je CheckSPRune
+SPPointerLast:
+cmp [rune],(int)115
+JE removalrune
+cmp [rune],(int)116
+JE removalrune
+cmp [rune],(int)117
+JE removalrune
+cmp [rune],(int)118
+JE removalrune
+cmp [rune],(int)119
+JE removalrune
+cmp [rune],(int)120
+JE removalrune
+cmp [rune],(int)121
+JE removalrune
+cmp [rune],(int)122
+JE removalrune
+cmp [rune],(int)123
+JE removalrune
+// Perfect Runes
+cmp [rune], (int)137 //Str
+je CheckStrRunePerf
+CheckDexPointerPerf:
+cmp [rune], (int)138 //Dex
+je CheckDexRunePerf
+CheckRecPointerPerf:
+cmp [rune], (int)139 // Rec
+je CheckRecRunePerf
+CheckIntPointerPerf:
+cmp [rune], (int)140 // Int
+je CheckIntRunePerf
+CheckWisPointerPerf:
+cmp [rune], (int)141 // Wis
+je CheckWisRunePerf
+CheckLucPointerPerf:
+cmp [rune], (int)142 // Luc
+je CheckLucRunePerf
+CheckHPPointerPerf:
+cmp [rune], (int)143 // HP
+je CheckHPRunePerf
+CheckMPPointerPerf:
+cmp [rune], (int)144 // MP
+je CheckMPRunePerf
+CheckSPPointerPerf:
+cmp [rune], (int)145 //SP
+je CheckSPRunePerf
+SPPointerLastPerf:
+jmp ps_game.exe+6D901
+removalrune:
+cmp byte ptr [ecx+46],3E
+jne ps_game.exe+6D901
+
+exit:
+jmp returnhere
+
+CheckStrRune:
+cmp [strpointer], 1
+je exit
+push eax
+mov eax,[ebp+30]
+movzx eax,byte ptr [eax+4A]
+cmp [counter16],eax
+pop eax
+jl exit
+jmp CheckDexPointer
+CheckDexRune:
+cmp [dexpointer], 1
+je exit
+push eax
+mov eax,[ebp+30]
+movzx eax,byte ptr [eax+4A]
+cmp [counter16],eax
+pop eax
+jl exit
+jmp CheckRecPointer
+CheckRecRune:
+cmp [recpointer], 1
+je exit
+push eax
+mov eax,[ebp+30]
+movzx eax,byte ptr [eax+4A]
+cmp [counter16],eax
+pop eax
+jl exit
+jmp CheckIntPointer
+CheckIntRune:
+cmp [intpointer], 1
+je exit
+push eax
+mov eax,[ebp+30]
+movzx eax,byte ptr [eax+4A]
+cmp [counter16],eax
+pop eax
+jl exit
+jmp CheckWisPointer
+CheckWisRune:
+cmp [wispointer], 1
+je exit
+push eax
+mov eax,[ebp+30]
+movzx eax,byte ptr [eax+4A]
+cmp [counter16],eax
+pop eax
+jl exit
+jmp CheckLucPointer
+CheckLucRune:
+cmp [lucpointer], 1
+je exit
+push eax
+mov eax,[ebp+30]
+movzx eax,byte ptr [eax+4A]
+cmp [counter16],eax
+pop eax
+jl exit
+jmp CheckHPPointer
+CheckHPRune:
+cmp [hppointer], 1
+je exit
+push eax
+mov eax,[ebp+30]
+movzx eax,byte ptr [eax+4A]
+cmp [counter16],eax
+pop eax
+jl exit
+jmp CheckMPPointer
+CheckMPRune:
+cmp [mppointer], 1
+je exit
+push eax
+mov eax,[ebp+30]
+movzx eax,byte ptr [eax+4A]
+cmp [counter16],eax
+pop eax
+jl exit
+jmp CheckSPPointer
+CheckSPRune:
+cmp [sppointer], 1
+je exit
+push eax
+mov eax,[ebp+30]
+movzx eax,byte ptr [eax+4A]
+cmp [counter16],eax
+pop eax
+jl exit
+jmp SPPointerLast
+// PerfectRunes
+CheckStrRunePerf:
+cmp [strpointer], 1
+je exit
+push eax
+mov eax,[ebp+30]
+movzx eax,byte ptr [eax+4A]
+cmp [counter16],eax
+pop eax
+jl exit
+jmp CheckDexPointerPerf
+CheckDexRunePerf:
+cmp [dexpointer], 1
+je exit
+push eax
+mov eax,[ebp+30]
+movzx eax,byte ptr [eax+4A]
+cmp [counter16],eax
+pop eax
+jl exit
+jmp CheckRecPointerPerf
+CheckRecRunePerf:
+cmp [recpointer], 1
+je exit
+push eax
+mov eax,[ebp+30]
+movzx eax,byte ptr [eax+4A]
+cmp [counter16],eax
+pop eax
+jl exit
+jmp CheckIntPointerPerf
+CheckIntRunePerf:
+cmp [intpointer], 1
+je exit
+push eax
+mov eax,[ebp+30]
+movzx eax,byte ptr [eax+4A]
+cmp [counter16],eax
+pop eax
+jl exit
+jmp CheckWisPointerPerf
+CheckWisRunePerf:
+cmp [wispointer], 1
+je exit
+push eax
+mov eax,[ebp+30]
+movzx eax,byte ptr [eax+4A]
+cmp [counter16],eax
+pop eax
+jl exit
+jmp CheckLucPointerPerf
+CheckLucRunePerf:
+cmp [lucpointer], 1
+je exit
+push eax
+mov eax,[ebp+30]
+movzx eax,byte ptr [eax+4A]
+cmp [counter16],eax
+pop eax
+jl exit
+jmp CheckHPPointerPerf
+CheckHPRunePerf:
+cmp [hppointer], 1
+je exit
+push eax
+mov eax,[ebp+30]
+movzx eax,byte ptr [eax+4A]
+cmp [counter16],eax
+pop eax
+jl exit
+jmp CheckMPPointerPerf
+CheckMPRunePerf:
+cmp [mppointer], 1
+je exit
+push eax
+mov eax,[ebp+30]
+movzx eax,byte ptr [eax+4A]
+cmp [counter16],eax
+pop eax
+jl exit
+jmp CheckSPPointerPerf
+CheckSPRunePerf:
+cmp [sppointer], 1
+je exit
+push eax
+mov eax,[ebp+30]
+movzx eax,byte ptr [eax+4A]
+cmp [counter16],eax
+pop eax
+jl exit
+jmp SPPointerLastPerf
+
+"ps_game.exe"+6D6A9:
+jmp newmem
+nop
+nop
+nop
+nop
+nop
+returnhere:
+
+
+
+
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+dealloc(newmem)
+"ps_game.exe"+6D6A9:
+cmp byte ptr [ecx+46],3E
+jne ps_game.exe+6D901
+//Alt: db 80 79 46 3E 0F 85 4E 02 00 00
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>45</ID>
+      <Description>"Max rec Rune 2"</Description>
+      <LastState Activated="1"/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+registersymbol(ecxpointer)
+registersymbol(orangecount)
+alloc(orangecount,4)
+alloc(ecxpointer,4)
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+label(equality)
+label(reroll)
+label(gmcheck)
+label(end)
+label(backend)
+label(hpcheck)
+label(mpcheck)
+label(spcheck)
+label(strreroll)
+label(dexreroll)
+label(recreroll)
+label(intreroll)
+label(wisreroll)
+label(lucreroll)
+label(hpreroll)
+label(mpreroll)
+label(spreroll)
+label(strrerollr)
+label(dexrerollr)
+label(recrerollr)
+label(intrerollr)
+label(wisrerollr)
+label(lucrerollr)
+label(hprerollr)
+label(mprerollr)
+label(sprerollr)
+label(strrerollequality)
+label(dexrerollequality)
+label(recrerollequality)
+label(intrerollequality)
+label(wisrerollequality)
+label(lucrerollequality)
+label(hprerollequality)
+label(mprerollequality)
+label(sprerollequality)
+label(rerollremoval)
+label(strrerollremoval)
+label(dexrerollremoval)
+label(recrerollremoval)
+label(intrerollremoval)
+label(wisrerollremoval)
+label(lucrerollremoval)
+label(hprerollremoval)
+label(mprerollremoval)
+label(sprerollremoval)
+label(strrerollremovalr)
+label(dexrerollremovalr)
+label(recrerollremovalr)
+label(intrerollremovalr)
+label(wisrerollremovalr)
+label(lucrerollremovalr)
+label(hprerollremovalr)
+label(mprerollremovalr)
+label(sprerollremovalr)
+label(strrerollremovalequality)
+label(dexrerollremovalequality)
+label(recrerollremovalequality)
+label(intrerollremovalequality)
+label(wisrerollremovalequality)
+label(lucrerollremovalequality)
+label(hprerollremovalequality)
+label(mprerollremovalequality)
+label(sprerollremovalequality)
+label(removal)
+
+
+newmem: //this is allocated memory, you have read,write,execute access
+cmp [rune],4B // StdRune
+je originalcode
+cmp [rune],9B // StdRune
+je originalcode
+lea ebp,[esi+00000084]
+mov [orangecount],eax
+cmp [counter16],eax
+JG originalcode
+cmp [counter16],eax
+JE equality
+cmp [rune],(int)106
+JE strreroll
+cmp [rune],(int)107
+JE dexreroll
+cmp [rune],(int)108
+JE recreroll
+cmp [rune],(int)109
+JE intreroll
+cmp [rune],(int)110
+JE wisreroll
+cmp [rune],(int)111
+JE lucreroll
+cmp [rune],(int)112
+JE hpcheck
+cmp [rune],(int)113
+JE mpcheck
+cmp [rune],(int)114
+JE spcheck
+cmp [rune],(int)115
+JE strrerollremoval
+cmp [rune],(int)116
+JE dexrerollremoval
+cmp [rune],(int)117
+JE recrerollremoval
+cmp [rune],(int)118
+JE intrerollremoval
+cmp [rune],(int)119
+JE wisrerollremoval
+cmp [rune],(int)120
+JE lucrerollremoval
+cmp [rune],(int)121
+JE hprerollremoval
+cmp [rune],(int)122
+JE mprerollremoval
+cmp [rune],(int)123
+JE sprerollremoval
+//PerfectRunes
+cmp [rune],(int)137
+JE strreroll
+cmp [rune],(int)138
+JE dexreroll
+cmp [rune],(int)139
+JE recreroll
+cmp [rune],(int)140
+JE intreroll
+cmp [rune],(int)141
+JE wisreroll
+cmp [rune],(int)142
+JE lucreroll
+cmp [rune],(int)143
+JE hpcheck
+cmp [rune],(int)144
+JE mpcheck
+cmp [rune],(int)145
+JE spcheck
+cmp [rune],(int)146
+
+originalcode:
+lea ebp,[esi+00000084]
+jmp exit
+
+equality:
+cmp [rune],(int)106
+JE strrerollequality
+cmp [rune],(int)107
+JE dexrerollequality
+cmp [rune],(int)108
+JE recrerollequality
+cmp [rune],(int)109
+JE intrerollequality
+cmp [rune],(int)110
+JE wisrerollequality
+cmp [rune],(int)111
+JE lucrerollequality
+cmp [rune],(int)112
+JE hprerollequality
+cmp [rune],(int)113
+JE mprerollequality
+cmp [rune],(int)114
+JE sprerollequality
+cmp [rune],(int)115
+JE strrerollremovalequality
+cmp [rune],(int)116
+JE dexrerollremovalequality
+cmp [rune],(int)117
+JE recrerollremovalequality
+cmp [rune],(int)118
+JE intrerollremovalequality
+cmp [rune],(int)119
+JE wisrerollremovalequality
+cmp [rune],(int)120
+JE lucrerollremovalequality
+cmp [rune],(int)121
+JE hprerollremovalequality
+cmp [rune],(int)122
+JE mprerollremovalequality
+cmp [rune],(int)123
+JE sprerollremovalequality
+//PerfectRunes
+cmp [rune],(int)137
+JE strrerollequality
+cmp [rune],(int)138
+JE dexrerollequality
+cmp [rune],(int)139
+JE recrerollequality
+cmp [rune],(int)140
+JE intrerollequality
+cmp [rune],(int)141
+JE wisrerollequality
+cmp [rune],(int)142
+JE lucrerollequality
+cmp [rune],(int)143
+JE hprerollequality
+cmp [rune],(int)144
+JE mprerollequality
+cmp [rune],(int)145
+JE sprerollequality
+cmp [rune],(int)146
+jmp originalcode
+
+hpcheck:
+cmp dword ptr [itemname],(int)16001
+JL 004D2C7B
+cmp dword ptr [itemname],(int)22001
+JL hpreroll
+cmp dword ptr [itemname],(int)23255
+JLE 004D2C7B
+cmp dword ptr [itemname],(int)40001
+JL hpreroll
+cmp dword ptr [itemname],(int)69001
+JL 004D2C7B
+cmp dword ptr [itemname],(int)92255
+JL hpreroll
+jmp 004D2C7B
+
+mpcheck:
+cmp dword ptr [itemname],(int)16001
+JL 004D2C7B
+cmp dword ptr [itemname],(int)22001
+JL mpreroll
+cmp dword ptr [itemname],(int)23255
+JLE 004D2C7B
+cmp dword ptr [itemname],(int)40001
+JL mpreroll
+cmp dword ptr [itemname],(int)69001
+JL 004D2C7B
+cmp dword ptr [itemname],(int)92255
+JL mpreroll
+jmp 004D2C7B
+
+
+spcheck:
+cmp dword ptr [itemname],(int)16001
+JL 004D2C7B
+cmp dword ptr [itemname],(int)22001
+JL spreroll
+cmp dword ptr [itemname],(int)23255
+JLE 004D2C7B
+cmp dword ptr [itemname],(int)40001
+JL spreroll
+cmp dword ptr [itemname],(int)69001
+JL 004D2C7B
+cmp dword ptr [itemname],(int)92255
+JL spreroll
+jmp 004D2C7B
+
+strrerollequality:
+cmp [strpointer],1
+JE strreroll
+mov edi,0
+jmp removal
+
+dexrerollequality:
+cmp [dexpointer],1
+JE dexreroll
+mov edi,1
+jmp removal
+
+recrerollequality:
+cmp [recpointer],1
+JE recreroll
+mov edi,2
+jmp removal
+
+intrerollequality:
+cmp [intpointer],1
+JE intreroll
+mov edi,3
+jmp removal
+
+wisrerollequality:
+cmp [wispointer],1
+JE wisreroll
+mov edi,4
+jmp removal
+
+lucrerollequality:
+cmp [lucpointer],1
+JE lucreroll
+mov edi,5
+jmp removal
+
+hprerollequality:
+cmp [hppointer],1
+JE hpcheck
+mov edi,6
+jmp removal
+
+mprerollequality:
+cmp [mppointer],1
+JE mpcheck
+mov edi,7
+jmp removal
+
+sprerollequality:
+cmp [sppointer],1
+JE spcheck
+mov edi,8
+jmp removal
+
+strrerollremovalequality:
+cmp [strpointer],1
+JE strrerollremoval
+mov edi,0
+jmp removal
+
+dexrerollremovalequality:
+cmp [dexpointer],1
+JE dexrerollremoval
+mov edi,1
+jmp removal
+
+recrerollremovalequality:
+cmp [recpointer],1
+JE recrerollremoval
+mov edi,2
+jmp removal
+
+intrerollremovalequality:
+cmp [intpointer],1
+JE intrerollremoval
+mov edi,3
+jmp removal
+
+wisrerollremovalequality:
+cmp [wispointer],1
+JE wisrerollremoval
+mov edi,4
+jmp removal
+
+lucrerollremovalequality:
+cmp [lucpointer],1
+JE lucrerollremoval
+mov edi,5
+jmp removal
+
+hprerollremovalequality:
+cmp [hppointer],1
+JE hprerollremoval
+mov edi,6
+jmp removal
+
+mprerollremovalequality:
+cmp [mppointer],1
+JE mprerollremoval
+mov edi,7
+jmp removal
+
+sprerollremovalequality:
+cmp [sppointer],1
+JE sprerollremoval
+mov edi,8
+jmp removal
+
+strreroll:
+mov edi,0
+jmp reroll
+
+dexreroll:
+mov edi,1
+jmp reroll
+
+recreroll:
+mov edi,2
+jmp reroll
+
+intreroll:
+mov edi,3
+jmp reroll
+
+wisreroll:
+mov edi,4
+jmp reroll
+
+lucreroll:
+mov edi,5
+jmp reroll
+
+hpreroll:
+mov edi,6
+jmp reroll
+
+mpreroll:
+mov edi,7
+jmp reroll
+
+spreroll:
+mov edi,8
+jmp reroll
+
+strrerollremoval:
+cmp [strpointer],0
+JE removal
+mov edi,0
+jmp rerollremoval
+
+dexrerollremoval:
+cmp [dexpointer],0
+JE removal
+mov edi,1
+jmp rerollremoval
+
+recrerollremoval:
+cmp [recpointer],0
+JE removal
+mov edi,2
+jmp rerollremoval
+
+intrerollremoval:
+cmp [intpointer],0
+JE removal
+mov edi,3
+jmp rerollremoval
+
+wisrerollremoval:
+cmp [wispointer],0
+JE removal
+mov edi,4
+jmp rerollremoval
+
+lucrerollremoval:
+cmp [lucpointer],0
+JE removal
+mov edi,5
+jmp rerollremoval
+
+hprerollremoval:
+cmp [hppointer],0
+JE removal
+mov edi,6
+jmp rerollremoval
+
+mprerollremoval:
+cmp [mppointer],0
+JE removal
+mov edi,7
+jmp rerollremoval
+
+sprerollremoval:
+cmp [sppointer],0
+JE removal
+mov edi,8
+jmp rerollremoval
+
+
+reroll:
+//PerfectRunes
+cmp [rune],(int)137
+JE Perfect
+cmp [rune],(int)138
+JE Perfect
+cmp [rune],(int)139
+JE Perfect
+cmp [rune],(int)140
+JE Perfect
+cmp [rune],(int)141
+JE Perfect
+cmp [rune],(int)142
+JE Perfect
+cmp [rune],(int)143
+JE Perfect
+cmp [rune],(int)144
+JE Perfect
+cmp [rune],(int)145
+JE Perfect
+JMP NotPerfect
+Perfect:
+mov edx,[esi+30]
+movzx ecx,word ptr [edx+3E]
+mov bl,cl
+jmp end
+NotPerfect:
+
+call 0051BD66
+mov edx,[esi+30]
+movzx ecx,word ptr [edx+3E]
+cdq
+inc ecx
+idiv ecx
+mov bl,dl
+call 0051BD66
+mov edx,[esi+30]
+movzx ecx,word ptr [edx+3E]
+inc ecx
+cdq
+idiv ecx
+cmp bl,dl
+jb gmcheck
+mov bl,dl
+
+gmcheck:
+cmp dword ptr [esp+2C],00
+jne end
+call 0051BD66
+mov edx,[esi+30]
+movzx ecx,word ptr [edx+3E]
+inc ecx
+cdq
+idiv ecx
+cmp bl,dl
+jb end
+mov bl,dl
+
+end:
+movzx dx,bl
+cmp [rune],(int)106
+JE strrerollr
+cmp [rune],(int)107
+JE dexrerollr
+cmp [rune],(int)108
+JE recrerollr
+cmp [rune],(int)109
+JE intrerollr
+cmp [rune],(int)110
+JE wisrerollr
+cmp [rune],(int)111
+JE lucrerollr
+cmp [rune],(int)112
+JE hprerollr
+cmp [rune],(int)113
+JE mprerollr
+cmp [rune],(int)114
+JE sprerollr
+//PerfectRunes
+cmp [rune],(int)137
+JE strrerollrPerf
+cmp [rune],(int)138
+JE dexrerollrPerf
+cmp [rune],(int)139
+JE recrerollrPerf
+cmp [rune],(int)140
+JE intrerollrPerf
+cmp [rune],(int)141
+JE wisrerollrPerf
+cmp [rune],(int)142
+JE lucrerollrPerf
+cmp [rune],(int)143
+JE hprerollrPerf
+cmp [rune],(int)144
+JE mprerollrPerf
+cmp [rune],(int)145
+JE sprerollrPerf
+
+backend:
+movzx eax,bl
+cdq
+mov ecx,0000000A
+idiv ecx
+movzx ecx,word ptr [edi*2+00581C74]
+add al,30
+mov [ecx+esi+4C],al
+movzx eax,word ptr [edi*2+00581C74]
+add dl,30
+mov [eax+esi+4D],dl
+Jmp 004D2C7B
+
+strrerollr:
+mov [ebp+00],dx
+Jmp backend
+dexrerollr:
+mov [ebp+02],dx
+Jmp backend
+recrerollr:
+mov [ebp+04],dx
+Jmp backend
+intrerollr:
+mov [ebp+06],dx
+Jmp backend
+wisrerollr:
+mov [ebp+08],dx
+Jmp backend
+lucrerollr:
+mov [ebp+0A],dx
+Jmp backend
+hprerollr:
+mov [ebp+0C],dx
+Jmp backend
+mprerollr:
+mov [ebp+0E],dx
+Jmp backend
+sprerollr:
+mov [ebp+10],dx
+Jmp backend
+
+//PerfectRunes
+strrerollrPerf:
+mov [ebp+00],dx
+Jmp backend
+dexrerollrPerf:
+mov [ebp+02],dx
+Jmp backend
+recrerollrPerf:
+mov [ebp+04],dx
+Jmp backend
+intrerollrPerf:
+mov [ebp+06],dx
+Jmp backend
+wisrerollrPerf:
+mov [ebp+08],dx
+Jmp backend
+lucrerollrPerf:
+mov [ebp+0A],dx
+Jmp backend
+hprerollrPerf:
+mov [ebp+0C],dx
+Jmp backend
+mprerollrPerf:
+mov [ebp+0E],dx
+Jmp backend
+sprerollrPerf:
+mov [ebp+10],dx
+Jmp backend
+
+rerollremoval:
+mov word ptr [ebp+00],0000
+movzx edx,word ptr [edi*2+00581C74]
+mov byte ptr [edx+esi+4C],30
+movzx eax,word ptr [edi*2+00581C74]
+mov byte ptr [eax+esi+4D],30
+cmp [rune],(int)115
+JE strrerollremovalr
+cmp [rune],(int)116
+JE dexrerollremovalr
+cmp [rune],(int)117
+JE recrerollremovalr
+cmp [rune],(int)118
+JE intrerollremovalr
+cmp [rune],(int)119
+JE wisrerollremovalr
+cmp [rune],(int)120
+JE lucrerollremovalr
+cmp [rune],(int)121
+JE hprerollremovalr
+cmp [rune],(int)122
+JE mprerollremovalr
+cmp [rune],(int)123
+JE sprerollremovalr
+Jmp 004D2C7B
+
+strrerollremovalr:
+mov byte ptr [esi+84],0
+Jmp 004D2C7B
+
+dexrerollremovalr:
+mov byte ptr [esi+86],0
+Jmp 004D2C7B
+
+recrerollremovalr:
+mov byte ptr [esi+88],0
+Jmp 004D2C7B
+
+intrerollremovalr:
+mov byte ptr [esi+8a],0
+Jmp 004D2C7B
+
+wisrerollremovalr:
+mov byte ptr [esi+8c],0
+Jmp 004D2C7B
+
+lucrerollremovalr:
+mov byte ptr [esi+8e],0
+Jmp 004D2C7B
+
+hprerollremovalr:
+mov byte ptr [esi+90],0
+Jmp 004D2C7B
+
+mprerollremovalr:
+mov byte ptr [esi+92],0
+Jmp 004D2C7B
+
+sprerollremovalr:
+mov byte ptr [esi+94],0
+Jmp 004D2C7B
+
+removal:
+jmp 004D2C7B
+
+exit:
+jmp returnhere
+
+"ps_game.exe"+D2BC7:
+jmp newmem
+nop
+returnhere:
+
+
+
+
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+dealloc(newmem)
+"ps_game.exe"+D2BC7:
+lea ebp,[esi+00000084]
+//Alt: db 8D AE 84 00 00 00
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>46</ID>
+      <Description>"Stat removal "</Description>
+      <LastState Activated="1"/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+registersymbol(rune)
+registersymbol(gecici)
+registersymbol(itemname)
+registersymbol(counter16)
+registersymbol(strpointer)
+registersymbol(dexpointer)
+registersymbol(recpointer)
+registersymbol(intpointer)
+registersymbol(wispointer)
+registersymbol(lucpointer)
+registersymbol(hppointer)
+registersymbol(mppointer)
+registersymbol(sppointer)
+alloc(counter16,4)
+alloc(gecici,4)
+alloc(itemname,4)
+alloc(strpointer,4)
+alloc(dexpointer,4)
+alloc(recpointer,4)
+alloc(intpointer,4)
+alloc(wispointer,4)
+alloc(lucpointer,4)
+alloc(hppointer,4)
+alloc(mppointer,4)
+alloc(sppointer,4)
+alloc(rune,4)
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+label(dexxx)
+label(reccc)
+label(inttt)
+label(wisss)
+label(luccc)
+label(hppp)
+label(mppp)
+label(sppp)
+label(removalrune)
+
+newmem: //this is allocated memory, you have read,write,execute access
+mov esi,[ebp+30]
+mov esi,[esi]
+mov [itemname],esi
+mov esi,0
+mov [strpointer],0
+mov [dexpointer],0
+mov [recpointer],0
+mov [intpointer],0
+mov [wispointer],0
+mov [lucpointer],0
+mov [hppointer],0
+mov [sppointer],0
+mov [mppointer],0
+mov [counter16],0
+cmp byte ptr [ebp+84],00
+JE dexxx
+add [counter16],1
+mov [strpointer],1
+
+dexxx:
+cmp byte ptr [ebp+86],00
+JE reccc
+add [counter16],1
+mov [dexpointer],1
+
+reccc:
+cmp byte ptr [ebp+88],00
+JE inttt
+add [counter16],1
+mov [recpointer],1
+
+inttt:
+cmp byte ptr [ebp+8A],00
+JE wisss
+add [counter16],1
+mov [intpointer],1
+
+wisss:
+cmp byte ptr [ebp+8C],00
+JE luccc
+add [counter16],1
+mov [wispointer],1
+
+luccc:
+cmp byte ptr [ebp+8E],00
+JE hppp
+add [counter16],1
+mov [lucpointer],1
+
+hppp:
+cmp byte ptr [ebp+90],00
+JE mppp
+add [counter16],1
+mov [hppointer],1
+
+mppp:
+cmp byte ptr [ebp+92],00
+JE sppp
+add [counter16],1
+mov [mppointer],1
+
+sppp:
+cmp byte ptr [ebp+94],00
+JE originalcode
+add [counter16],1
+mov [sppointer],1
+
+
+originalcode:
+mov dl,[ecx]
+mov [rune],dl
+
+//Check
+cmp [rune], (int)75 //StdRune
+je removalrune
+cmp [rune], (int)155 //StdRune
+je removalrune
+cmp [rune], (int)106 //Str
+je CheckStrRune
+CheckDexPointer:
+cmp [rune], (int)107 //Dex
+je CheckDexRune
+CheckRecPointer:
+cmp [rune], (int)108 // Rec
+je CheckRecRune
+CheckIntPointer:
+cmp [rune], (int)109 // Int
+je CheckIntRune
+CheckWisPointer:
+cmp [rune], (int)110 // Wis
+je CheckWisRune
+CheckLucPointer:
+cmp [rune], (int)111 // Luc
+je CheckLucRune
+CheckHPPointer:
+cmp [rune], (int)112 // HP
+je CheckHPRune
+CheckMPPointer:
+cmp [rune], (int)113 // MP
+je CheckMPRune
+CheckSPPointer:
+cmp [rune], (int)114 //SP
+je CheckSPRune
+SPPointerLast:
+cmp [rune],(int)115
+JE removalrune
+cmp [rune],(int)116
+JE removalrune
+cmp [rune],(int)117
+JE removalrune
+cmp [rune],(int)118
+JE removalrune
+cmp [rune],(int)119
+JE removalrune
+cmp [rune],(int)120
+JE removalrune
+cmp [rune],(int)121
+JE removalrune
+cmp [rune],(int)122
+JE removalrune
+cmp [rune],(int)123
+JE removalrune
+// Perfect Runes
+cmp [rune], (int)137 //Str
+je CheckStrRunePerf
+CheckDexPointerPerf:
+cmp [rune], (int)138 //Dex
+je CheckDexRunePerf
+CheckRecPointerPerf:
+cmp [rune], (int)139 // Rec
+je CheckRecRunePerf
+CheckIntPointerPerf:
+cmp [rune], (int)140 // Int
+je CheckIntRunePerf
+CheckWisPointerPerf:
+cmp [rune], (int)141 // Wis
+je CheckWisRunePerf
+CheckLucPointerPerf:
+cmp [rune], (int)142 // Luc
+je CheckLucRunePerf
+CheckHPPointerPerf:
+cmp [rune], (int)143 // HP
+je CheckHPRunePerf
+CheckMPPointerPerf:
+cmp [rune], (int)144 // MP
+je CheckMPRunePerf
+CheckSPPointerPerf:
+cmp [rune], (int)145 //SP
+je CheckSPRunePerf
+SPPointerLastPerf:
+jmp ps_game.exe+6D901
+removalrune:
+cmp byte ptr [ecx+46],3E
+jne ps_game.exe+6D901
+
+exit:
+jmp returnhere
+
+CheckStrRune:
+cmp [strpointer], 1
+je exit
+push eax
+mov eax,[ebp+30]
+movzx eax,byte ptr [eax+4A]
+cmp [counter16],eax
+pop eax
+jl exit
+jmp CheckDexPointer
+CheckDexRune:
+cmp [dexpointer], 1
+je exit
+push eax
+mov eax,[ebp+30]
+movzx eax,byte ptr [eax+4A]
+cmp [counter16],eax
+pop eax
+jl exit
+jmp CheckRecPointer
+CheckRecRune:
+cmp [recpointer], 1
+je exit
+push eax
+mov eax,[ebp+30]
+movzx eax,byte ptr [eax+4A]
+cmp [counter16],eax
+pop eax
+jl exit
+jmp CheckIntPointer
+CheckIntRune:
+cmp [intpointer], 1
+je exit
+push eax
+mov eax,[ebp+30]
+movzx eax,byte ptr [eax+4A]
+cmp [counter16],eax
+pop eax
+jl exit
+jmp CheckWisPointer
+CheckWisRune:
+cmp [wispointer], 1
+je exit
+push eax
+mov eax,[ebp+30]
+movzx eax,byte ptr [eax+4A]
+cmp [counter16],eax
+pop eax
+jl exit
+jmp CheckLucPointer
+CheckLucRune:
+cmp [lucpointer], 1
+je exit
+push eax
+mov eax,[ebp+30]
+movzx eax,byte ptr [eax+4A]
+cmp [counter16],eax
+pop eax
+jl exit
+jmp CheckHPPointer
+CheckHPRune:
+cmp [hppointer], 1
+je exit
+push eax
+mov eax,[ebp+30]
+movzx eax,byte ptr [eax+4A]
+cmp [counter16],eax
+pop eax
+jl exit
+jmp CheckMPPointer
+CheckMPRune:
+cmp [mppointer], 1
+je exit
+push eax
+mov eax,[ebp+30]
+movzx eax,byte ptr [eax+4A]
+cmp [counter16],eax
+pop eax
+jl exit
+jmp CheckSPPointer
+CheckSPRune:
+cmp [sppointer], 1
+je exit
+push eax
+mov eax,[ebp+30]
+movzx eax,byte ptr [eax+4A]
+cmp [counter16],eax
+pop eax
+jl exit
+jmp SPPointerLast
+// PerfectRunes
+CheckStrRunePerf:
+cmp [strpointer], 1
+je exit
+push eax
+mov eax,[ebp+30]
+movzx eax,byte ptr [eax+4A]
+cmp [counter16],eax
+pop eax
+jl exit
+jmp CheckDexPointerPerf
+CheckDexRunePerf:
+cmp [dexpointer], 1
+je exit
+push eax
+mov eax,[ebp+30]
+movzx eax,byte ptr [eax+4A]
+cmp [counter16],eax
+pop eax
+jl exit
+jmp CheckRecPointerPerf
+CheckRecRunePerf:
+cmp [recpointer], 1
+je exit
+push eax
+mov eax,[ebp+30]
+movzx eax,byte ptr [eax+4A]
+cmp [counter16],eax
+pop eax
+jl exit
+jmp CheckIntPointerPerf
+CheckIntRunePerf:
+cmp [intpointer], 1
+je exit
+push eax
+mov eax,[ebp+30]
+movzx eax,byte ptr [eax+4A]
+cmp [counter16],eax
+pop eax
+jl exit
+jmp CheckWisPointerPerf
+CheckWisRunePerf:
+cmp [wispointer], 1
+je exit
+push eax
+mov eax,[ebp+30]
+movzx eax,byte ptr [eax+4A]
+cmp [counter16],eax
+pop eax
+jl exit
+jmp CheckLucPointerPerf
+CheckLucRunePerf:
+cmp [lucpointer], 1
+je exit
+push eax
+mov eax,[ebp+30]
+movzx eax,byte ptr [eax+4A]
+cmp [counter16],eax
+pop eax
+jl exit
+jmp CheckHPPointerPerf
+CheckHPRunePerf:
+cmp [hppointer], 1
+je exit
+push eax
+mov eax,[ebp+30]
+movzx eax,byte ptr [eax+4A]
+cmp [counter16],eax
+pop eax
+jl exit
+jmp CheckMPPointerPerf
+CheckMPRunePerf:
+cmp [mppointer], 1
+je exit
+push eax
+mov eax,[ebp+30]
+movzx eax,byte ptr [eax+4A]
+cmp [counter16],eax
+pop eax
+jl exit
+jmp CheckSPPointerPerf
+CheckSPRunePerf:
+cmp [sppointer], 1
+je exit
+push eax
+mov eax,[ebp+30]
+movzx eax,byte ptr [eax+4A]
+cmp [counter16],eax
+pop eax
+jl exit
+jmp SPPointerLastPerf
+
+"ps_game.exe"+6D6A9:
+jmp newmem
+nop
+nop
+nop
+nop
+nop
+returnhere:
+
+
+
+
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+dealloc(newmem)
+"ps_game.exe"+6D6A9:
+cmp byte ptr [ecx+46],3E
+jne ps_game.exe+6D901
+//Alt: db 80 79 46 3E 0F 85 4E 02 00 00
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>47</ID>
+      <Description>"Stat rec Rune"</Description>
+      <LastState Activated="1"/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+registersymbol(ecxpointer)
+registersymbol(orangecount)
+alloc(orangecount,4)
+alloc(ecxpointer,4)
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+label(equality)
+label(reroll)
+label(gmcheck)
+label(end)
+label(backend)
+label(hpcheck)
+label(mpcheck)
+label(spcheck)
+label(strreroll)
+label(dexreroll)
+label(recreroll)
+label(intreroll)
+label(wisreroll)
+label(lucreroll)
+label(hpreroll)
+label(mpreroll)
+label(spreroll)
+label(strrerollr)
+label(dexrerollr)
+label(recrerollr)
+label(intrerollr)
+label(wisrerollr)
+label(lucrerollr)
+label(hprerollr)
+label(mprerollr)
+label(sprerollr)
+label(strrerollequality)
+label(dexrerollequality)
+label(recrerollequality)
+label(intrerollequality)
+label(wisrerollequality)
+label(lucrerollequality)
+label(hprerollequality)
+label(mprerollequality)
+label(sprerollequality)
+label(rerollremoval)
+label(strrerollremoval)
+label(dexrerollremoval)
+label(recrerollremoval)
+label(intrerollremoval)
+label(wisrerollremoval)
+label(lucrerollremoval)
+label(hprerollremoval)
+label(mprerollremoval)
+label(sprerollremoval)
+label(strrerollremovalr)
+label(dexrerollremovalr)
+label(recrerollremovalr)
+label(intrerollremovalr)
+label(wisrerollremovalr)
+label(lucrerollremovalr)
+label(hprerollremovalr)
+label(mprerollremovalr)
+label(sprerollremovalr)
+label(strrerollremovalequality)
+label(dexrerollremovalequality)
+label(recrerollremovalequality)
+label(intrerollremovalequality)
+label(wisrerollremovalequality)
+label(lucrerollremovalequality)
+label(hprerollremovalequality)
+label(mprerollremovalequality)
+label(sprerollremovalequality)
+label(removal)
+
+
+newmem: //this is allocated memory, you have read,write,execute access
+cmp [rune],4B // StdRune
+je originalcode
+cmp [rune],9B // StdRune
+je originalcode
+lea ebp,[esi+00000084]
+mov [orangecount],eax
+cmp [counter16],eax
+JG originalcode
+cmp [counter16],eax
+JE equality
+cmp [rune],(int)106
+JE strreroll
+cmp [rune],(int)107
+JE dexreroll
+cmp [rune],(int)108
+JE recreroll
+cmp [rune],(int)109
+JE intreroll
+cmp [rune],(int)110
+JE wisreroll
+cmp [rune],(int)111
+JE lucreroll
+cmp [rune],(int)112
+JE hpcheck
+cmp [rune],(int)113
+JE mpcheck
+cmp [rune],(int)114
+JE spcheck
+cmp [rune],(int)115
+JE strrerollremoval
+cmp [rune],(int)116
+JE dexrerollremoval
+cmp [rune],(int)117
+JE recrerollremoval
+cmp [rune],(int)118
+JE intrerollremoval
+cmp [rune],(int)119
+JE wisrerollremoval
+cmp [rune],(int)120
+JE lucrerollremoval
+cmp [rune],(int)121
+JE hprerollremoval
+cmp [rune],(int)122
+JE mprerollremoval
+cmp [rune],(int)123
+JE sprerollremoval
+//PerfectRunes
+cmp [rune],(int)137
+JE strreroll
+cmp [rune],(int)138
+JE dexreroll
+cmp [rune],(int)139
+JE recreroll
+cmp [rune],(int)140
+JE intreroll
+cmp [rune],(int)141
+JE wisreroll
+cmp [rune],(int)142
+JE lucreroll
+cmp [rune],(int)143
+JE hpcheck
+cmp [rune],(int)144
+JE mpcheck
+cmp [rune],(int)145
+JE spcheck
+cmp [rune],(int)146
+
+originalcode:
+lea ebp,[esi+00000084]
+jmp exit
+
+equality:
+cmp [rune],(int)106
+JE strrerollequality
+cmp [rune],(int)107
+JE dexrerollequality
+cmp [rune],(int)108
+JE recrerollequality
+cmp [rune],(int)109
+JE intrerollequality
+cmp [rune],(int)110
+JE wisrerollequality
+cmp [rune],(int)111
+JE lucrerollequality
+cmp [rune],(int)112
+JE hprerollequality
+cmp [rune],(int)113
+JE mprerollequality
+cmp [rune],(int)114
+JE sprerollequality
+cmp [rune],(int)115
+JE strrerollremovalequality
+cmp [rune],(int)116
+JE dexrerollremovalequality
+cmp [rune],(int)117
+JE recrerollremovalequality
+cmp [rune],(int)118
+JE intrerollremovalequality
+cmp [rune],(int)119
+JE wisrerollremovalequality
+cmp [rune],(int)120
+JE lucrerollremovalequality
+cmp [rune],(int)121
+JE hprerollremovalequality
+cmp [rune],(int)122
+JE mprerollremovalequality
+cmp [rune],(int)123
+JE sprerollremovalequality
+//PerfectRunes
+cmp [rune],(int)137
+JE strrerollequality
+cmp [rune],(int)138
+JE dexrerollequality
+cmp [rune],(int)139
+JE recrerollequality
+cmp [rune],(int)140
+JE intrerollequality
+cmp [rune],(int)141
+JE wisrerollequality
+cmp [rune],(int)142
+JE lucrerollequality
+cmp [rune],(int)143
+JE hprerollequality
+cmp [rune],(int)144
+JE mprerollequality
+cmp [rune],(int)145
+JE sprerollequality
+cmp [rune],(int)146
+jmp originalcode
+
+hpcheck:
+cmp dword ptr [itemname],(int)16001
+JL 004D2C7B
+cmp dword ptr [itemname],(int)22001
+JL hpreroll
+cmp dword ptr [itemname],(int)23255
+JLE 004D2C7B
+cmp dword ptr [itemname],(int)40001
+JL hpreroll
+cmp dword ptr [itemname],(int)69001
+JL 004D2C7B
+cmp dword ptr [itemname],(int)92255
+JL hpreroll
+jmp 004D2C7B
+
+mpcheck:
+cmp dword ptr [itemname],(int)16001
+JL 004D2C7B
+cmp dword ptr [itemname],(int)22001
+JL mpreroll
+cmp dword ptr [itemname],(int)23255
+JLE 004D2C7B
+cmp dword ptr [itemname],(int)40001
+JL mpreroll
+cmp dword ptr [itemname],(int)69001
+JL 004D2C7B
+cmp dword ptr [itemname],(int)92255
+JL mpreroll
+jmp 004D2C7B
+
+
+spcheck:
+cmp dword ptr [itemname],(int)16001
+JL 004D2C7B
+cmp dword ptr [itemname],(int)22001
+JL spreroll
+cmp dword ptr [itemname],(int)23255
+JLE 004D2C7B
+cmp dword ptr [itemname],(int)40001
+JL spreroll
+cmp dword ptr [itemname],(int)69001
+JL 004D2C7B
+cmp dword ptr [itemname],(int)92255
+JL spreroll
+jmp 004D2C7B
+
+strrerollequality:
+cmp [strpointer],1
+JE strreroll
+mov edi,0
+jmp removal
+
+dexrerollequality:
+cmp [dexpointer],1
+JE dexreroll
+mov edi,1
+jmp removal
+
+recrerollequality:
+cmp [recpointer],1
+JE recreroll
+mov edi,2
+jmp removal
+
+intrerollequality:
+cmp [intpointer],1
+JE intreroll
+mov edi,3
+jmp removal
+
+wisrerollequality:
+cmp [wispointer],1
+JE wisreroll
+mov edi,4
+jmp removal
+
+lucrerollequality:
+cmp [lucpointer],1
+JE lucreroll
+mov edi,5
+jmp removal
+
+hprerollequality:
+cmp [hppointer],1
+JE hpcheck
+mov edi,6
+jmp removal
+
+mprerollequality:
+cmp [mppointer],1
+JE mpcheck
+mov edi,7
+jmp removal
+
+sprerollequality:
+cmp [sppointer],1
+JE spcheck
+mov edi,8
+jmp removal
+
+strrerollremovalequality:
+cmp [strpointer],1
+JE strrerollremoval
+mov edi,0
+jmp removal
+
+dexrerollremovalequality:
+cmp [dexpointer],1
+JE dexrerollremoval
+mov edi,1
+jmp removal
+
+recrerollremovalequality:
+cmp [recpointer],1
+JE recrerollremoval
+mov edi,2
+jmp removal
+
+intrerollremovalequality:
+cmp [intpointer],1
+JE intrerollremoval
+mov edi,3
+jmp removal
+
+wisrerollremovalequality:
+cmp [wispointer],1
+JE wisrerollremoval
+mov edi,4
+jmp removal
+
+lucrerollremovalequality:
+cmp [lucpointer],1
+JE lucrerollremoval
+mov edi,5
+jmp removal
+
+hprerollremovalequality:
+cmp [hppointer],1
+JE hprerollremoval
+mov edi,6
+jmp removal
+
+mprerollremovalequality:
+cmp [mppointer],1
+JE mprerollremoval
+mov edi,7
+jmp removal
+
+sprerollremovalequality:
+cmp [sppointer],1
+JE sprerollremoval
+mov edi,8
+jmp removal
+
+strreroll:
+mov edi,0
+jmp reroll
+
+dexreroll:
+mov edi,1
+jmp reroll
+
+recreroll:
+mov edi,2
+jmp reroll
+
+intreroll:
+mov edi,3
+jmp reroll
+
+wisreroll:
+mov edi,4
+jmp reroll
+
+lucreroll:
+mov edi,5
+jmp reroll
+
+hpreroll:
+mov edi,6
+jmp reroll
+
+mpreroll:
+mov edi,7
+jmp reroll
+
+spreroll:
+mov edi,8
+jmp reroll
+
+strrerollremoval:
+cmp [strpointer],0
+JE removal
+mov edi,0
+jmp rerollremoval
+
+dexrerollremoval:
+cmp [dexpointer],0
+JE removal
+mov edi,1
+jmp rerollremoval
+
+recrerollremoval:
+cmp [recpointer],0
+JE removal
+mov edi,2
+jmp rerollremoval
+
+intrerollremoval:
+cmp [intpointer],0
+JE removal
+mov edi,3
+jmp rerollremoval
+
+wisrerollremoval:
+cmp [wispointer],0
+JE removal
+mov edi,4
+jmp rerollremoval
+
+lucrerollremoval:
+cmp [lucpointer],0
+JE removal
+mov edi,5
+jmp rerollremoval
+
+hprerollremoval:
+cmp [hppointer],0
+JE removal
+mov edi,6
+jmp rerollremoval
+
+mprerollremoval:
+cmp [mppointer],0
+JE removal
+mov edi,7
+jmp rerollremoval
+
+sprerollremoval:
+cmp [sppointer],0
+JE removal
+mov edi,8
+jmp rerollremoval
+
+
+reroll:
+//PerfectRunes
+cmp [rune],(int)137
+JE Perfect
+cmp [rune],(int)138
+JE Perfect
+cmp [rune],(int)139
+JE Perfect
+cmp [rune],(int)140
+JE Perfect
+cmp [rune],(int)141
+JE Perfect
+cmp [rune],(int)142
+JE Perfect
+cmp [rune],(int)143
+JE Perfect
+cmp [rune],(int)144
+JE Perfect
+cmp [rune],(int)145
+JE Perfect
+JMP NotPerfect
+Perfect:
+mov edx,[esi+30]
+movzx ecx,word ptr [edx+3E]
+mov bl,cl
+jmp end
+NotPerfect:
+
+call 0051BD66
+mov edx,[esi+30]
+movzx ecx,word ptr [edx+3E]
+cdq
+inc ecx
+idiv ecx
+mov bl,dl
+call 0051BD66
+mov edx,[esi+30]
+movzx ecx,word ptr [edx+3E]
+inc ecx
+cdq
+idiv ecx
+cmp bl,dl
+jb gmcheck
+mov bl,dl
+
+gmcheck:
+cmp dword ptr [esp+2C],00
+jne end
+call 0051BD66
+mov edx,[esi+30]
+movzx ecx,word ptr [edx+3E]
+inc ecx
+cdq
+idiv ecx
+cmp bl,dl
+jb end
+mov bl,dl
+
+end:
+movzx dx,bl
+cmp [rune],(int)106
+JE strrerollr
+cmp [rune],(int)107
+JE dexrerollr
+cmp [rune],(int)108
+JE recrerollr
+cmp [rune],(int)109
+JE intrerollr
+cmp [rune],(int)110
+JE wisrerollr
+cmp [rune],(int)111
+JE lucrerollr
+cmp [rune],(int)112
+JE hprerollr
+cmp [rune],(int)113
+JE mprerollr
+cmp [rune],(int)114
+JE sprerollr
+//PerfectRunes
+cmp [rune],(int)137
+JE strrerollrPerf
+cmp [rune],(int)138
+JE dexrerollrPerf
+cmp [rune],(int)139
+JE recrerollrPerf
+cmp [rune],(int)140
+JE intrerollrPerf
+cmp [rune],(int)141
+JE wisrerollrPerf
+cmp [rune],(int)142
+JE lucrerollrPerf
+cmp [rune],(int)143
+JE hprerollrPerf
+cmp [rune],(int)144
+JE mprerollrPerf
+cmp [rune],(int)145
+JE sprerollrPerf
+
+backend:
+movzx eax,bl
+cdq
+mov ecx,0000000A
+idiv ecx
+movzx ecx,word ptr [edi*2+00581C74]
+add al,30
+mov [ecx+esi+4C],al
+movzx eax,word ptr [edi*2+00581C74]
+add dl,30
+mov [eax+esi+4D],dl
+Jmp 004D2C7B
+
+strrerollr:
+mov [ebp+00],dx
+Jmp backend
+dexrerollr:
+mov [ebp+02],dx
+Jmp backend
+recrerollr:
+mov [ebp+04],dx
+Jmp backend
+intrerollr:
+mov [ebp+06],dx
+Jmp backend
+wisrerollr:
+mov [ebp+08],dx
+Jmp backend
+lucrerollr:
+mov [ebp+0A],dx
+Jmp backend
+hprerollr:
+mov [ebp+0C],dx
+Jmp backend
+mprerollr:
+mov [ebp+0E],dx
+Jmp backend
+sprerollr:
+mov [ebp+10],dx
+Jmp backend
+
+//PerfectRunes
+strrerollrPerf:
+mov [ebp+00],dx
+Jmp backend
+dexrerollrPerf:
+mov [ebp+02],dx
+Jmp backend
+recrerollrPerf:
+mov [ebp+04],dx
+Jmp backend
+intrerollrPerf:
+mov [ebp+06],dx
+Jmp backend
+wisrerollrPerf:
+mov [ebp+08],dx
+Jmp backend
+lucrerollrPerf:
+mov [ebp+0A],dx
+Jmp backend
+hprerollrPerf:
+mov [ebp+0C],dx
+Jmp backend
+mprerollrPerf:
+mov [ebp+0E],dx
+Jmp backend
+sprerollrPerf:
+mov [ebp+10],dx
+Jmp backend
+
+rerollremoval:
+mov word ptr [ebp+00],0000
+movzx edx,word ptr [edi*2+00581C74]
+mov byte ptr [edx+esi+4C],30
+movzx eax,word ptr [edi*2+00581C74]
+mov byte ptr [eax+esi+4D],30
+cmp [rune],(int)115
+JE strrerollremovalr
+cmp [rune],(int)116
+JE dexrerollremovalr
+cmp [rune],(int)117
+JE recrerollremovalr
+cmp [rune],(int)118
+JE intrerollremovalr
+cmp [rune],(int)119
+JE wisrerollremovalr
+cmp [rune],(int)120
+JE lucrerollremovalr
+cmp [rune],(int)121
+JE hprerollremovalr
+cmp [rune],(int)122
+JE mprerollremovalr
+cmp [rune],(int)123
+JE sprerollremovalr
+Jmp 004D2C7B
+
+strrerollremovalr:
+mov byte ptr [esi+84],0
+Jmp 004D2C7B
+
+dexrerollremovalr:
+mov byte ptr [esi+86],0
+Jmp 004D2C7B
+
+recrerollremovalr:
+mov byte ptr [esi+88],0
+Jmp 004D2C7B
+
+intrerollremovalr:
+mov byte ptr [esi+8a],0
+Jmp 004D2C7B
+
+wisrerollremovalr:
+mov byte ptr [esi+8c],0
+Jmp 004D2C7B
+
+lucrerollremovalr:
+mov byte ptr [esi+8e],0
+Jmp 004D2C7B
+
+hprerollremovalr:
+mov byte ptr [esi+90],0
+Jmp 004D2C7B
+
+mprerollremovalr:
+mov byte ptr [esi+92],0
+Jmp 004D2C7B
+
+sprerollremovalr:
+mov byte ptr [esi+94],0
+Jmp 004D2C7B
+
+removal:
+jmp 004D2C7B
+
+exit:
+jmp returnhere
+
+"ps_game.exe"+D2BC7:
+jmp newmem
+nop
+returnhere:
+
+
+
+
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+dealloc(newmem)
+"ps_game.exe"+D2BC7:
+lea ebp,[esi+00000084]
+//Alt: db 8D AE 84 00 00 00
+</AssemblerScript>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>

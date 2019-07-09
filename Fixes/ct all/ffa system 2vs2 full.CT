@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="26">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>4</ID>
+      <Description>"ffa system"</Description>
+      <Options moActivateChildrenAsWell="1" moDeactivateChildrenAsWell="1"/>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>1</ID>
+          <Description>"Check the /party request"</Description>
+          <LastState/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem:
+cmp word ptr [edi+160],#35 // MapID
+je 00475505
+
+originalcode:
+mov cl,[edi+0000012D]
+
+exit:
+jmp returnhere
+
+"ps_game.exe"+754F7:
+jmp newmem
+nop
+returnhere:
+
+[DISABLE]
+dealloc(newmem)
+"ps_game.exe"+754F7:
+mov cl,[edi+0000012D]
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>2</ID>
+          <Description>"Check the pt request"</Description>
+          <LastState/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem:
+cmp word ptr [esi+160],#35 // MapID
+je 004753A4
+
+originalcode:
+mov dl,[esi+0000012D]
+
+exit:
+jmp returnhere
+
+"ps_game.exe"+75396:
+jmp newmem
+nop
+returnhere:
+
+[DISABLE]
+dealloc(newmem)
+"ps_game.exe"+75396:
+mov dl,[esi+0000012D]
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>6</ID>
+          <Description>"Check /join"</Description>
+          <LastState/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem:
+cmp word ptr [ebp+160],#35 // MapID
+je 004757C8
+
+
+originalcode:
+mov dl,[ebp+0000012D]
+
+exit:
+jmp returnhere
+
+"ps_game.exe"+757BA:
+jmp newmem
+nop
+returnhere:
+
+[DISABLE]
+dealloc(newmem)
+"ps_game.exe"+757BA:
+mov dl,[ebp+0000012D]
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>282</ID>
+          <Description>"cross faction party"</Description>
+          <LastState/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+cmp byte ptr [ebp+160],(int)36
+je 00475514
+originalcode:
+cmp cl,[ebp+0000012D]
+
+exit:
+jmp returnhere
+
+"ps_game.exe"+754FD:
+jmp newmem
+nop
+returnhere:
+
+
+ 
+ 
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+dealloc(newmem)
+"ps_game.exe"+754FD:
+cmp cl,[ebp+0000012D]
+//Alt: db 3A 8D 2D 01 00 00
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>218</ID>
+          <Description>"partili pvp sistemi"</Description>
+          <LastState/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+cmp edx,1
+jl originalcode
+cmp edx,7
+jg originalcode
+cmp [ebp+17f4],0
+je 00476F33
+mov eax,[ebp+17f4]
+cmp [eax+10],edx
+jne 00476F33
+mov edx,0
+
+originalcode:
+cmp [ebp+00000140],edx
+
+exit:
+jmp returnhere
+
+"ps_game.exe"+76D24:
+jmp newmem
+nop
+returnhere:
+
+
+ 
+ 
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+dealloc(newmem)
+"ps_game.exe"+76D24:
+cmp [ebp+00000140],edx
+//Alt: db 39 95 40 01 00 00
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>11</ID>
+          <Description>"ep5.9 auto party leave"</Description>
+          <LastState/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem: //this is allocated memory, you have read,write,execute access
+cmp word ptr [edi+160],(int)35
+je originalcode
+mov [edi+00000160],dx
+jmp exit
+originalcode:
+mov [edi+00000160],dx
+cmp [edi+17f4],0
+je exit
+pushad
+pushfd
+mov ecx,[edi+17f4]
+mov eax,edi
+call 0044f5f0
+popfd
+popad
+
+
+exit:
+jmp returnhere
+
+"ps_game.exe"+1C7AC:
+jmp newmem
+nop
+nop
+returnhere:
+
+
+ 
+ 
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+dealloc(newmem)
+"ps_game.exe"+1C7AC:
+mov [edi+00000160],dx
+//Alt: db 66 89 97 60 01 00 00
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>220</ID>
+          <Description>"no tele"</Description>
+          <LastState/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+
+newmem: //this is allocated memory, you have read,write,execute access
+cmp word ptr [ebp+160],(int)35
+je ps_game.exe+7468A
+
+originalcode:
+test al,al
+je ps_game.exe+7468A
+jmp exit
+
+
+exit:
+jmp returnhere
+
+"ps_game.exe"+73708:
+jmp newmem
+nop
+nop
+nop
+returnhere:
+
+
+
+
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+dealloc(newmem)
+"ps_game.exe"+73708:
+test al,al
+je ps_game.exe+7468A
+//Alt: db 84 C0 0F 84 7A 0F 00 00
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>3</ID>
+          <Description>"pvp"</Description>
+          <LastState/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+label(pvp)
+
+newmem: //this is allocated memory, you have read,write,execute access
+cmp word ptr [edx+160],(int)35
+JE pvp
+
+originalcode:
+mov dl,[edx+0000012D]
+jmp exit
+
+pvp:
+mov dl,[edx+17F4]
+cmp dl,[eax+17F4]
+je "ps_game.exe"+57E39
+jne "ps_game.exe"+57E35
+
+exit:
+jmp returnhere
+
+"ps_game.exe"+57E27:
+jmp newmem
+nop
+returnhere:
+
+
+ 
+ 
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+dealloc(newmem)
+"ps_game.exe"+57E27:
+mov dl,[edx+0000012D]
+//Alt: db 8A 92 2D 01 00 00
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>221</ID>
+          <Description>"no summon"</Description>
+          <LastState/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+
+newmem: //this is allocated memory, you have read,write,execute access
+
+cmp word ptr [esi+160],(int)35
+JE ps_game.exe+9E517
+cmp word ptr [edi+160],(int)35
+je 0049E49F
+mov dl,[esi+12d]
+cmp dl,[edi+12d]
+JNE ps_game.exe+9E517
+
+originalcode:
+test al,al
+je ps_game.exe+9E517
+jmp exit
+
+
+exit:
+jmp returnhere
+
+"ps_game.exe"+9E479:
+jmp newmem
+nop
+nop
+nop
+returnhere:
+
+
+
+
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+dealloc(newmem)
+"ps_game.exe"+9E479:
+test al,al
+je ps_game.exe+9E517
+//Alt: db 84 C0 0F 84 96 00 00 00
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>222</ID>
+          <Description>"no move"</Description>
+          <LastState/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem: //this is allocated memory, you have read,write,execute access
+cmp word ptr [ebp+160],(int)35
+je ps_game.exe+73576
+cmp word ptr [esi+00000160],(int)35
+je 00473523
+mov dl,[esi+12d]
+cmp dl,[ebp+12d]
+JNE ps_game.exe+73576
+
+originalcode:
+test al,al
+je ps_game.exe+73576
+cmp [ebp+00000160],dx
+jmp exit
+
+
+exit:
+jmp returnhere
+
+"ps_game.exe"+73501:
+jmp newmem
+nop
+nop
+nop
+nop
+nop
+nop
+returnhere:
+
+
+
+
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+dealloc(newmem)
+"ps_game.exe"+73501:
+test al,al
+je ps_game.exe+73576
+cmp [ebp+00000160],dx
+//Alt: db 84 C0 74 71 66 39 95 60 01 00 00
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>9</ID>
+          <Description>"heal/dispel"</Description>
+          <LastState/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+
+newmem: //this is allocated memory, you have read,write,execute access
+mov al,[esi+0000012D]
+cmp word ptr [esi+160],(int)35
+JE 00457F41
+
+originalcode:
+
+jmp exit
+
+
+exit:
+jmp returnhere
+
+"ps_game.exe"+57F33:
+jmp newmem
+nop
+returnhere:
+
+
+ 
+ 
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+dealloc(newmem)
+"ps_game.exe"+57F33:
+mov al,[esi+0000012D]
+//Alt: db 8A 86 2D 01 00 00
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>10</ID>
+          <Description>"buff"</Description>
+          <LastState/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+
+newmem: //this is allocated memory, you have read,write,execute access
+mov dl,[esi+0000012D]
+cmp word ptr [edi+160],(int)35
+JE ps_game.exe+60a53
+
+originalcode:
+
+jmp exit
+
+
+exit:
+jmp returnhere
+
+"ps_game.exe"+60A45:
+jmp newmem
+nop
+returnhere:
+
+
+ 
+ 
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+dealloc(newmem)
+"ps_game.exe"+60A45:
+mov dl,[esi+0000012D]
+//Alt: db 8A 96 2D 01 00 00
+</AssemblerScript>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="26">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>1</ID>
+      <Description>"fix serverversion"</Description>
+      <LastState/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+00407407:
+db 90 90
+0040740C:
+db 90 90
+0040741B:
+db 90 90
+[DISABLE]
+00407407:
+je 00407424
+0040740C:
+je 00407424
+0040741B:
+je 00407424
+</AssemblerScript>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>

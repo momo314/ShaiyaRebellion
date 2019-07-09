@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="28">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>11</ID>
+      <Description>"Pet &amp; Costume Swap Timer"</Description>
+      <LastState Activated="1"/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+cmp eax,0d
+jl originalcode
+
+
+checktimer:
+push eax
+call dword ptr [005540D0]
+cmp eax,[edi+6400]
+jl fail
+add eax,(int)5000 // in miliseconds
+mov [esi+6400],eax
+pop eax
+
+
+
+
+originalcode:
+jmp dword ptr [eax*4+0046853C]
+
+
+
+fail:
+pop eax
+xor al,al
+pop esi
+ret
+
+
+
+exit:
+jmp returnhere
+
+"ps_game.exe"+6838E:
+jmp newmem
+nop
+nop
+returnhere:
+
+
+ 
+ 
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+dealloc(newmem)
+"ps_game.exe"+6838E:
+jmp dword ptr [eax*4+0046853C]
+//Alt: db FF 24 85 3C 85 46 00
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>12</ID>
+      <Description>"Auto Assemble script"</Description>
+      <LastState/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+
+originalcode:
+cmp eax,0f
+ja ps_game.exe+6846B
+
+exit:
+jmp returnhere
+
+"ps_game.exe"+68385:
+jmp newmem
+nop
+nop
+nop
+nop
+returnhere:
+
+
+ 
+ 
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+dealloc(newmem)
+"ps_game.exe"+68385:
+cmp eax,0D
+ja ps_game.exe+6846B
+//Alt: db 83 F8 0D 0F 87 DD 00 00 00
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>13</ID>
+      <Description>"33333"</Description>
+      <LastState Activated="1"/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+cmp eax,0d
+jl originalcode
+checktimer:
+push eax
+call dword ptr [005540D0]
+cmp eax,[edi+6400]
+jl fail
+add eax,(int)5000 // in miliseconds
+mov [esi+6400],eax
+pop eax
+
+originalcode:
+mov cx,[edi+00000136]
+jmp exit
+
+fail:
+pop eax
+xor eax,eax
+ret
+exit:
+jmp returnhere
+
+"Pet.dll"+5BF2:
+jmp newmem
+nop
+nop
+returnhere:
+
+
+ 
+ 
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+dealloc(newmem)
+"Pet.dll"+5BF2:
+mov cx,[edi+00000136]
+//Alt: db 66 8B 8F 36 01 00 00
+</AssemblerScript>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>
