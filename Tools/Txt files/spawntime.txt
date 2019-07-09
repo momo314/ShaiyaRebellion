@@ -1,0 +1,17 @@
+AttackSpecial3 (aka respawn time)
+0 - 15-16 seconds (Tested on OS)
+1 - 35-40 seconds (Tested on OS)
+2 - 1 minute 10 sec (Tested on OS)
+3 - 3 min 10 sec (Tested on OS)
+4 - 7-8 min (Check Greendieta Archangel respawn time)?
+5 - ?? min (Red Spear Ifrit, Lunatic Kibe, Blackheart Kibe OS respawn time)
+6 - 15 min(Check Prince Abinue/Princess Floria/Executioner Zark/Queen Caput Princess Respawn time)?
+7 - 30 min(Rocagos Crazy Warrior/Chopping Molcan)? 45 min (Black Blood Blade Knight)? 1 hour (Black Magic Ruler)? //Black Blood Blade Knight and Black Magic Ruler have same Attack3, but different respawn times
+8 - 45 min(Azman Elf Vein/Lamultan Bloodstorm)? 1 hour (Asmodeus)? 2 hours? (Loca)
+9 - 1 hour? (Lich) 4 hours? (Elkid/Ajuha/Ankylul Wild Dark)
+10 - 12 hours
+11 - ?? hours (OI? might be 18 hours or lower)
+12 - 3 days
+13 - ?? days (Dynos: C-99, Dynos B-29, Dynos: C-69 OS respawn time)
+14 - ?? days (Cryptic One OS respawn time. *not the same as the other bosses in CT)
+15 - 7 days (GRB/ CT -- probably not exactly 7 days)
