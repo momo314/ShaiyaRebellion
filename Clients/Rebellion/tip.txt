@@ -1,0 +1,8 @@
+Being the best is more than just being able to attack quickly.
+Be careful in the borderlands! The opposing forces can swiftly ambush you.
+You can only change sides after you delete all of your existing characters.
+You can move using 'w', 'a', 's', 'd' (double-tap 'w' to auto-run) or by clicking your mouse.
+Ultimate Mode characters are stronger than Hard (Basic) Mode characters, but they require more EXP to level up.
+Double-tap 'q', 'e' and 's' to launch into rolls and flips. Press 'c' to sit down and take a rest.
+If you get stuck, press Space-Bar to jump, or type '/return' in normal chat.
+For help Join Discord or visit www.shaiya-rebellion.online
