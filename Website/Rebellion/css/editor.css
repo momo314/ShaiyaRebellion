@@ -1,0 +1,496 @@
+body
+{
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAAWElEQVRoge3PAQ0AIRDAsOP9S0MUJki+IauCbc3Mngd8fwfc0oimEU0jmkY0jWga0TSiaUTTiKYRTSOaRjSNaBrRNKJpRNOIphFNI5pGNI1oGtE0omlEcwAZ1wEwSwu1zAAAAABJRU5ErkJggg==), #000000 url('../images/page.jpeg') top center no-repeat fixed;
+  margin: 0 auto;
+  font-size: 19px;
+  font-family: Amarante, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 150%;
+  min-height: 100%;
+  left: 0;
+  top: 0;
+  cursor: default;
+}
+
+table
+{
+  font-size: 19px;
+  font-family: Amarante, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 150%;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul, ol, li
+{
+  margin: 0;
+  padding: 0;
+}
+
+body
+{
+  text-align: left;
+}
+
+body, li, table, a, a:link, a:visited, a.visited, a:hover, a.hovered
+{
+  font-size: 19px;
+  font-family: Amarante, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+  text-align: justify;
+}
+
+p
+{
+  margin: 12px 0;
+}
+
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover, h2, h2 a, h2 a:link, h2 a:visited, h2 a:hover, h3, h3 a, h3 a:link, h3 a:visited, h3 a:hover, h4, h4 a, h4 a:link, h4 a:visited, h4 a:hover, h5, h5 a, h5 a:link, h5 a:visited, h5 a:hover, h6, h6 a, h6 a:link, h6 a:visited, h6 a:hover
+{
+  font-size: 36px;
+  font-family: Amarante, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+a, a:link
+{
+  font-size: 19px;
+  font-family: Amarante, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+  text-decoration: none;
+  color: #858585;
+}
+
+a:visited, a.visited
+{
+  font-size: 19px;
+  font-family: Amarante, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+  text-decoration: none;
+  color: #F64C54;
+}
+
+a:hover, a.hover
+{
+  font-size: 19px;
+  font-family: Amarante, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+  text-decoration: underline;
+  color: #A1A1A1;
+}
+
+h1
+{
+  color: #858585;
+  margin: 10px 2px 0;
+  font-size: 58px;
+  font-family: Amarante, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+h1 a, h1 a:link, h1 a:hover, h1 a:visited
+{
+  font-size: 58px;
+  font-family: Amarante, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+h2
+{
+  color: #A1A1A1;
+  margin: 10px 0 0;
+  font-size: 43px;
+  font-family: Amarante, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+h2 a, h2 a:link, h2 a:hover, h2 a:visited
+{
+  font-size: 43px;
+  font-family: Amarante, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+h3
+{
+  color: #F31621;
+  margin: 10px 0 0;
+  font-size: 34px;
+  font-family: Amarante, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+h3 a, h3 a:link, h3 a:hover, h3 a:visited
+{
+  font-size: 34px;
+  font-family: Amarante, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+h4
+{
+  color: #FDD8DA;
+  margin: 10px 0 0;
+  font-size: 29px;
+  font-family: Amarante, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+h4 a, h4 a:link, h4 a:hover, h4 a:visited
+{
+  font-size: 29px;
+  font-family: Amarante, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+h5
+{
+  color: #FDD8DA;
+  margin: 10px 0 0;
+  font-size: 26px;
+  font-family: Amarante, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+h5 a, h5 a:link, h5 a:hover, h5 a:visited
+{
+  font-size: 26px;
+  font-family: Amarante, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+h6
+{
+  color: #F88187;
+  margin: 10px 0 0;
+  font-size: 19px;
+  font-family: Amarante, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+h6 a, h6 a:link, h6 a:hover, h6 a:visited
+{
+  font-size: 19px;
+  font-family: Amarante, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+header, footer, nav
+{
+  -webkit-background-origin: border !important;
+  -moz-background-origin: border !important;
+  background-origin: border-box !important;
+}
+
+header, footer, nav
+{
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul
+{
+  list-style-type: none;
+}
+
+ol
+{
+  list-style-position: inside;
+}
+
+html, body
+{
+  height: 100%;
+}
+
+body
+{
+  padding: 0;
+  margin: 0;
+  color: #C4C4C4;
+}
+
+.clearfix:after
+{
+  clear: both;
+  font: 0/0 serif;
+  display: block;
+  content: " ";
+}
+
+form
+{
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+table.position
+{
+  position: relative;
+  width: 100%;
+  table-layout: fixed;
+}
+
+li h1, li h1
+{
+  margin: 1px;
+}
+
+li h2, li h2
+{
+  margin: 1px;
+}
+
+li h3, li h3
+{
+  margin: 1px;
+}
+
+li h4, li h4
+{
+  margin: 1px;
+}
+
+li h5, li h5
+{
+  margin: 1px;
+}
+
+li h6, li h6
+{
+  margin: 1px;
+}
+
+li p, li p
+{
+  margin: 1px;
+}
+
+input, select, textarea
+{
+  vertical-align: middle;
+  font-size: 19px;
+  font-family: Amarante, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="url"], textarea
+{
+  background: #F9FAFB;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.35);
+  border: 1px solid #8C8C8C;
+  margin: 0 auto;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="url"], textarea
+{
+  width: 100%;
+  padding: 10px 0;
+  color: #3D3D3D !important;
+  font-size: 19px;
+  font-family: Amarante, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+  font-weight: normal;
+  font-style: normal;
+  text-shadow: none;
+}
+
+a img
+{
+  border: 0;
+}
+
+body img
+{
+  margin: 7px 7px 7px 7px;
+}
+
+body table
+{
+  border-collapse: collapse;
+  margin: 1px;
+}
+
+body th, body td
+{
+  padding: 2px;
+  vertical-align: top;
+  text-align: left;
+}
+
+body th
+{
+  text-align: center;
+  vertical-align: middle;
+  padding: 7px;
+}
+
+pre
+{
+  overflow: auto;
+  padding: 0.1em;
+}
+
+.image-caption-wrapper
+{
+  padding: 7px 7px 7px 7px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.image-caption-wrapper img
+{
+  margin: 0 !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.image-caption-wrapper p
+{
+  font-size: 80%;
+  text-align: right;
+  margin: 0;
+}
+
+ul>li:before
+{
+  content: url('../images/postbullets.png');
+  margin-right: 6px;
+  bottom: 2px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+  line-height: 0;
+}
+
+.opera  ul>li:before
+{
+  bottom: 0;
+}
+
+li
+{
+  font-size: 19px;
+  font-family: Amarante, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+  font-weight: normal;
+  font-style: italic;
+  color: #9E9E9E;
+  margin: 5px 0 5px 13px;
+}
+
+ul>li, ol
+{
+  padding: 0;
+}
+
+ul>li
+{
+  padding-left: 16px;
+}
+
+ul>li:before
+{
+  margin-left: -16px;
+}
+
+ol, ul
+{
+  margin: 1em 0 1em 13px;
+}
+
+li ol, li ul
+{
+  margin: 0.5em 0 0.5em 13px;
+}
+
+li
+{
+  margin: 5px 0 5px 0;
+}
+
+ol>li
+{
+  overflow: visible;
+}
+
+ul>li
+{
+  overflow-x: visible;
+  overflow-y: hidden;
+}
+
+blockquote
+{
+  background: #570509 url('../images/postquote.png') no-repeat scroll;
+  background: rgba(87, 5, 9, 0.7) url('../images/postquote.png') no-repeat scroll;
+  padding: 0 0 0 28px;
+  color: #F0F0F0;
+  font-size: 24px;
+  font-family: Amarante, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+  font-weight: normal;
+  font-style: italic;
+  text-shadow: 1px 0 0 rgb(23, 23, 23), 1px 0 0 rgb(23, 23, 23), 0 -1px 0 rgb(23, 23, 23), 0 1px 0 rgb(23, 23, 23), 0 0 10px rgba(0, 0, 0, 0.99);
+  overflow: auto;
+  clear: both;
+}
+
+blockquote a, blockquote a, blockquote a:link, blockquote a:link, blockquote a:visited, blockquote a:visited, blockquote a:hover, blockquote a:hover
+{
+  color: #F0F0F0;
+  font-size: 24px;
+  font-family: Amarante, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+  font-weight: normal;
+  font-style: italic;
+  text-shadow: 1px 0 0 rgb(23, 23, 23), 1px 0 0 rgb(23, 23, 23), 0 -1px 0 rgb(23, 23, 23), 0 1px 0 rgb(23, 23, 23), 0 0 10px rgba(0, 0, 0, 0.99);
+}
+
+blockquote p, blockquote p
+{
+  margin: 0;
+}
+
+/* Created by Artisteer vundefined.undefined.undefined.undefined */
+
+/* Compatibility rules for the default TinyMCE skin: */
+td 
+{ 
+    color: inherit; 
+    font-family: inherit; 
+    font-size: inherit; 
+    margin: inherit; 
+}
+
+abbr
+{
+    border-bottom: 0px none;
+}
+
+cite
+{
+    border-bottom: 0px none;
+}
+
+body 
+{
+    border-collapse: collapse;
+}

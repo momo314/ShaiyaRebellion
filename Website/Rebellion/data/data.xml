@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+    <categories>
+        <category id="1" title="Featured"/>
+        <category id="2" title="Articles"/>
+    </categories>
+    <articles>
+        <article id="1" category="2" title="Home" alias="article" path="/home" description="" keywords="">
+            <![CDATA[<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell" style="width:100%" >
+        <h3>Many Different Colors</h3>
+        <p><img width="261" height="256" alt="" src="images/template-content/sticker.png" style="float: left;" class=""></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pharetra, tellus sit amet congue vulputate, nisi erat iaculis nibh, vitae feugiat sapien ante eget mauris. Cras elit nisl, rhoncus nec iaculis ultricies, feugiat eget sapien. Pellentesque ac felis tellus.</p>
+        <p>Aenean sollicitudin imperdiet arcu, vitae dignissim est posuere id. Duis placerat justo eu nunc interdum ultrices. Phasellus elit dolor, porttitor id consectetur sit amet, posuere id magna.&nbsp;</p>
+        <p><a href="#" class="art-button">Read More</a></p>
+    </div>
+    </div>
+</div>
+<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell" style="width:50%" >
+        <p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p>
+    </div><div class="art-layout-cell" style="width:50%" >
+        <p><br></p>
+    </div>
+    </div>
+</div>
+<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell" style="width:100%" >
+        <h3>Life is Good, Felas!</h3>
+        <p><img width="264" height="191" alt="" src="images/template-content/shutterstock_15290737.jpg" style="float:left;" class=""></p>
+        <p>Suspendisse pharetra auctor pharetra. Nunc a sollicitudin est. Curabitur ullamcorper gravida felis, sit amet scelerisque lorem iaculis sed. Donec vel neque in neque porta venenatis sed sit amet lectus.&nbsp;</p>
+        <p>Vivamus pretium dictum sem vel laoreet. In fringilla pharetra purus, semper vulputate ligula cursus in. Donec at nunc nec dui laoreet porta eu eu ipsum.&nbsp;</p>
+        <p><a href="#" class="art-button">Read More</a></p>
+    </div>
+    </div>
+</div>
+]]>
+        </article>
+        <article id="2" category="2" title="New Page" alias="article-1" path="/player-tools" description="" keywords="">
+            <![CDATA[<p><br/></p>]]>
+        </article>
+        <article id="3" category="2" title="New Page" alias="article-2" path="/player-tools/game-registration" description="" keywords="">
+            <![CDATA[<p><br/></p>]]>
+        </article>
+        <article id="4" category="2" title="New Page" alias="article-3" path="/player-tools/pvp-ranks" description="" keywords="">
+            <![CDATA[<p><br/></p>]]>
+        </article>
+        <article id="5" category="2" title="New Page" alias="article-4" path="/player-tools/guild-ranks" description="" keywords="">
+            <![CDATA[<p><br/></p>]]>
+        </article>
+        <article id="6" category="2" title="New Page" alias="article-5" path="/player-tools/drop-list" description="" keywords="">
+            <![CDATA[<p><br/></p>]]>
+        </article>
+        <article id="7" category="2" title="New Page" alias="article-6" path="/player-tools/change-password" description="" keywords="">
+            <![CDATA[<p><br/></p>]]>
+        </article>
+        <article id="8" category="2" title="New Page" alias="article-7" path="/wiki" description="" keywords="">
+            <![CDATA[<p><br/></p>]]>
+        </article>
+        <article id="9" category="2" title="New Page" alias="article-8" path="/wiki/overview" description="" keywords="">
+            <![CDATA[<p><br/></p>]]>
+        </article>
+        <article id="10" category="2" title="Features" alias="article-9" path="/wiki/overview/features" description="" keywords="">
+            <![CDATA[<p style="margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px; font-weight: 400; font-size: 12px; font-family: Verdana, Geneva, sans-serif; -webkit-font-smoothing: antialiased; text-rendering: optimizelegibility; color: rgb(255, 255, 255); text-align: start; background-color: rgb(0, 0, 0);"><br><br></p>]]>
+        </article>
+        <article id="11" category="2" title="New Page" alias="article-10" path="/wiki/overview/story" description="" keywords="">
+            <![CDATA[<p><br/></p>]]>
+        </article>
+        <article id="12" category="2" title="New Page" alias="article-11" path="/wiki/overview/faqs" description="" keywords="">
+            <![CDATA[<p><br/></p>]]>
+        </article>
+        <article id="13" category="2" title="New Page" alias="article-12" path="/wiki/overview/system-requirements" description="" keywords="">
+            <![CDATA[<p><br/></p>]]>
+        </article>
+        <article id="14" category="2" title="New Page" alias="article-13" path="/wiki/overview/player-ethics" description="" keywords="">
+            <![CDATA[<p><br/></p>]]>
+        </article>
+        <article id="15" category="2" title="New Page 2" alias="article-14" path="/wiki/game-guide" description="" keywords="">
+            <![CDATA[<p><br/></p>]]>
+        </article>
+        <article id="16" category="2" title="New Page" alias="article-15" path="/wiki/game-guide/getting-started" description="" keywords="">
+            <![CDATA[<p><br/></p>]]>
+        </article>
+        <article id="17" category="2" title="New Page" alias="article-16" path="/wiki/game-guide/interface" description="" keywords="">
+            <![CDATA[<p><br/></p>]]>
+        </article>
+        <article id="18" category="2" title="New Page" alias="article-17" path="/wiki/game-guide/races" description="" keywords="">
+            <![CDATA[<p><br/></p>]]>
+        </article>
+        <article id="19" category="2" title="New Page" alias="article-18" path="/wiki/game-guide/classes" description="" keywords="">
+            <![CDATA[<p><br/></p>]]>
+        </article>
+        <article id="20" category="2" title="New Page" alias="article-19" path="/wiki/game-guide/difficulty-modes" description="" keywords="">
+            <![CDATA[<p><br/></p>]]>
+        </article>
+        <article id="21" category="2" title="New Page" alias="article-20" path="/wiki/game-guide/goddess-blessing" description="" keywords="">
+            <![CDATA[<p><br/></p>]]>
+        </article>
+        <article id="22" category="2" title="New Page" alias="article-21" path="/wiki/game-guide/combat" description="" keywords="">
+            <![CDATA[<p><br/></p>]]>
+        </article>
+        <article id="23" category="2" title="New Page" alias="article-22" path="/item-mall" description="" keywords="">
+            <![CDATA[<p><br/></p>]]>
+        </article>
+        <article id="24" category="2" title="New Page" alias="article-23" path="/download" description="" keywords="">
+            <![CDATA[<p><br/></p>]]>
+        </article>
+    </articles>
+    <menus>
+        <menu id="1" name="ct-horizontal-menu" title="Content / Horizontal Menu"/>
+        <menu id="2" name="ct-vertical-menu" title="Content / Vertical Menu"/>
+        <menu id="3" name="ct-special-menu" title="Content / Special Menu"/>
+    </menus>
+    <menuitems>
+        <menuitem id="1" menu="ct-horizontal-menu" title="Home" alias="ct-menu-item-1" path="/home" menutype="hmenu" type="single-article" article="1" showTitle="no" category="1" default="1"/>
+        <menuitem id="2" menu="ct-vertical-menu" title="Home" alias="ct-menu-item-2" path="/home" menutype="vmenu" type="single-article" article="1" showTitle="no" category="1"/>
+        <menuitem id="3" menu="ct-horizontal-menu" title="Player Tools" alias="ct-menu-item-3" path="/player-tools" menutype="hmenu" type="single-article" article="2" showTitle="yes" category="1"/>
+        <menuitem id="4" menu="ct-vertical-menu" title="Player Tools" alias="ct-menu-item-4" path="/player-tools" menutype="vmenu" type="single-article" article="2" showTitle="yes" category="1"/>
+        <menuitem id="5" menu="ct-horizontal-menu" title="Game Registration" alias="ct-menu-item-5" path="/player-tools/game-registration" menutype="hmenu" type="single-article" parent="3" article="3" showTitle="yes" category="1"/>
+        <menuitem id="6" menu="ct-vertical-menu" title="Game Registration" alias="ct-menu-item-6" path="/player-tools/game-registration" menutype="vmenu" type="single-article" parent="4" article="3" showTitle="yes" category="1"/>
+        <menuitem id="7" menu="ct-horizontal-menu" title="PvP Ranks" alias="ct-menu-item-7" path="/player-tools/pvp-ranks" menutype="hmenu" type="single-article" parent="3" article="4" showTitle="yes" category="1"/>
+        <menuitem id="8" menu="ct-vertical-menu" title="PvP Ranks" alias="ct-menu-item-8" path="/player-tools/pvp-ranks" menutype="vmenu" type="single-article" parent="4" article="4" showTitle="yes" category="1"/>
+        <menuitem id="9" menu="ct-horizontal-menu" title="Guild Ranks" alias="ct-menu-item-9" path="/player-tools/guild-ranks" menutype="hmenu" type="single-article" parent="3" article="5" showTitle="yes" category="1"/>
+        <menuitem id="10" menu="ct-vertical-menu" title="Guild Ranks" alias="ct-menu-item-10" path="/player-tools/guild-ranks" menutype="vmenu" type="single-article" parent="4" article="5" showTitle="yes" category="1"/>
+        <menuitem id="11" menu="ct-horizontal-menu" title="Drop List" alias="ct-menu-item-11" path="/player-tools/drop-list" menutype="hmenu" type="single-article" parent="3" article="6" showTitle="yes" category="1"/>
+        <menuitem id="12" menu="ct-vertical-menu" title="Drop List" alias="ct-menu-item-12" path="/player-tools/drop-list" menutype="vmenu" type="single-article" parent="4" article="6" showTitle="yes" category="1"/>
+        <menuitem id="13" menu="ct-horizontal-menu" title="Change Password" alias="ct-menu-item-13" path="/player-tools/change-password" menutype="hmenu" type="single-article" parent="3" article="7" showTitle="yes" category="1"/>
+        <menuitem id="14" menu="ct-vertical-menu" title="Change Password" alias="ct-menu-item-14" path="/player-tools/change-password" menutype="vmenu" type="single-article" parent="4" article="7" showTitle="yes" category="1"/>
+        <menuitem id="15" menu="ct-horizontal-menu" title="Wiki" alias="ct-menu-item-15" path="/wiki" menutype="hmenu" type="single-article" article="8" showTitle="yes" category="1"/>
+        <menuitem id="16" menu="ct-vertical-menu" title="Wiki" alias="ct-menu-item-16" path="/wiki" menutype="vmenu" type="single-article" article="8" showTitle="yes" category="1"/>
+        <menuitem id="17" menu="ct-horizontal-menu" title="Overview" alias="ct-menu-item-17" path="/wiki/overview" menutype="hmenu" type="single-article" parent="15" article="9" showTitle="yes" category="1"/>
+        <menuitem id="18" menu="ct-vertical-menu" title="Overview" alias="ct-menu-item-18" path="/wiki/overview" menutype="vmenu" type="single-article" parent="16" article="9" showTitle="yes" category="1"/>
+        <menuitem id="19" menu="ct-horizontal-menu" title="Features" alias="ct-menu-item-19" path="/wiki/overview/features" menutype="hmenu" type="single-article" parent="17" article="10" showTitle="yes" category="1"/>
+        <menuitem id="20" menu="ct-vertical-menu" title="Features" alias="ct-menu-item-20" path="/wiki/overview/features" menutype="vmenu" type="single-article" parent="18" article="10" showTitle="yes" category="1"/>
+        <menuitem id="21" menu="ct-horizontal-menu" title="Story" alias="ct-menu-item-21" path="/wiki/overview/story" menutype="hmenu" type="single-article" parent="17" article="11" showTitle="yes" category="1"/>
+        <menuitem id="22" menu="ct-vertical-menu" title="Story" alias="ct-menu-item-22" path="/wiki/overview/story" menutype="vmenu" type="single-article" parent="18" article="11" showTitle="yes" category="1"/>
+        <menuitem id="23" menu="ct-horizontal-menu" title="FAQ's" alias="ct-menu-item-23" path="/wiki/overview/faqs" menutype="hmenu" type="single-article" parent="17" article="12" showTitle="yes" category="1"/>
+        <menuitem id="24" menu="ct-vertical-menu" title="FAQ's" alias="ct-menu-item-24" path="/wiki/overview/faqs" menutype="vmenu" type="single-article" parent="18" article="12" showTitle="yes" category="1"/>
+        <menuitem id="25" menu="ct-horizontal-menu" title="System Requirements" alias="ct-menu-item-25" path="/wiki/overview/system-requirements" menutype="hmenu" type="single-article" parent="17" article="13" showTitle="yes" category="1"/>
+        <menuitem id="26" menu="ct-vertical-menu" title="System Requirements" alias="ct-menu-item-26" path="/wiki/overview/system-requirements" menutype="vmenu" type="single-article" parent="18" article="13" showTitle="yes" category="1"/>
+        <menuitem id="27" menu="ct-horizontal-menu" title="Player Ethics" alias="ct-menu-item-27" path="/wiki/overview/player-ethics" menutype="hmenu" type="single-article" parent="17" article="14" showTitle="yes" category="1"/>
+        <menuitem id="28" menu="ct-vertical-menu" title="Player Ethics" alias="ct-menu-item-28" path="/wiki/overview/player-ethics" menutype="vmenu" type="single-article" parent="18" article="14" showTitle="yes" category="1"/>
+        <menuitem id="29" menu="ct-horizontal-menu" title="Game Guide" alias="ct-menu-item-29" path="/wiki/game-guide" menutype="hmenu" type="single-article" parent="15" article="15" showTitle="yes" category="1"/>
+        <menuitem id="30" menu="ct-vertical-menu" title="Game Guide" alias="ct-menu-item-30" path="/wiki/game-guide" menutype="vmenu" type="single-article" parent="16" article="15" showTitle="yes" category="1"/>
+        <menuitem id="31" menu="ct-horizontal-menu" title="Getting Started" alias="ct-menu-item-31" path="/wiki/game-guide/getting-started" menutype="hmenu" type="single-article" parent="29" article="16" showTitle="yes" category="1"/>
+        <menuitem id="32" menu="ct-vertical-menu" title="Getting Started" alias="ct-menu-item-32" path="/wiki/game-guide/getting-started" menutype="vmenu" type="single-article" parent="30" article="16" showTitle="yes" category="1"/>
+        <menuitem id="33" menu="ct-horizontal-menu" title="Interface" alias="ct-menu-item-33" path="/wiki/game-guide/interface" menutype="hmenu" type="single-article" parent="29" article="17" showTitle="yes" category="1"/>
+        <menuitem id="34" menu="ct-vertical-menu" title="Interface" alias="ct-menu-item-34" path="/wiki/game-guide/interface" menutype="vmenu" type="single-article" parent="30" article="17" showTitle="yes" category="1"/>
+        <menuitem id="35" menu="ct-horizontal-menu" title="Races" alias="ct-menu-item-35" path="/wiki/game-guide/races" menutype="hmenu" type="single-article" parent="29" article="18" showTitle="yes" category="1"/>
+        <menuitem id="36" menu="ct-vertical-menu" title="Races" alias="ct-menu-item-36" path="/wiki/game-guide/races" menutype="vmenu" type="single-article" parent="30" article="18" showTitle="yes" category="1"/>
+        <menuitem id="37" menu="ct-horizontal-menu" title="Classes" alias="ct-menu-item-37" path="/wiki/game-guide/classes" menutype="hmenu" type="single-article" parent="29" article="19" showTitle="yes" category="1"/>
+        <menuitem id="38" menu="ct-vertical-menu" title="Classes" alias="ct-menu-item-38" path="/wiki/game-guide/classes" menutype="vmenu" type="single-article" parent="30" article="19" showTitle="yes" category="1"/>
+        <menuitem id="39" menu="ct-horizontal-menu" title="Difficulty Modes" alias="ct-menu-item-39" path="/wiki/game-guide/difficulty-modes" menutype="hmenu" type="single-article" parent="29" article="20" showTitle="yes" category="1"/>
+        <menuitem id="40" menu="ct-vertical-menu" title="Difficulty Modes" alias="ct-menu-item-40" path="/wiki/game-guide/difficulty-modes" menutype="vmenu" type="single-article" parent="30" article="20" showTitle="yes" category="1"/>
+        <menuitem id="41" menu="ct-horizontal-menu" title="Goddess Blessing" alias="ct-menu-item-41" path="/wiki/game-guide/goddess-blessing" menutype="hmenu" type="single-article" parent="29" article="21" showTitle="yes" category="1"/>
+        <menuitem id="42" menu="ct-vertical-menu" title="Goddess Blessing" alias="ct-menu-item-42" path="/wiki/game-guide/goddess-blessing" menutype="vmenu" type="single-article" parent="30" article="21" showTitle="yes" category="1"/>
+        <menuitem id="43" menu="ct-horizontal-menu" title="Combat" alias="ct-menu-item-43" path="/wiki/game-guide/combat" menutype="hmenu" type="single-article" parent="29" article="22" showTitle="yes" category="1"/>
+        <menuitem id="44" menu="ct-vertical-menu" title="Combat" alias="ct-menu-item-44" path="/wiki/game-guide/combat" menutype="vmenu" type="single-article" parent="30" article="22" showTitle="yes" category="1"/>
+        <menuitem id="45" menu="ct-horizontal-menu" title="Item Mall" alias="ct-menu-item-45" path="/item-mall" menutype="hmenu" type="single-article" article="23" showTitle="yes" category="1"/>
+        <menuitem id="46" menu="ct-vertical-menu" title="Item Mall" alias="ct-menu-item-46" path="/item-mall" menutype="vmenu" type="single-article" article="23" showTitle="yes" category="1"/>
+        <menuitem id="47" menu="ct-horizontal-menu" title="Download" alias="ct-menu-item-47" path="/download" menutype="hmenu" type="single-article" article="24" showTitle="yes" category="1"/>
+        <menuitem id="48" menu="ct-vertical-menu" title="Download" alias="ct-menu-item-48" path="/download" menutype="vmenu" type="single-article" article="24" showTitle="yes" category="1"/>
+        <menuitem id="49" menu="ct-special-menu" title="Special Blog Page" alias="ct-menu-item-49" menutype="menu" type="category-blog-layout" category="1"/>
+        <menuitem id="50" menu="ct-special-menu" title="Special Single Page" alias="ct-menu-item-50" menutype="menu" type="single-article" showTitle="yes" category="1"/>
+    </menuitems>
+    <modules>
+        <module id="1" title="Content / Horizontal Menu" showTitle="true" position="position-1" type="menu" menu="ct-horizontal-menu"/>
+        <module id="2" title="Search" showTitle="true" position="position-7" type="custom">
+            <![CDATA[<div>
+  <form action="#" class="art-search" method="get" name="searchform">
+    <input type="text" value="" name="s" />
+    <input type="submit" value="Search" name="search" class="art-search-button" />
+  </form>
+</div>]]>
+        </module>
+        <module id="3" title="Login Form" showTitle="true" position="position-7" type="login">
+            <![CDATA[<form action="#" method="post" name="login" id="form-login">
+  <fieldset class="input" style="border: 0 none;">
+    <p id="form-login-username">
+      <label for="modlgn_username">Username</label>
+      <br />
+      <input id="modlgn_username" type="text" name="username" class="inputbox" alt="username" style="width:100%" />
+    </p>
+    <p id="form-login-password">
+      <label for="modlgn_passwd">Password</label>
+      <br />
+      <input id="modlgn_passwd" type="password" name="passwd" class="inputbox" size="18" alt="password" style="width:100%" />
+    </p>
+    <p id="form-login-remember">
+      <label class="art-checkbox">
+      <input type="checkbox" id="modlgn_remember" name="remember" value="yes" alt="Remember Me" />Remember Me
+      </label>
+    </p>
+    <input type="submit" value="Login" name="Submit" class="art-button" />    
+  </fieldset>
+  <ul>
+    <li>
+      <a href="#">Forgot your password?</a>
+    </li>
+    <li>
+      <a href="#">Forgot your username?</a>
+    </li>
+    <li>
+      <a href="#">Create an account</a>
+    </li>
+  </ul>
+</form>]]>
+        </module>
+        <module id="4" title="Facebook" showTitle="true" position="position-7" type="custom">
+            <![CDATA[<div class="fb-page" data-href="https://www.facebook.com/ShaiyaRebellion/" data-tabs="timeline" data-width="200" data-height="300" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/ShaiyaRebellion/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ShaiyaRebellion/">Shaiya Rebellion</a></blockquote></div>]]>
+        </module>
+        <module id="5" title="News" showTitle="true" position="position-7" type="custom">
+            <![CDATA[<p>some news etc etc etc etc etc&nbsp;</p>]]>
+        </module>
+        <module id="6" title="Discord" showTitle="true" position="position-7" type="custom">
+            <![CDATA[<p><br></p>]]>
+        </module>
+        <module id="7" title="Footer" showTitle="false" position="position-27" type="custom">
+            <![CDATA[
+<p>Copyright © 2011. All Rights Reserved.</p>
+<br>
+<br>
+]]>
+        </module>
+    </modules>
+    <parameters/>
+</data>
