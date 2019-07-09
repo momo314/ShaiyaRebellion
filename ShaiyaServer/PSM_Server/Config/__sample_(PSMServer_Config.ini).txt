@@ -1,0 +1,35 @@
+[Main]
+  <ip_session> = 127.0.0.1
+  <ip_userlog> = 127.0.0.1
+  <db_user>    = 127.0.0.1, PS_UserData, account, encrypted password
+
+[Login_001]
+  <sv_maxuser>  = 5000
+  <ip_login>    = 127.0.0.1
+
+[GameGroup_001]
+  <sv_maxuser>     = 3000
+  <sv_gameversion> = 0x06112300
+  <sv_gamename>    = game server name
+  <sv_publicip>    = 127.0.0.1
+  <ip_game>    = 127.0.0.1
+  <ip_dbagent> = 127.0.0.1
+  <ip_gamelog> = 127.0.0.1
+  <db_game>    = 127.0.0.1, PS_GameData, account, encrypted password
+  <db_gamedef> = 127.0.0.1, PS_GameDefs, account, encrypted password
+  <db_gamelog> = 127.0.0.1, PS_GameLog, account, encrypted password
+  <db_chatlog> = 127.0.0.1, PS_ChatLog, account, encrypted password
+
+[GameGroup_002]
+  <sv_maxuser>     = 3000
+  <sv_gameversion> = 0x06112300
+  <sv_gamename>    = game server name
+  <sv_publicip>    = 127.0.0.1
+  <ip_game>    = 127.0.0.1
+  <ip_dbagent> = 127.0.0.1
+  <ip_gamelog> = 127.0.0.1
+  <db_game>    = 127.0.0.1, PS_GameData, account, encrypted password
+  <db_gamedef> = 127.0.0.1, PS_GameDefs, account, encrypted password
+  <db_gamelog> = 127.0.0.1, PS_GameLog, account, encrypted password
+  <db_chatlog> = 127.0.0.1, PS_ChatLog, account, encrypted password
+
