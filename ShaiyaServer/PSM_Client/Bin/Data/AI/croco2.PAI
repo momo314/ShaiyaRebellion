@@ -1,0 +1,1175 @@
+BehaviorsCount : 5
+BehaviorName : scorlp1
+BehaviorDesc : "음..."
+StateCount : 8
+StateName : init
+StateDesc : ""
+StatePos : 201 46
+StateSize : 40 36
+StateEnter : Empty
+StateUpdate : Empty
+StateExit : Empty
+StateType : 1
+StatebStart : 1
+StatebEnd : 0
+StartConditionCount : 0
+UpdateConditionCount : 0
+ExitConditionCount : 0
+StateName : move
+StateDesc : ""
+StatePos : 35 266
+StateSize : 56 36
+StateEnter : MoveRandom
+StateUpdate : MoveRandom
+StateExit : Empty
+StateType : 1
+StatebStart : 0
+StatebEnd : 0
+StartConditionCount : 1
+ConditionType : 0
+ConditionExp : "dwTime=GetCurrentTime()"
+UpdateConditionCount : 0
+ExitConditionCount : 0
+StateName : idle
+StateDesc : ""
+StatePos : 432 71
+StateSize : 44 36
+StateEnter : Empty
+StateUpdate : Empty
+StateExit : Empty
+StateType : 1
+StatebStart : 0
+StatebEnd : 0
+StartConditionCount : 0
+UpdateConditionCount : 0
+ExitConditionCount : 0
+StateName : battle
+StateDesc : ""
+StatePos : 274 352
+StateSize : 56 36
+StateEnter : Battle
+StateUpdate : Battle
+StateExit : Empty
+StateType : 1
+StatebStart : 0
+StatebEnd : 0
+StartConditionCount : 2
+ConditionType : 0
+ConditionExp : "dwTime = GetCurrentTime()"
+ConditionType : 0
+ConditionExp : "Say("흔적도 없이 가루로 만들어 주마")"
+UpdateConditionCount : 0
+ExitConditionCount : 0
+StateName : schattackUser
+StateDesc : "더 많은 공격 한놈을 검사하여 userid에 넣는다"
+StatePos : 698 159
+StateSize : 112 36
+StateEnter : Empty
+StateUpdate : Empty
+StateExit : Empty
+StateType : 1
+StatebStart : 0
+StatebEnd : 0
+StartConditionCount : 1
+ConditionType : 0
+ConditionExp : "UserID = IsExistUserAttackPoint()"
+UpdateConditionCount : 0
+ExitConditionCount : 0
+StateName : selectuser
+StateDesc : ""
+StatePos : 596 460
+StateSize : 88 36
+StateEnter : Empty
+StateUpdate : Empty
+StateExit : Empty
+StateType : 1
+StatebStart : 0
+StatebEnd : 0
+StartConditionCount : 2
+ConditionType : 0
+ConditionExp : "SelectUser( UserID )"
+ConditionType : 0
+ConditionExp : "Say("나를 화나게 하다니 배짱 한 번 좋구나!")"
+UpdateConditionCount : 0
+ExitConditionCount : 0
+StateName : applyvalue
+StateDesc : "능력치 증가"
+StatePos : 131 617
+StateSize : 92 36
+StateEnter : Empty
+StateUpdate : Empty
+StateExit : Empty
+StateType : 1
+StatebStart : 0
+StatebEnd : 0
+StartConditionCount : 4
+ConditionType : 0
+ConditionExp : "nCount = 1"
+ConditionType : 0
+ConditionExp : "SetStr( 2.0 )"
+ConditionType : 0
+ConditionExp : "Say( "분노는 나를 더욱 강하게 해주지. 나를 화나게 한 것을 후회하게 될 것이다." )"
+ConditionType : 0
+ConditionExp : "SetAttackSpeed( 2.0 )"
+UpdateConditionCount : 0
+ExitConditionCount : 0
+StateName : runaway
+StateDesc : "hp10% 남으면 도망. 도망갈 때는 걸어가지 않고 뛰어간다."
+StatePos : 446 632
+StateSize : 75 36
+StateEnter : MoveRandomRun
+StateUpdate : MoveRandomRun
+StateExit : Empty
+StateType : 1
+StatebStart : 0
+StatebEnd : 0
+StartConditionCount : 2
+ConditionType : 0
+ConditionExp : "nCount = 2"
+ConditionType : 0
+ConditionExp : "SetRunawayPosition()"
+UpdateConditionCount : 0
+ExitConditionCount : 0
+TransitionCount : 14
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 231 56 422 76
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : init
+TransitionEnd : idle
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 1
+ConditionType : 0
+ConditionExp : "dwTime=GetCurrentTime()"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 434 97 301 342
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : idle
+TransitionEnd : battle
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 2
+ConditionType : 1
+ConditionExp : "IsAttackMe() == 1"
+ConditionType : 1
+ConditionExp : "nCount == 0"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 422 92 81 263
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : idle
+TransitionEnd : move
+TransitionRefNumber : 2
+TransitionRecursive : 0
+ConditionCount : 1
+ConditionType : 1
+ConditionExp : "GetCurrentTime()-dwTime > 5000"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 81 284 264 349
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : move
+TransitionEnd : battle
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 2
+ConditionType : 1
+ConditionExp : "IsAttackMe() == 1"
+ConditionType : 0
+ConditionExp : "nCount = 0"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 59 256 192 72
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : move
+TransitionEnd : init
+TransitionRefNumber : 2
+TransitionRecursive : 0
+ConditionCount : 1
+ConditionType : 1
+ConditionExp : "GetCurrentTime()-dwTime > 3000"
+TransitionPos : 299 392
+TransitionPosForTrans : 297 378 455 622
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : battle
+TransitionEnd : runaway
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 2
+ConditionType : 1
+ConditionExp : "GetEnergyPercent() <= 0.1"
+ConditionType : 1
+ConditionExp : "nCount < 2"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 737 185 636 450
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : schattackUser
+TransitionEnd : selectuser
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 1
+ConditionType : 0
+ConditionExp : "UserID <> 0"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 586 453 320 368
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : selectuser
+TransitionEnd : battle
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 0
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 713 185 320 353
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : schattackUser
+TransitionEnd : battle
+TransitionRefNumber : 2
+TransitionRecursive : 0
+ConditionCount : 0
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 295 378 187 607
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : battle
+TransitionEnd : applyvalue
+TransitionRefNumber : 2
+TransitionRecursive : 0
+ConditionCount : 2
+ConditionType : 1
+ConditionExp : "GetEnergyPercent() <= 0.4"
+ConditionType : 1
+ConditionExp : "nCount == 0"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 169 607 277 378
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : applyvalue
+TransitionEnd : battle
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 0
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 316 342 688 183
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : battle
+TransitionEnd : schattackUser
+TransitionRefNumber : 3
+TransitionRecursive : 0
+ConditionCount : 1
+ConditionType : 1
+ConditionExp : "GetCurrentTime() - dwTime > 10000"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 467 622 309 378
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : runaway
+TransitionEnd : battle
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 1
+ConditionType : 1
+ConditionExp : "GetDistanceFromExit() >= 20"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 305 342 231 61
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : battle
+TransitionEnd : init
+TransitionRefNumber : 4
+TransitionRecursive : 0
+ConditionCount : 1
+ConditionType : 1
+ConditionExp : "IsBattle() == 0"
+BehaviorName : Croco1
+BehaviorDesc : "악어"
+StateCount : 7
+StateName : init
+StateDesc : ""
+StatePos : 301 129
+StateSize : 40 36
+StateEnter : Empty
+StateUpdate : Empty
+StateExit : Empty
+StateType : 1
+StatebStart : 1
+StatebEnd : 0
+StartConditionCount : 0
+UpdateConditionCount : 0
+ExitConditionCount : 0
+StateName : idle
+StateDesc : ""
+StatePos : 501 272
+StateSize : 44 36
+StateEnter : Empty
+StateUpdate : Empty
+StateExit : Empty
+StateType : 1
+StatebStart : 0
+StatebEnd : 0
+StartConditionCount : 0
+UpdateConditionCount : 0
+ExitConditionCount : 0
+StateName : move
+StateDesc : ""
+StatePos : 101 271
+StateSize : 56 36
+StateEnter : MoveRandom
+StateUpdate : MoveRandom
+StateExit : Empty
+StateType : 1
+StatebStart : 0
+StatebEnd : 0
+StartConditionCount : 1
+ConditionType : 0
+ConditionExp : "dwTime=GetCurrentTime()"
+UpdateConditionCount : 0
+ExitConditionCount : 0
+StateName : battle
+StateDesc : ""
+StatePos : 291 470
+StateSize : 56 36
+StateEnter : Battle
+StateUpdate : Battle
+StateExit : Empty
+StateType : 1
+StatebStart : 0
+StatebEnd : 0
+StartConditionCount : 0
+UpdateConditionCount : 0
+ExitConditionCount : 0
+StateName : BeStrong
+StateDesc : ""
+StatePos : 279 740
+StateSize : 80 36
+StateEnter : Empty
+StateUpdate : Empty
+StateExit : Empty
+StateType : 1
+StatebStart : 0
+StatebEnd : 0
+StartConditionCount : 5
+ConditionType : 0
+ConditionExp : "UserID=GetCurrentUser()"
+ConditionType : 0
+ConditionExp : "AttackUser(UserID, 7.0)"
+ConditionType : 0
+ConditionExp : "nCount = 1"
+ConditionType : 0
+ConditionExp : "SetStr( 1.5 )"
+ConditionType : 0
+ConditionExp : "Say("어리석은 족속들!! 나를 화나게 하다니!!")"
+UpdateConditionCount : 0
+ExitConditionCount : 0
+StateName : determineaction
+StateDesc : ""
+StatePos : 463 578
+StateSize : 124 36
+StateEnter : Empty
+StateUpdate : Empty
+StateExit : Empty
+StateType : 1
+StatebStart : 0
+StatebEnd : 0
+StartConditionCount : 1
+ConditionType : 0
+ConditionExp : "TempNumber = GetRandInt()"
+UpdateConditionCount : 0
+ExitConditionCount : 0
+StateName : MonsterSay
+StateDesc : ""
+StatePos : 79 470
+StateSize : 98 36
+StateEnter : Empty
+StateUpdate : Empty
+StateExit : Empty
+StateType : 1
+StatebStart : 0
+StatebEnd : 0
+StartConditionCount : 1
+ConditionType : 0
+ConditionExp : "Say("죽고 싶어 환장을 했구나")"
+UpdateConditionCount : 0
+ExitConditionCount : 0
+TransitionCount : 13
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 331 151 491 264
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : init
+TransitionEnd : idle
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 1
+ConditionType : 0
+ConditionExp : "dwTime=GetCurrentTime()"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 491 291 153 460
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : idle
+TransitionEnd : MonsterSay
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 2
+ConditionType : 1
+ConditionExp : "IsFirstAttack() == 1"
+ConditionType : 1
+ConditionExp : "nCount == 0"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 491 294 159 460
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : idle
+TransitionEnd : MonsterSay
+TransitionRefNumber : 2
+TransitionRecursive : 0
+ConditionCount : 2
+ConditionType : 1
+ConditionExp : "IsAttackMe() == 1"
+ConditionType : 1
+ConditionExp : "nCount == 0"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 118 297 118 460
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : move
+TransitionEnd : MonsterSay
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 2
+ConditionType : 1
+ConditionExp : "IsFirstAttack() == 1"
+ConditionType : 1
+ConditionExp : "nCount == 0"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 124 297 124 460
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : move
+TransitionEnd : MonsterSay
+TransitionRefNumber : 2
+TransitionRecursive : 0
+ConditionCount : 2
+ConditionType : 1
+ConditionExp : "IsAttackMe() == 1"
+ConditionType : 1
+ConditionExp : "nCount == 0"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 337 495 474 568
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : battle
+TransitionEnd : determineaction
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 2
+ConditionType : 1
+ConditionExp : "GetEnergyPercent() <= 0.5"
+ConditionType : 1
+ConditionExp : "nCount == 0"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 309 730 309 496
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : BeStrong
+TransitionEnd : battle
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 0
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 303 460 304 155
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : battle
+TransitionEnd : init
+TransitionRefNumber : 2
+TransitionRecursive : 0
+ConditionCount : 1
+ConditionType : 1
+ConditionExp : "IsBattle() == 0"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 492 604 331 730
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : determineaction
+TransitionEnd : BeStrong
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 1
+ConditionType : 1
+ConditionExp : "TempNumber > 60"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 492 568 337 486
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : determineaction
+TransitionEnd : battle
+TransitionRefNumber : 2
+TransitionRecursive : 0
+ConditionCount : 1
+ConditionType : 1
+ConditionExp : "nCount == 1"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 491 279 147 279
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : idle
+TransitionEnd : move
+TransitionRefNumber : 3
+TransitionRecursive : 0
+ConditionCount : 1
+ConditionType : 1
+ConditionExp : "GetCurrentTime()-dwTime > 5000"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 131 261 291 142
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : move
+TransitionEnd : init
+TransitionRefNumber : 3
+TransitionRecursive : 0
+ConditionCount : 1
+ConditionType : 1
+ConditionExp : "GetCurrentTime()-dwTime > 3000"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 167 478 281 478
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : MonsterSay
+TransitionEnd : battle
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 0
+BehaviorName : Troll1
+BehaviorDesc : "트럴"
+StateCount : 5
+StateName : Init
+StateDesc : ""
+StatePos : 329 48
+StateSize : 40 36
+StateEnter : Empty
+StateUpdate : Empty
+StateExit : Empty
+StateType : 1
+StatebStart : 1
+StatebEnd : 0
+StartConditionCount : 0
+UpdateConditionCount : 0
+ExitConditionCount : 0
+StateName : Idle
+StateDesc : ""
+StatePos : 488 173
+StateSize : 44 36
+StateEnter : Empty
+StateUpdate : Empty
+StateExit : Empty
+StateType : 1
+StatebStart : 0
+StatebEnd : 0
+StartConditionCount : 0
+UpdateConditionCount : 0
+ExitConditionCount : 0
+StateName : Move
+StateDesc : ""
+StatePos : 186 172
+StateSize : 56 36
+StateEnter : MoveRandom
+StateUpdate : MoveRandom
+StateExit : Empty
+StateType : 1
+StatebStart : 0
+StatebEnd : 0
+StartConditionCount : 1
+ConditionType : 0
+ConditionExp : "dwTime=GetCurrentTime()"
+UpdateConditionCount : 0
+ExitConditionCount : 0
+StateName : Battle
+StateDesc : ""
+StatePos : 320 300
+StateSize : 58 36
+StateEnter : Battle
+StateUpdate : Battle
+StateExit : Empty
+StateType : 1
+StatebStart : 0
+StatebEnd : 0
+StartConditionCount : 0
+UpdateConditionCount : 0
+ExitConditionCount : 0
+StateName : BeStrong
+StateDesc : ""
+StatePos : 308 510
+StateSize : 80 36
+StateEnter : Empty
+StateUpdate : Empty
+StateExit : Empty
+StateType : 1
+StatebStart : 0
+StatebEnd : 0
+StartConditionCount : 2
+ConditionType : 0
+ConditionExp : "SetRec(2.0)"
+ConditionType : 1
+ConditionExp : "nCount == 1"
+UpdateConditionCount : 0
+ExitConditionCount : 0
+TransitionCount : 10
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 359 71 478 163
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : Init
+TransitionEnd : Idle
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 1
+ConditionType : 0
+ConditionExp : "dwTime=GetCurrentTime()"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 478 198 361 290
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : Idle
+TransitionEnd : Battle
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 2
+ConditionType : 1
+ConditionExp : "IsFirstAttack() == 1"
+ConditionType : 1
+ConditionExp : "nCount == 0"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 483 199 367 290
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : Idle
+TransitionEnd : Battle
+TransitionRefNumber : 2
+TransitionRecursive : 0
+ConditionCount : 2
+ConditionType : 1
+ConditionExp : "IsAttackMe() == 1"
+ConditionType : 1
+ConditionExp : "nCount == 0"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 478 180 232 180
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : Idle
+TransitionEnd : Move
+TransitionRefNumber : 3
+TransitionRecursive : 0
+ConditionCount : 1
+ConditionType : 1
+ConditionExp : "GetCurrentTime()-dwTime > 5000"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 222 198 320 290
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : Move
+TransitionEnd : Battle
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 2
+ConditionType : 1
+ConditionExp : "IsFirstAttack() == 1"
+ConditionType : 1
+ConditionExp : "nCount == 0"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 216 198 314 290
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : Move
+TransitionEnd : Battle
+TransitionRefNumber : 2
+TransitionRecursive : 0
+ConditionCount : 2
+ConditionType : 1
+ConditionExp : "IsAttackMe() == 1"
+ConditionType : 1
+ConditionExp : "nCount == 0"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 211 162 319 63
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : Move
+TransitionEnd : Init
+TransitionRefNumber : 3
+TransitionRecursive : 0
+ConditionCount : 1
+ConditionType : 1
+ConditionExp : "GetCurrentTime()-dwTime > 3000"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 344 326 344 500
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : Battle
+TransitionEnd : BeStrong
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 2
+ConditionType : 1
+ConditionExp : "GetEnergyPercent() <= 0.15"
+ConditionType : 1
+ConditionExp : "nCount == 0"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 332 500 332 326
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : BeStrong
+TransitionEnd : Battle
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 0
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 345 290 345 74
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : Battle
+TransitionEnd : Init
+TransitionRefNumber : 2
+TransitionRecursive : 0
+ConditionCount : 1
+ConditionType : 1
+ConditionExp : "IsBattle() == 0"
+BehaviorName : Spink1
+BehaviorDesc : "스핑크스~~~"
+StateCount : 5
+StateName : Init
+StateDesc : ""
+StatePos : 281 27
+StateSize : 40 36
+StateEnter : Empty
+StateUpdate : Empty
+StateExit : Empty
+StateType : 1
+StatebStart : 1
+StatebEnd : 0
+StartConditionCount : 0
+UpdateConditionCount : 0
+ExitConditionCount : 0
+StateName : Move
+StateDesc : ""
+StatePos : 163 153
+StateSize : 56 36
+StateEnter : MoveRandom
+StateUpdate : MoveRandom
+StateExit : Empty
+StateType : 1
+StatebStart : 0
+StatebEnd : 0
+StartConditionCount : 1
+ConditionType : 0
+ConditionExp : "dwTime=GetCurrentTime()"
+UpdateConditionCount : 0
+ExitConditionCount : 0
+StateName : Idle
+StateDesc : ""
+StatePos : 406 152
+StateSize : 44 36
+StateEnter : Empty
+StateUpdate : Empty
+StateExit : Empty
+StateType : 1
+StatebStart : 0
+StatebEnd : 0
+StartConditionCount : 0
+UpdateConditionCount : 0
+ExitConditionCount : 0
+StateName : Battle
+StateDesc : ""
+StatePos : 279 303
+StateSize : 58 36
+StateEnter : Battle
+StateUpdate : Battle
+StateExit : Empty
+StateType : 1
+StatebStart : 0
+StatebEnd : 0
+StartConditionCount : 0
+UpdateConditionCount : 0
+ExitConditionCount : 0
+StateName : BeStrong
+StateDesc : ""
+StatePos : 267 479
+StateSize : 80 36
+StateEnter : Empty
+StateUpdate : Empty
+StateExit : Empty
+StateType : 1
+StatebStart : 0
+StatebEnd : 0
+StartConditionCount : 3
+ConditionType : 0
+ConditionExp : "SetStr(2.0)"
+ConditionType : 0
+ConditionExp : "SetRec(0.5)"
+ConditionType : 1
+ConditionExp : "nCount == 1"
+UpdateConditionCount : 0
+ExitConditionCount : 0
+TransitionCount : 10
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 309 53 399 142
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : Init
+TransitionEnd : Idle
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 1
+ConditionType : 0
+ConditionExp : "dwTime=GetCurrentTime()"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 403 178 312 293
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : Idle
+TransitionEnd : Battle
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 2
+ConditionType : 1
+ConditionExp : "IsFirstAttack() == 1"
+ConditionType : 1
+ConditionExp : "nCount == 0"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 409 178 318 293
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : Idle
+TransitionEnd : Battle
+TransitionRefNumber : 2
+TransitionRecursive : 0
+ConditionCount : 2
+ConditionType : 1
+ConditionExp : "IsAttackMe() == 1"
+ConditionType : 1
+ConditionExp : "nCount == 0"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 396 160 209 160
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : Idle
+TransitionEnd : Move
+TransitionRefNumber : 3
+TransitionRecursive : 0
+ConditionCount : 1
+ConditionType : 1
+ConditionExp : "GetCurrentTime()-dwTime > 5000"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 195 179 283 293
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : Move
+TransitionEnd : Battle
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 2
+ConditionType : 1
+ConditionExp : "IsFirstAttack() == 1"
+ConditionType : 1
+ConditionExp : "nCount == 0"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 189 179 277 293
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : Move
+TransitionEnd : Battle
+TransitionRefNumber : 2
+TransitionRecursive : 0
+ConditionCount : 2
+ConditionType : 1
+ConditionExp : "IsAttackMe() == 1"
+ConditionType : 1
+ConditionExp : "nCount == 0"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 184 143 271 44
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : Move
+TransitionEnd : Init
+TransitionRefNumber : 3
+TransitionRecursive : 0
+ConditionCount : 1
+ConditionType : 1
+ConditionExp : "GetCurrentTime()-dwTime < 3000"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 303 329 303 469
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : Battle
+TransitionEnd : BeStrong
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 2
+ConditionType : 1
+ConditionExp : "GetEnergyPercent() <= 0.4"
+ConditionType : 1
+ConditionExp : "nCount == 0"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 291 469 291 329
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : BeStrong
+TransitionEnd : Battle
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 0
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 303 293 297 53
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : Battle
+TransitionEnd : Init
+TransitionRefNumber : 2
+TransitionRecursive : 0
+ConditionCount : 1
+ConditionType : 1
+ConditionExp : "IsBattle() == 0"
+BehaviorName : GoldenPig
+BehaviorDesc : "이벤트 전용 황금돼지/지속적으로 idle과 move만을 반복하며, 근접 공격을 받았을 경우 주변 10m 내의 거리에 보물상자 몬스터 1개를 소환합니다. 이 몹은 전투 상태에 있을 때 실제로 유저를 때리지 않기 때문에 IsBattle은 언제나 0이 나오게 됩니다. 그렇기 때문에 다른 함수를 사용합니다."
+StateCount : 8
+StateName : Init
+StateDesc : "계속 실행된다. 한번만 실행하면 되기 때문에 returninit에서 초기화를 한다."
+StatePos : 211 20
+StateSize : 40 36
+StateEnter : Empty
+StateUpdate : Empty
+StateExit : Empty
+StateType : 1
+StatebStart : 1
+StatebEnd : 0
+StartConditionCount : 1
+ConditionType : 0
+ConditionExp : "SetEnableOnlyAttackType(0)"
+UpdateConditionCount : 0
+ExitConditionCount : 0
+StateName : Move
+StateDesc : "움직인다."
+StatePos : 90 206
+StateSize : 56 36
+StateEnter : MoveRandom
+StateUpdate : MoveRandom
+StateExit : Empty
+StateType : 1
+StatebStart : 0
+StatebEnd : 0
+StartConditionCount : 1
+ConditionType : 0
+ConditionExp : "dwTime=GetCurrentTime()"
+UpdateConditionCount : 0
+ExitConditionCount : 0
+StateName : Idle
+StateDesc : "idle상태에서 빈둥 거리다가 움직이거나 전투 상태에 돌입한다. "
+StatePos : 499 207
+StateSize : 44 36
+StateEnter : Empty
+StateUpdate : Empty
+StateExit : Empty
+StateType : 1
+StatebStart : 0
+StatebEnd : 0
+StartConditionCount : 0
+UpdateConditionCount : 0
+ExitConditionCount : 0
+StateName : SummonMonster
+StateDesc : ""
+StatePos : 260 544
+StateSize : 130 36
+StateEnter : Empty
+StateUpdate : Empty
+StateExit : Empty
+StateType : 1
+StatebStart : 0
+StatebEnd : 0
+StartConditionCount : 1
+ConditionType : 0
+ConditionExp : "SetSummonMob(1967, 10.0)"
+UpdateConditionCount : 0
+ExitConditionCount : 0
+StateName : Battle
+StateDesc : ""
+StatePos : 697 244
+StateSize : 58 36
+StateEnter : MoveRandomRun
+StateUpdate : MoveRandomRun
+StateExit : Empty
+StateType : 1
+StatebStart : 0
+StatebEnd : 0
+StartConditionCount : 0
+UpdateConditionCount : 0
+ExitConditionCount : 0
+StateName : IsFirst
+StateDesc : ""
+StatePos : 562 459
+StateSize : 61 36
+StateEnter : Empty
+StateUpdate : Empty
+StateExit : Empty
+StateType : 1
+StatebStart : 0
+StatebEnd : 0
+StartConditionCount : 0
+UpdateConditionCount : 0
+ExitConditionCount : 0
+StateName : settime
+StateDesc : ""
+StatePos : 292 364
+StateSize : 68 36
+StateEnter : Empty
+StateUpdate : Empty
+StateExit : Empty
+StateType : 1
+StatebStart : 0
+StatebEnd : 0
+StartConditionCount : 1
+ConditionType : 0
+ConditionExp : "dwTime = GetCurrentTime()"
+UpdateConditionCount : 0
+ExitConditionCount : 0
+StateName : returninit
+StateDesc : "이곳에서 변수 초기화에 관련된 작업을 한다."
+StatePos : 373 82
+StateSize : 78 36
+StateEnter : Empty
+StateUpdate : Empty
+StateExit : Empty
+StateType : 1
+StatebStart : 0
+StatebEnd : 0
+StartConditionCount : 0
+UpdateConditionCount : 0
+ExitConditionCount : 0
+TransitionCount : 12
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 417 108 495 197
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : returninit
+TransitionEnd : Idle
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 1
+ConditionType : 0
+ConditionExp : "dwTime=GetCurrentTime()"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 489 232 338 354
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : Idle
+TransitionEnd : settime
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 1
+ConditionType : 1
+ConditionExp : "IsAttackMe() == 1"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 131 232 292 354
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : Move
+TransitionEnd : settime
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 1
+ConditionType : 1
+ConditionExp : "IsAttackMe() == 1"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 136 199 363 103
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : Move
+TransitionEnd : returninit
+TransitionRefNumber : 2
+TransitionRecursive : 0
+ConditionCount : 0
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 489 214 136 214
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : Idle
+TransitionEnd : Move
+TransitionRefNumber : 2
+TransitionRecursive : 0
+ConditionCount : 1
+ConditionType : 1
+ConditionExp : "GetCurrentTime()-dwTime > 2000"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 710 270 599 449
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : Battle
+TransitionEnd : IsFirst
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 1
+ConditionType : 1
+ConditionExp : "IsAttackMeAtMoment() == 1"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 315 534 315 390
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : SummonMonster
+TransitionEnd : settime
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 0
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 552 476 371 534
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : IsFirst
+TransitionEnd : SummonMonster
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 1
+ConditionType : 1
+ConditionExp : "GetCurrentTime() - dwTime > 7000"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 350 361 687 260
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : settime
+TransitionEnd : Battle
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 0
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 581 449 692 270
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : IsFirst
+TransitionEnd : Battle
+TransitionRefNumber : 2
+TransitionRecursive : 0
+ConditionCount : 0
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 241 34 363 76
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : Init
+TransitionEnd : returninit
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 0
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 687 234 441 107
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : Battle
+TransitionEnd : returninit
+TransitionRefNumber : 2
+TransitionRecursive : 0
+ConditionCount : 1
+ConditionType : 1
+ConditionExp : "IsBattle() == 0"

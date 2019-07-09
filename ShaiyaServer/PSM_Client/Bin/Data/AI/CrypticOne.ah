@@ -1,0 +1,11 @@
+Init,Empty,Empty,Empty
+Idle,Empty,Empty,Empty
+Battle,Battle,Battle,Empty
+Say,Empty,Empty,Empty
+UseMobSkill1,Empty,Empty,Empty
+SelectMaxHpUser,Empty,Empty,Empty
+HpChage,Empty,Empty,Empty
+CheckHitPoint,Empty,Empty,Empty
+ResetCheckHitPoint,Empty,Empty,Empty
+CheckAttackCount,Empty,Empty,Empty
+Say1,Empty,Empty,Empty

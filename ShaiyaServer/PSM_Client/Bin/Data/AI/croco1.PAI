@@ -1,0 +1,135 @@
+BehaviorsCount : 1
+BehaviorName : Croco1
+BehaviorDesc : "À×????"
+StateCount : 4
+StateName : init
+StateDesc : ""
+StatePos : 301 129
+StateSize : 40 36
+StateEnter : Empty
+StateUpdate : Empty
+StateExit : Empty
+StateType : 1
+StatebStart : 1
+StatebEnd : 0
+StartConditionCount : 0
+UpdateConditionCount : 0
+ExitConditionCount : 0
+StateName : idle
+StateDesc : ""
+StatePos : 479 174
+StateSize : 44 36
+StateEnter : Empty
+StateUpdate : Empty
+StateExit : Empty
+StateType : 1
+StatebStart : 0
+StatebEnd : 0
+StartConditionCount : 0
+UpdateConditionCount : 0
+ExitConditionCount : 0
+StateName : battle
+StateDesc : ""
+StatePos : 294 313
+StateSize : 56 36
+StateEnter : Battle
+StateUpdate : Battle
+StateExit : Empty
+StateType : 1
+StatebStart : 0
+StatebEnd : 0
+StartConditionCount : 0
+UpdateConditionCount : 0
+ExitConditionCount : 0
+StateName : BeStrong
+StateDesc : ""
+StatePos : 281 497
+StateSize : 80 36
+StateEnter : Empty
+StateUpdate : Empty
+StateExit : Empty
+StateType : 1
+StatebStart : 0
+StatebEnd : 0
+StartConditionCount : 4
+ConditionType : 0
+ConditionExp : "UserID=GetCurrentUser()"
+ConditionType : 0
+ConditionExp : "AttackUser(UserID, 10.0)"
+ConditionType : 0
+ConditionExp : "nCount = 1"
+ConditionType : 0
+ConditionExp : "SetStr( 1.5 )"
+UpdateConditionCount : 0
+ExitConditionCount : 0
+TransitionCount : 6
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 331 142 469 176
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : init
+TransitionEnd : idle
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 1
+ConditionType : 0
+ConditionExp : "dwTime=GetCurrentTime()"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 469 199 335 303
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : idle
+TransitionEnd : battle
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 2
+ConditionType : 1
+ConditionExp : "IsFirstAttack() == 1"
+ConditionType : 1
+ConditionExp : "nCount == 0"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 469 200 337 303
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : idle
+TransitionEnd : battle
+TransitionRefNumber : 2
+TransitionRecursive : 0
+ConditionCount : 2
+ConditionType : 1
+ConditionExp : "IsAttackMe() == 1"
+ConditionType : 1
+ConditionExp : "nCount == 0"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 313 339 313 487
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : battle
+TransitionEnd : BeStrong
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 2
+ConditionType : 1
+ConditionExp : "GetEnergyPercent() <= 0.5"
+ConditionType : 1
+ConditionExp : "nCount == 0"
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 309 487 309 339
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : BeStrong
+TransitionEnd : battle
+TransitionRefNumber : 1
+TransitionRecursive : 0
+ConditionCount : 0
+TransitionPos : -842150451 -842150451
+TransitionPosForTrans : 313 303 313 155
+TransitionSize : -842150451 -842150451
+TransitionType : 2
+TransitionStart : battle
+TransitionEnd : init
+TransitionRefNumber : 2
+TransitionRecursive : 0
+ConditionCount : 1
+ConditionType : 1
+ConditionExp : "IsBattle() == 0"

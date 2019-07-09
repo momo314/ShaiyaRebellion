@@ -1,0 +1,8 @@
+Init,Empty,Empty,Empty
+Move,MoveRandom,MoveRandom,Empty
+Idle,Empty,Empty,Empty
+SummonMonster,Empty,Empty,Empty
+Battle,MoveRandomRun,MoveRandomRun,Empty
+IsFirst,Empty,Empty,Empty
+settime,Empty,Empty,Empty
+returninit,ResetUser,Empty,Empty

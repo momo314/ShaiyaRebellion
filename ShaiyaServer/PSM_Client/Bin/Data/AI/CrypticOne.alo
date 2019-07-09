@@ -1,0 +1,15 @@
+LocalVariableCount : 7
+Type : 1
+Name : nCount
+Type : 3
+Name : dwTime
+Type : 3
+Name : UserID
+Type : 1
+Name : TempNumber
+Type : 3
+Name : dwTimeSecond
+Type : 3
+Name : dwTimeThird
+Type : 3
+Name : dwTimeFour
